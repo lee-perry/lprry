@@ -18,6 +18,17 @@ As the page grows I _may_ break this out into a page for  each route.
 
 16 Nov 2025 [🏃‍♂️ ⏰00:43:06 📏7.52km ⏱️05:44/km 🛫052m ❤️‍🔥165bpm 🧁817 Kcal](/2025-11-16-run) 
 
+## Blacko (short) from HHP
+
+<div class="snaps-horizontal">
+	
+![/assets/images/blacko-short.jpeg](/assets/images/blacko-short.jpeg")
+
+</div>
+
+01 Dec 2025 🏃‍♂️ ⏰00:48:48 📏7.53km ⏱️06:29/km 🛫113m ❤️‍🔥158bpm 🧁702 Kcal
+
+
 ## Foulridge Loop (short) from HHP
 
 <div class="snaps-horizontal">
