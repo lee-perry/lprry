@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Setting a favicon and site logo in Bear</title>
+ <meta name="fediverse:creator" content="@lee@prry.uk">
+ <link rel="stylesheet" href="/assets/css/style.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+ <link rel="webmention" href="https://webmention.io/l.prry.uk/webmention">
+ <link rel="pingback" href="https://webmention.io/l.prry.uk/xmlrpc">
+ <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+ <link rel="shortcut icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
+ <link rel="apple-touch-icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
+
+ <link rel="canonical" href="https://l.prry.uk">
+ 
+ <!-- Primary Meta Tags -->
+ <meta name="title" content="lprry">
+ <meta name="description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ 
+ <!-- Open Graph / Facebook -->
+ <meta property="og:site_name" content="lprry">
+ <meta property="og:title" content="lprry">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://l.prry.uk">
+ <meta property="og:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ <meta property="og:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp"> 
+ 
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary">
+ <meta property="twitter:url" content="https://l.prry.uk">
+ <meta property="twitter:title" content="lprry">
+ <meta property="twitter:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ <meta property="twitter:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp">
+ 
+</head>
+
+<body>
+ <header>
+	<a class="title" href="/">
+	  <h1>
+		lprry
+	  </h1>
+	</a>
+	<nav>
+	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='/mentions'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	</nav>
+</header>
+ 
+ <h1>Setting a favicon and site logo in Bear</h1>
+<p>2025-07-11</p>
+<p>Setting a personalised favicon for your website is one of the features that can help your site's tab stand out in the browser for the reader.  I designed a wee favicon for my website a while back.  I'm not especially creative, so while it might not be particularly special, I wanted to see if I could work out how to use it.</p>
+<p>It was easy enough.  As I am experimenting with a paid bear plan[^1] I can insert media, so on the home tab of the bear dashboard I have used the insert media link to upload my icon, and from there copied the url into the <code>meta_image</code> property in the frontmatter:</p>
+<p><img src="/assets/images/59.webp" alt="Screenshot of the Bear 'home' dashboard with favicon url pointing towards an uploaded file"></p>
+<p>I didn't really expect this to work, partly as the upload had converted the file to webp- but I flicked across to Vivaldi, and sure enough my logo appeared at the top of the tab.</p>
+<p>I then thought that it would be really cool to replace my site name at the top of the page with my logo, as it appears in my existing design.  I failed to come up with a decent css replacement method to achieve that so instead I used css to hide display of the title class:</p>
+<pre><code>.title {
+  display: none;
+}
+</code></pre>
+<p>Then I used html to insert the same logo into the beginning of the navigation menu, linking through to the homepage, and providing a class for styling.</p>
+<pre><code>&lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;https://bear-images.sfo2.cdn.digitaloceanspaces.com/leeperry/favicon.webp&quot; alt=&quot;logo&quot; class=&quot;logo&quot;&gt;&lt;/a&gt; [Home](/) [Blog](/blog/) [Now](/now)
+</code></pre>
+<p>Here is the result, the end of my first session looking at styling in Bear.</p>
+<p><img src="/assets/images/35.webp" alt="Screenshot showing my site logo appearing both in the browser tab, and at the front of my navigation menu"></p>
+<p>In my next update I'll look at adding an h-card to the home page in bear, to identify the site on the indieWeb.</p>
+<p>[^1]: A paid plan is necessary to upload media to Bear.</p>
+
+ 
+ <footer style="padding:25px 0;">
+	
+<span id="footer-directive">
+	<div class="h-card">
+  <img class="u-photo h-card-img" src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/lee.webp" alt="Lee Perry" loading="lazy">
+  <p class="h-card-header"><a class="p-name u-url" href="https://l.prry.uk">Lee Perry</a></p>
+  <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
+<nav>
+<p><a href='/code'><i class="ph ph-code"></i> </a> <a href='/dogs'><i class="ph ph-dog"></i> </a> <a href='/grow'><i class="ph ph-plant"></i> </a> <a href='/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/exploring'><i class="ph ph-van"></i> </a><a href='/reading'><i class="ph ph-book"></i> </a> <a href='/watching'><i class="ph ph-television"></i> </a> <a href='/vinyl'><i class="ph ph-guitar"></i> </a></p>
+</nav>
+<div class="social">  
+<a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>
+  <a href="https://bsky.app/profile/lee-perry.co.uk" class="u-url" rel="me"><i class="ph ph-butterfly"></i></a>
+  <a href="https://github.com/lee-perry" class="u-url" rel="me"><i class="ph ph-github-logo"></i></a>
+  <a href="https://codeberg.org/leeperry" class="u-url" rel="me"><i class="ph ph-file-code"></i></a>
+  <a href="mailto:l@prry.uk" rel="me"><i class="ph ph-at"></i></a>
+  <a href="/feeds"><i class="ph ph-rss-simple"></i></a>
+</div>
+</div>
+<br><br>
+Made with <i class="ph ph-coffee"></i> in Burnley by lprry <i class="ph ph-copyright"></i>1979-2025 - 
+
+</span>
+
+<span>
+	Powered by <a href="https://bearblog.dev">Bear <span role="img" class="bear" aria-label="ASCII bear logo">ʕ•ᴥ•ʔ</span></a>
+</span>
+
+  </footer>
+
+ 
+</body>
+</html>

@@ -1,0 +1,12 @@
+---
+title: Training Log
+layout: /layouts/page.html
+---
+<h1>My Activities</h1>
+<ul>
+{% for activity in collections.training-log | reverse %}
+ <li>
+   {{ activity.date | date: "%Y-%m-%d" }} - <a href="{{ activity.url }}">{{ activity.data.title }}</a>
+ </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Using Microformats with Bear</title>
+ <meta name="fediverse:creator" content="@lee@prry.uk">
+ <link rel="stylesheet" href="/assets/css/style.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+ <link rel="webmention" href="https://webmention.io/l.prry.uk/webmention">
+ <link rel="pingback" href="https://webmention.io/l.prry.uk/xmlrpc">
+ <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+ <link rel="shortcut icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
+ <link rel="apple-touch-icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
+
+ <link rel="canonical" href="https://l.prry.uk">
+ 
+ <!-- Primary Meta Tags -->
+ <meta name="title" content="lprry">
+ <meta name="description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ 
+ <!-- Open Graph / Facebook -->
+ <meta property="og:site_name" content="lprry">
+ <meta property="og:title" content="lprry">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://l.prry.uk">
+ <meta property="og:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ <meta property="og:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp"> 
+ 
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary">
+ <meta property="twitter:url" content="https://l.prry.uk">
+ <meta property="twitter:title" content="lprry">
+ <meta property="twitter:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ <meta property="twitter:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp">
+ 
+</head>
+
+<body>
+ <header>
+	<a class="title" href="/">
+	  <h1>
+		lprry
+	  </h1>
+	</a>
+	<nav>
+	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='/mentions'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	</nav>
+</header>
+ 
+ <h1>Using Microformats with Bear</h1>
+<p>2025-07-11</p>
+<p>Microformats are tiny snippets of class data within html return author, title, date and content to indieWeb tools that rely on microformats to obtain structured data about your content for use elsewhere.</p>
+<p>Pretty abstract for the most part, but important if you want to participate directly in the IndieWeb as my <a href="https://lee-perry.co.uk">main site</a> does.</p>
+<p>The first problem that I solved last night was to create the h-card on my homepage, which is a short introduction to your site.  This was easy, and worked immediately, inserting the following code into the 'home' section:</p>
+<pre><code>&lt;div class=&quot;h-card&quot;&gt;
+  &lt;a class=&quot;h-card p-name u-url&quot; href=&quot;https://l33.co.uk/&quot; rel=&quot;me&quot; style=&quot;display: none;&quot;&gt;Lee Perry&lt;/a&gt;
+  &lt;p class=&quot;p-note&quot;&gt;&lt;img src=&quot;https://bear-images.sfo2.cdn.digitaloceanspaces.com/leeperry/header.webp&quot; class=&quot;u-photo u-featured&quot; style=&quot;max-width: 50%; border-radius: 20px; float: right; margin-left: 20px; margin-bottom:20px; border: 2px solid whitesmoke&quot; alt=&quot;&quot;&gt;Burnley based, I run, ride online, climb rocks and mountains, and explore the world in our motorhome with my Social Secretary, Vickie.&lt;br&gt;&lt;br&gt;Expect lots of talk about running, virtual cycling on my Wattbike Atom (NG), Burnley FC, retrogaming and code.  Accompanied by lots of cute photographs of our podenco oriented spaniel infiltrated family. Find out what I'm up to &lt;a href=&quot;/now/&quot;&gt;now&lt;/a&gt;&lt;/p&gt;	
+&lt;/div&gt;
+</code></pre>
+<p><img src="/assets/images/47.webp" alt="Screenshot from the front page of my Bear website showing my h-card ash the top of the page"></p>
+<p>Easy enough so far, but my first real frustrations with bear were about to begin.  As far as I can tell the only difference between the themes available in Bear is the css applied to them, so it would be super simple to make microformats work out of the box.</p>
+<p>I very quickly came up with a way through the post template to implement microformats, but that is exposed in the post editor for every post, which is ugly.  I had hoped to insert the opening tags into the header settings, and information and closing tags into the footer settings.  This did not work though, header settings insert in the <code>&lt;head&gt;</code> section of the html, and there is no obvious way to control the appearance of the footer settings on pages that are not posts.</p>
+<p>For now I have inserted the opening tags at the top of the post editor.</p>
+<pre><code>&lt;article class=&quot;h-entry&quot;&gt;
+  &lt;div class=&quot;e-content&quot;&gt;
+</code></pre>
+<p>And I have created an information section at the bottom of the post template (with closing <code>article</code> and <code>div</code> tags in the footer).</p>
+<pre><code>&lt;p&gt;#&lt;span class=&quot;p-name&quot;&gt;&lt;/span&gt; &lt;a href=&quot;&quot; class=&quot;u-url&quot;&gt;&lt;time datetime=&quot;&quot; class=&quot;dt-published&quot;&gt;&lt;/time&gt;&lt;/a&gt; by &lt;a href=&quot;/&quot; rel=&quot;author&quot; class=&quot;h-card p-author&quot;&gt;Lee Perry&lt;/a&gt; last updated:  ago.&lt;/p&gt;
+</code></pre>
+<p>So the lovely plaintext markdown view now looks like this:</p>
+<p><img src="/assets/images/36-1.webp" alt="Screenshot showing the bear post editor with microformats code above and below"></p>
+<p>Not as obtrusive as my earlier attempts, but I dislike this and it could be a dealbreaker with either microformats coming out, or this site not being viable beyond this experiment.</p>
+<p><img src="/assets/images/56.webp" alt="Screenshot showing a post on this website passing the h-entry tests on indiewebify"></p>
+<p>The good news is that the site now passes the microformats tests on <a href="indiewebify.me">indiewebify</a> - but I do need to work out whether I can live with that, or without microformats.</p>
+
+ 
+ <footer style="padding:25px 0;">
+	
+<span id="footer-directive">
+	<div class="h-card">
+  <img class="u-photo h-card-img" src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/lee.webp" alt="Lee Perry" loading="lazy">
+  <p class="h-card-header"><a class="p-name u-url" href="https://l.prry.uk">Lee Perry</a></p>
+  <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
+<nav>
+<p><a href='/code'><i class="ph ph-code"></i> </a> <a href='/dogs'><i class="ph ph-dog"></i> </a> <a href='/grow'><i class="ph ph-plant"></i> </a> <a href='/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/exploring'><i class="ph ph-van"></i> </a><a href='/reading'><i class="ph ph-book"></i> </a> <a href='/watching'><i class="ph ph-television"></i> </a> <a href='/vinyl'><i class="ph ph-guitar"></i> </a></p>
+</nav>
+<div class="social">  
+<a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>
+  <a href="https://bsky.app/profile/lee-perry.co.uk" class="u-url" rel="me"><i class="ph ph-butterfly"></i></a>
+  <a href="https://github.com/lee-perry" class="u-url" rel="me"><i class="ph ph-github-logo"></i></a>
+  <a href="https://codeberg.org/leeperry" class="u-url" rel="me"><i class="ph ph-file-code"></i></a>
+  <a href="mailto:l@prry.uk" rel="me"><i class="ph ph-at"></i></a>
+  <a href="/feeds"><i class="ph ph-rss-simple"></i></a>
+</div>
+</div>
+<br><br>
+Made with <i class="ph ph-coffee"></i> in Burnley by lprry <i class="ph ph-copyright"></i>1979-2025 - 
+
+</span>
+
+<span>
+	Powered by <a href="https://bearblog.dev">Bear <span role="img" class="bear" aria-label="ASCII bear logo">ʕ•ᴥ•ʔ</span></a>
+</span>
+
+  </footer>
+
+ 
+</body>
+</html>

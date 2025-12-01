@@ -1,0 +1,12 @@
+---
+title: Snaps
+layout: /layouts/page.html
+---
+<h1>My Snaps</h1>
+<ul>
+{% for snap in collections.snaps | reverse %}
+ <li>
+   {{ snap.date | date: "%Y-%m-%d" }} - <a href="{{ snap.url }}">{{ snap.data.title }}</a>
+ </li>
+{% endfor %}
+</ul>

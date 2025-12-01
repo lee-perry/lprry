@@ -1,0 +1,12 @@
+---
+title: Clips
+layout: /layouts/page.html
+---
+<h1>My clips</h1>
+<ul>
+{% for clip in collections.clips | reverse %}
+ <li>
+   {{ clip.date | date: "%Y-%m-%d" }} - <a href="{{ clip.url }}">{{ clip.data.title }}</a>
+ </li>
+{% endfor %}
+</ul>

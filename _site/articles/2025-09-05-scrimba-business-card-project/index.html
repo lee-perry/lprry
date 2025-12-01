@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Scrimba Business Card Project</title>
+ <meta name="fediverse:creator" content="@lee@prry.uk">
+ <link rel="stylesheet" href="/assets/css/style.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+ <link rel="webmention" href="https://webmention.io/l.prry.uk/webmention">
+ <link rel="pingback" href="https://webmention.io/l.prry.uk/xmlrpc">
+ <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+ <link rel="shortcut icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
+ <link rel="apple-touch-icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
+
+ <link rel="canonical" href="https://l.prry.uk">
+ 
+ <!-- Primary Meta Tags -->
+ <meta name="title" content="lprry">
+ <meta name="description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ 
+ <!-- Open Graph / Facebook -->
+ <meta property="og:site_name" content="lprry">
+ <meta property="og:title" content="lprry">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://l.prry.uk">
+ <meta property="og:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ <meta property="og:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp"> 
+ 
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary">
+ <meta property="twitter:url" content="https://l.prry.uk">
+ <meta property="twitter:title" content="lprry">
+ <meta property="twitter:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ <meta property="twitter:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp">
+ 
+</head>
+
+<body>
+ <header>
+	<a class="title" href="/">
+	  <h1>
+		lprry
+	  </h1>
+	</a>
+	<nav>
+	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='/mentions'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	</nav>
+</header>
+ 
+ <h1>Scrimba Business Card Project</h1>
+<p>2025-09-05</p>
+<p>When I wrote my first article on this site <a href="https://code.prry.uk/starting-over/">last week</a> I explained that I had decided to work back through the Scrimba curriculum from the beginning to try to really master the basics before moving forwards to more complicated projects.I also explained that I was trying to complete the project with alternatives to big tech - Codeberg and Statichost.</p>
+<p>This first exercise builds a simple html and css business card, customised on the back of a walk through project.  The project uses flexbox to split the images and content onto separate columns.  I always struggle to remember flexbox, though it seems straightforward, splitting the direct children of the flexbox container into columns.</p>
+<p><img src="/assets/images/17-1.webp" alt="Screenshot showing a business card with a styled avatar image and information about my interests on blue and claret."></p>
+<p>The main changes that I made to the project where the introductions of a slight border-radius to the card, another to the avatar, and a light text shadow.  Obviously I also introduced a slight claret and blue Burnley color palette too.</p>
+<p>This was the first project that I had deployed to Statichost via Codeberg replacing the Github via Netlify workflow in Scrimba.  It worked fine other than needing to enter my Codeberg credentials - I think I cloned via HTTPS rater than SSH, so hopefully this will just work in the next project.</p>
+<p><a href="https://codeberg.org/leeperry/scrimba-business-card.git">Codeberg Repo</a> | <a href="https://leeperry-scrimba-business-card.statichost.eu/">Deployment</a></p>
+<p>The fixed width avatar seems to be being vertically stretched as the card lengthens on my deployment - I'll need to look into how to control that.</p>
+<p>Until the next time...</p>
+
+ 
+ <footer style="padding:25px 0;">
+	
+<span id="footer-directive">
+	<div class="h-card">
+  <img class="u-photo h-card-img" src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/lee.webp" alt="Lee Perry" loading="lazy">
+  <p class="h-card-header"><a class="p-name u-url" href="https://l.prry.uk">Lee Perry</a></p>
+  <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
+<nav>
+<p><a href='/code'><i class="ph ph-code"></i> </a> <a href='/dogs'><i class="ph ph-dog"></i> </a> <a href='/grow'><i class="ph ph-plant"></i> </a> <a href='/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/exploring'><i class="ph ph-van"></i> </a><a href='/reading'><i class="ph ph-book"></i> </a> <a href='/watching'><i class="ph ph-television"></i> </a> <a href='/vinyl'><i class="ph ph-guitar"></i> </a></p>
+</nav>
+<div class="social">  
+<a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>
+  <a href="https://bsky.app/profile/lee-perry.co.uk" class="u-url" rel="me"><i class="ph ph-butterfly"></i></a>
+  <a href="https://github.com/lee-perry" class="u-url" rel="me"><i class="ph ph-github-logo"></i></a>
+  <a href="https://codeberg.org/leeperry" class="u-url" rel="me"><i class="ph ph-file-code"></i></a>
+  <a href="mailto:l@prry.uk" rel="me"><i class="ph ph-at"></i></a>
+  <a href="/feeds"><i class="ph ph-rss-simple"></i></a>
+</div>
+</div>
+<br><br>
+Made with <i class="ph ph-coffee"></i> in Burnley by lprry <i class="ph ph-copyright"></i>1979-2025 - 
+
+</span>
+
+<span>
+	Powered by <a href="https://bearblog.dev">Bear <span role="img" class="bear" aria-label="ASCII bear logo">ʕ•ᴥ•ʔ</span></a>
+</span>
+
+  </footer>
+
+ 
+</body>
+</html>

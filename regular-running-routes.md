@@ -1,0 +1,39 @@
+---
+title: Regular Running Routes
+layout: layouts/page.html
+---
+# Running Routes
+
+{{ post_description }}
+
+As the page grows I _may_ break this out into a page for  each route.
+
+## Barden Lane to B&Q Circuit CCW
+
+<div class="snaps-horizontal">
+
+![/assets/images/25-1.webp](/assets/images/25-1.webp)
+
+</div>
+
+16 Nov 2025 [🏃‍♂️ ⏰00:43:06 📏7.52km ⏱️05:44/km 🛫052m ❤️‍🔥165bpm 🧁817 Kcal](/2025-11-16-run) 
+
+## Foulridge Loop (short) from HHP
+
+<div class="snaps-horizontal">
+
+![/assets/images/10-1.webp](/assets/images/10-1.webp)
+
+</div>
+
+17 Nov 2025 [🏃‍♂️ ⏰00:49:14 📏7.76km ⏱️06:20/km 🛫148m ❤️‍🔥157bpm 🧁877 Kcal](/2025-11-17-run)
+
+## Laneshawbridge Loop (short) from HHP
+
+<div class="snaps-horizontal">
+
+![Screenshot from Veloviewer showing route map and elevation profile](/assets/images/40-2.webp)
+
+</div>
+
+24 Nov 2025[🏃‍♂️ ⏰00:46:00 📏7.00km ⏱️06:34/km 🛫110m ❤️‍🔥158bpm 🧁574 Kcal](/2025-11-24-run)

@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Starting Over</title>
+ <meta name="fediverse:creator" content="@lee@prry.uk">
+ <link rel="stylesheet" href="/assets/css/style.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+ <link rel="webmention" href="https://webmention.io/l.prry.uk/webmention">
+ <link rel="pingback" href="https://webmention.io/l.prry.uk/xmlrpc">
+ <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+ <link rel="shortcut icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
+ <link rel="apple-touch-icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
+
+ <link rel="canonical" href="https://l.prry.uk">
+ 
+ <!-- Primary Meta Tags -->
+ <meta name="title" content="lprry">
+ <meta name="description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ 
+ <!-- Open Graph / Facebook -->
+ <meta property="og:site_name" content="lprry">
+ <meta property="og:title" content="lprry">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://l.prry.uk">
+ <meta property="og:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ <meta property="og:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp"> 
+ 
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary">
+ <meta property="twitter:url" content="https://l.prry.uk">
+ <meta property="twitter:title" content="lprry">
+ <meta property="twitter:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
+ <meta property="twitter:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp">
+ 
+</head>
+
+<body>
+ <header>
+	<a class="title" href="/">
+	  <h1>
+		lprry
+	  </h1>
+	</a>
+	<nav>
+	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='/mentions'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	</nav>
+</header>
+ 
+ <h1>Starting Over</h1>
+<p>2025-08-31</p>
+<p>I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.</p>
+<p>That inconsistency, combined with being fairly/partly proficient, makes it really difficult to just pick up a MOOC course and follow it through from the beginning.  It's pretty boring relearning simple concepts to pick up the 2% that you may not know or that has changed.</p>
+<p>I'm going to try just that though.  I've had a Scrimba subscription for a number of years, have always enjoyed the program, but have struggled to maintain progress for a variety of reasons, many external to the learning itself.  Scrimba have also recently introduced the back end to create a full-stack learning path for the first time too.</p>
+<p>So I've cleared my course and submission history, starting over from the beginning.  I'll be blogging about the journey here, partly to consolidate learning, partly to keep myself accountable, and part about rebelling against use of big tech, and finding alternatives where appropriate.</p>
+<p>I completed the Intro to HTML module in the HTML and CSS Fundamentals course today.  The assignment at the end of the module is to create a personal website, though really this task is html only - the stylesheet is provided and controlled by variables.</p>
+<p>Here is the html that I provided to meet the design specification:</p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;
+		&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Bangers&amp;family=Black+Ops+One&amp;family=Creepster&amp;family=La+Belle+Aurore&amp;family=MedievalSharp&amp;family=Orbitron&amp;family=Rye&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+		&lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;!-- 
+		Challenge 1:
+		Write the HTML for your personal website.
+		--&gt;
+		&lt;img src=&quot;lee.jpg&quot; alt=&quot;&quot;&gt;
+		&lt;h1&gt;Hi, my name is Lee&lt;/h1&gt;
+		&lt;h2&gt;Fun facts about me:&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;I watch Burnley FC&lt;/li&gt;
+			&lt;li&gt;I write about playing old video games&lt;/li&gt;
+			&lt;li&gt;I build things with code for fun&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;p&gt;Please connect with me on mastodon &lt;a href=&quot;https://prry.uk/@lee&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+		&lt;input type=&quot;text&quot; placeholder=&quot;Enter email...&quot;&gt;
+		&lt;button&gt;Join newsletter&lt;/button
+	&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>The output is shown below, although the styling was largely provided I think this shows how minimal code is required to create something like a personal linktree page.</p>
+<p><img src="/assets/images/48.webp" alt="Screenshot of a personal website with avatar, key interests, and follow buttons"></p>
+<p>The Scrimba curriculum uses Github and Netlify, neither fit well with trying to find privacy conscious EU based alternatives to big tech.  So I have set myself up with a couple of alternatives for the first time.  I am trying out <a href="https://codeberg.org">Codeberg</a> in place of Github, and <a href="https://statichost.eu">Statichost</a> in place of Netlify.</p>
+<p>So far everything has gone to plan, and though this initial exercise deploys manually rather than from codeberg, I have my SSH keys setup ready and verified in codeberg ready to use.</p>
+<p>View the project on Statichost <a href="https://scrimba-personal-website.statichost.eu/">here</a></p>
+
+ 
+ <footer style="padding:25px 0;">
+	
+<span id="footer-directive">
+	<div class="h-card">
+  <img class="u-photo h-card-img" src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/lee.webp" alt="Lee Perry" loading="lazy">
+  <p class="h-card-header"><a class="p-name u-url" href="https://l.prry.uk">Lee Perry</a></p>
+  <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
+<nav>
+<p><a href='/code'><i class="ph ph-code"></i> </a> <a href='/dogs'><i class="ph ph-dog"></i> </a> <a href='/grow'><i class="ph ph-plant"></i> </a> <a href='/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/exploring'><i class="ph ph-van"></i> </a><a href='/reading'><i class="ph ph-book"></i> </a> <a href='/watching'><i class="ph ph-television"></i> </a> <a href='/vinyl'><i class="ph ph-guitar"></i> </a></p>
+</nav>
+<div class="social">  
+<a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>
+  <a href="https://bsky.app/profile/lee-perry.co.uk" class="u-url" rel="me"><i class="ph ph-butterfly"></i></a>
+  <a href="https://github.com/lee-perry" class="u-url" rel="me"><i class="ph ph-github-logo"></i></a>
+  <a href="https://codeberg.org/leeperry" class="u-url" rel="me"><i class="ph ph-file-code"></i></a>
+  <a href="mailto:l@prry.uk" rel="me"><i class="ph ph-at"></i></a>
+  <a href="/feeds"><i class="ph ph-rss-simple"></i></a>
+</div>
+</div>
+<br><br>
+Made with <i class="ph ph-coffee"></i> in Burnley by lprry <i class="ph ph-copyright"></i>1979-2025 - 
+
+</span>
+
+<span>
+	Powered by <a href="https://bearblog.dev">Bear <span role="img" class="bear" aria-label="ASCII bear logo">ʕ•ᴥ•ʔ</span></a>
+</span>
+
+  </footer>
+
+ 
+</body>
+</html>

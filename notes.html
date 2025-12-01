@@ -1,0 +1,12 @@
+---
+title: Notes
+layout: /layouts/page.html
+---
+<h1>My notes</h1>
+<ul>
+{% for note in collections.notes | reversed %}
+ <li>
+   {{ note.date | date: "%Y-%m-%d" }} - <a href="{{ note.url }}">{{ note.data.title }}</a>
+ </li>
+{% endfor %}
+</ul>
