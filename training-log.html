@@ -6,7 +6,7 @@ layout: /layouts/page.html
 <ul>
 {% for activity in collections.training-log | reverse %}
  <li>
-   {{ activity.date | date: "%Y-%m-%d" }} - <a href="{{ activity.url }}">{{ activity.data.title }}</a>
+   {{ activity.date | date: "%Y-%m-%d" }} <a href="{{ activity.url }}">{% if activity.data.type == "ride" %}🚴‍♂️ {% endif %}{% if activity.data.type == "run" %}🏃‍♂️ {% endif %}{% if activity.data.type == "swim" %}🏊‍♂️ {% endif %}{% if activity.data.type == "climb" %}🧗‍♂️ {% endif %}{{ activity.data.time }} {{ activity.data.distance }}km {% if activity.data.type == "run" %}{{ activity.data.pace }}min/km {% endif %}{{ activity.data.climb }}m+ {{ activity.data.hr }}bpm {% if activity.data.type == "ride" %}{{ activity.data.w }}w {% endif %}{{ activity.data.kcal }}kcal</a>
  </li>
 {% endfor %}
 </ul>

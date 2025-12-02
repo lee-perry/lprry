@@ -42,9 +42,9 @@ On this site I write notes and longer articles about learning to code, exploring
 
 ## Latest Training
 <ul class="embedded blog-posts">
-{% for item in collections.training-log | reversed %}
+{% for activity in collections.training-log | reversed %}
  <li>
-   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
+   {{ activity.date | date: "%Y-%m-%d" }} <a href="{{ activity.url }}">{% if activity.data.type == "ride" %}🚴‍♂️ {% endif %}{% if activity.data.type == "run" %}🏃‍♂️ {% endif %}{% if activity.data.type == "swim" %}🏊‍♂️ {% endif %}{% if activity.data.type == "climb" %}🧗‍♂️ {% endif %}{{ activity.data.time }} {{ activity.data.distance }}km {% if activity.data.type == "run" %}{{ activity.data.pace }}min/km {% endif %}{{ activity.data.climb }}m+ {{ activity.data.hr }}bpm {% if activity.data.type == "ride" %}{{ activity.data.w }}w {% endif %}{{ activity.data.kcal }}kcal</a>
  </li>
 {% endfor %}
 </ul>
