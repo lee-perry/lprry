@@ -22,7 +22,7 @@ As the page grows I _may_ break this out into a page for  each route.
 
 <div class="snaps-horizontal">
 	
-![/assets/images/blacko-short.jpeg](/assets/images/blacko-short.jpeg")
+![/assets/images/blacko-short.jpeg](/assets/images/blacko-short.jpeg)
 
 </div>
 
