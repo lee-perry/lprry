@@ -3,7 +3,7 @@ title: Home
 layout: layouts/page.html
 ---
 
-<img src="/assets/images/header.webp" alt="Me, surrounded by dogs on the sofa" class="header-img" eleventy:ignore>
+<img src="/assets/images/header.webp" alt="Me, surrounded by dogs on the sofa" class="header-img" >
 
 Welcome to my site!  I live in Burnley, UK, with my wife Victoria, our canine children, and our hens.
 
@@ -20,11 +20,11 @@ On this site I write notes and longer articles about learning to code, exploring
 ## Latest Articles
 
 <ul class="embedded blog-posts">
-{%- for item in collections.articles | reversed -%}
+{% for item in collections.articles | reverse %}
  <li>
    {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
  </li>
-{%- endfor -%}
+{% endfor %}
 </ul>
 
 [View all articles](/articles)

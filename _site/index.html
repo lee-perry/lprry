@@ -4,14 +4,13 @@
  <meta charset="utf-8">
  <title>Home</title>
  <meta name="fediverse:creator" content="@lee@prry.uk">
- <link rel="stylesheet" href="/assets/css/style.css">
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
  <link rel="webmention" href="https://webmention.io/l.prry.uk/webmention">
  <link rel="pingback" href="https://webmention.io/l.prry.uk/xmlrpc">
  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
- <link rel="shortcut icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
- <link rel="apple-touch-icon" href="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/favicon.webp">
+ <link rel="shortcut icon" href="/assets/images/favicon.webp">
+ <link rel="apple-touch-icon" href="/assets/images/favicon.webp">
 
  <link rel="canonical" href="https://l.prry.uk">
  
@@ -33,6 +32,298 @@
  <meta property="twitter:title" content="lprry">
  <meta property="twitter:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
  <meta property="twitter:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp">
+ 
+ <style>
+ @font-face {
+   font-family: "Atkinson Hyperlegible";
+   src:
+     url("/assets/fonts/atkinsonhyperlegiblenext-regular.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: "Atkinson Hyperlegible Bold";
+   src:
+     url("/assets/fonts/atkinsonhyperlegiblenext-extrabold.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: "Atkinson Hyperlegible Mono";
+   src:
+     url("/assets/fonts/atkinsonhyperlegiblemono-regular.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: "Gloria Hallelujah";
+   src:
+     url("/assets/fonts/gloria-hallelujah-latin-400-normal.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+ }
+ 
+ :root {
+   --background-color: whitesmoke;
+   --focus-color: #630C2B;
+   --font-main: 'Atkinson Hyperlegible Bold';
+   --font-secondary: 'Atkinson Hyperlegible';
+   --font-code: 'Atkinson Hyperlegible Mono';
+   --font-scrawl: 'Gloria Hallelujah';
+ }
+ 
+ @media (prefers-color-scheme: dark) {
+   :root {
+     --background-color: #222222;
+     --focus-color: #F8B319;
+     --text-color: whitesmoke;
+   }
+ }
+ 
+ html {
+   color: var(--text-color);
+ }
+ 
+ header > a {
+   text-decoration: none;
+ }
+ 
+ header h1 {
+   font-size: 4em;
+   margin-top: 50px;
+   margin-bottom: 30px;
+ }
+ 
+ main {
+   margin-top: 50px;
+ }
+ 
+ body {
+   width: 900px;
+   max-width: 95%;
+   margin: 0 auto;
+   font-family: var(--font-secondary);
+   font-size: 1.25em;
+   line-height: 1.5em;
+   background-color: var(--background-color);
+ }
+ 
+ h1, h2 {
+   font-family: var(--font-main);
+   color:var(--focus-color);
+ }
+ 
+ em {
+   font-family: var(--font-scrawl);
+ }
+ 
+ main > h1 {
+  font-size: 1.6em;
+ }
+ main > h2 {
+  font-size: 1.4em; 
+ }
+ 
+ a {
+   color: var(--focus-color);
+ }
+ 
+ nav a {
+   font-size: 0.8em;
+   margin-right: 5px;
+   text-decoration: none;
+ }
+ 
+ img {
+   max-width: 100%;
+   text-align: center;
+   border-radius: 10px;
+   border: 2px solid var(--focus-color);
+ }
+ 
+ ul.embedded.blog-posts {
+   list-style-type: none;
+   padding-left: 0;
+ }
+ 
+ ul.blog-posts li {
+   font-variant-numeric: tabular-nums;
+   letter-spacing: 0.02em;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ pre, .highlight {
+   font-family: var(--font-code); 
+ }
+ 
+ footer {
+   text-align: center;
+ }
+ 
+ .social {
+   margin-top: 75px;
+   text-align: center;
+ }
+ 
+ .social a {
+   text-decoration: none;
+ }
+ 
+ .h-card {
+   margin-top: 75px;
+ }
+ 
+ .h-card-header {
+   text-align: left;
+   font-size: 1.4em; 
+   font-family: var(--font-main);
+ }
+ 
+ .h-card-header a {
+   text-decoration: none;
+ }
+ 
+ .h-card-img {
+   float: left;
+   max-width: 200px;
+   margin-right: 20px;
+ }
+ 
+ .h-card-text {
+   text-align: left;
+ }
+ 
+ .ph {
+   font-size: 1.3em;
+   vertical-align: -20%;
+ }
+ 
+ iframe, .video {
+     aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
+     width: 100%;          /* Full width of the container */
+     height: auto;        /* Height adjusts automatically */
+ }
+ 
+ ul.embedded.blog-posts > li > img{
+     display: flex;
+     flex-flow: row wrap;
+     max-width: 295px
+ }
+ 
+ blockquote {
+  border-left: 10px solid var(--focus-color); 
+  padding-left: 5px;
+ }
+ 
+ .header-img {
+   float: right; 
+   width: 300px; 
+   max-width: 50%;
+   margin-left: 15px;
+   margin-bottom: 10px;
+   border: 3px solid var(--focus-color);
+ }
+ 
+ .hidden {
+  display: none;
+ }
+ 
+ .highlight {
+   max-width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+   text-wrap: wrap;
+ /*  overflow: scroll; */
+ }
+ 
+ .highlight pre {
+   text-wrap: wrap;
+   font-size: 0.8em;
+ }
+ 
+ iframe {
+   border: 3px solid var(--focus-color);
+ }
+ 
+ .webmentions h2 {
+   text-align: left;
+ }
+ 
+ .webmentions {
+   text-align: left;
+   margin-bottom: 25px;
+ }
+ 
+ .webmentions blockquote {
+   border-left: 3px solid var(--focus-color);
+ }
+ 
+ .snaps ul {
+   margin: 0 auto;
+   text-align: left;
+ }
+ 
+ .snaps li {
+   display: inline-block;
+   vertical-align: top;
+   text-wrap: wrap;
+   text-align: left;
+ }
+ 
+ .snaps ul li span {
+   display: table; 
+ }
+ 
+ .snaps ul li img {
+   width: 291px; 
+   margin-bottom: 20px;
+ }
+ 
+ .snaps-vertical img {
+   width: clamp(215px, 95%, 300px);
+   transition: 300ms transform;
+   height: auto;
+ }
+ 
+ .snaps-vertical img:hover, .snaps-vertical img:active {
+   /* transform: scale(1.5); */
+   /* transform-origin: left; */
+   transform: scale(1.1);
+   transform-origin: left bottom;
+   z-index: 2;
+ }
+ 
+ img {
+   width: clamp(290px, 95%, 890px); 
+   height: auto;
+   z-index: 1;
+   position: relative;
+ }
+ 
+ .snaps-horizontal img {
+   width: clamp(290px, 95%, 435px); 
+   transition: 300ms transform;
+   height: auto;
+ }
+ 
+ .snaps-horizontal img:hover, .snaps-horizontal img:focus {
+   transform: scale(1.1);
+   transform-origin: left bottom;
+   z-index: 2;
+ }
+ 
+ .webmention-avatar {
+   border-radius: 50%; 
+   margin-right: -20px;
+   background-color: whitesmoke;
+   width:64px;
+   height:64px;
+ }
+ </style>
  
  
  <style type="text/css" media="all">
@@ -59,7 +350,7 @@
 	</nav>
 </header>
  
- <img src="/assets/images/header.webp" alt="Me, surrounded by dogs on the sofa" class="header-img">
+ <picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2Fheader.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2Fheader.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2Fheader.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2Fheader.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2Fheader.webp&width=295&format=jpeg&via=transform" alt="Me, surrounded by dogs on the sofa" class="header-img" width="1200" height="900" srcset="/.11ty/image/?src=assets%2Fimages%2Fheader.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2Fheader.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2Fheader.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2Fheader.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture>
 <p>Welcome to my site!  I live in Burnley, UK, with my wife Victoria, our canine children, and our hens.</p>
 <p>On this site I write notes and longer articles about learning to code, exploring, following <a href="/burnley-fc">Burnley FC</a> around the country, and <a href="/training-log">training</a> and <a href="/archive?q=race">racing</a>.  I snap images along the way, that appear in my dedicated snaps section.  I also record all of my training, <a href="/runs">run</a>, <a href="/rides">ride</a> and <a href="/weigh-ins">weigh-in</a> data.</p>
 <h2>Topics</h2>
@@ -67,27 +358,38 @@
 <p><a href="/code"><i class="ph ph-code"></i> </a> <a href="/dogs"><i class="ph ph-dog"></i> </a> <a href="/grow"><i class="ph ph-plant"></i> </a> <a href="/football"><i class="ph ph-soccer-ball"></i> </a> <a href="/exploring"><i class="ph ph-van"></i> </a><a href="/reading"><i class="ph ph-book"></i> </a> <a href="/watching"><i class="ph ph-television"></i> </a> <a href="/vinyl"><i class="ph ph-guitar"></i> </a></p>
 </nav>
 <h2>Latest Articles</h2>
-<ul class="embedded blog-posts"><li>
+<ul class="embedded blog-posts">
+ <li>
    2025-07-10 - <a href="/articles/2025-07-10-hello-bear/">Hello Bear?</a>
- </li><li>
+ </li>
+ <li>
    2025-07-11 - <a href="/articles/2025-07-11-a-favicon-and-site-logo-in-bear/">Setting a favicon and site logo in Bear</a>
- </li><li>
+ </li>
+ <li>
    2025-07-11 - <a href="/articles/2025-07-11-using-microformats-with-bear/">Using Microformats with Bear</a>
- </li><li>
+ </li>
+ <li>
    2025-08-31 - <a href="/articles/2025-08-31-starting-over/">Starting Over</a>
- </li><li>
+ </li>
+ <li>
    2025-09-05 - <a href="/articles/2025-09-05-scrimba-business-card-project/">Scrimba Business Card Project</a>
- </li><li>
+ </li>
+ <li>
    2025-09-07 - <a href="/articles/2025-07-09-great-north-run/">Great North Run 2025</a>
- </li><li>
+ </li>
+ <li>
    2025-10-25 - <a href="/articles/2025-10-25-bearly-here/">Bearly here</a>
- </li><li>
+ </li>
+ <li>
    2025-11-05 - <a href="/articles/2025-11-05-whats-in-my-inventory/">What's in my inventory?</a>
- </li><li>
+ </li>
+ <li>
    2025-11-08 - <a href="/articles/2025-11-08-west-ham-united-3-burnley-2/">West Ham United 3 Burnley 2</a>
- </li><li>
+ </li>
+ <li>
    2025-11-15 - <a href="/articles/2025-11-15-finalising-my-bearblog-theme-for-now/">Finalising my bearblog theme. For now...</a>
- </li></ul>
+ </li>
+</ul>
 <p><a href="/articles">View all articles</a></p>
 <h2>Latest Notes</h2>
 <ul class="embedded blog-posts">

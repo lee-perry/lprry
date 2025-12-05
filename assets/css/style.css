@@ -252,6 +252,27 @@ iframe {
 }
 
 .snaps-vertical img {
+  /* width: 215px; */
+  width: clamp(215px, 100%, 300px);
+  transition: 300ms transform;
+  height: auto;
+}
+
+.snaps-vertical img:hover, .snaps-vertical img:active {
+  /* transform: scale(1.5); */
+  /* transform-origin: left; */
+  transform: scale(1.1);
+  transform-origin: left bottom;
+  z-index: 2;
+}
+
+img {
+  z-index: 1;
+  position: relative;
+}
+
+/*
+.snaps-vertical img {
   width: 215px; 
   margin-bottom: 20px;
 }
@@ -260,7 +281,7 @@ iframe {
   transform: scale(1.5);
   transform-origin: left;
 }
-
+*/
 
 .snaps-horizontal img {
   width: 440px; 
