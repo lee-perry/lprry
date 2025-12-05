@@ -3,7 +3,7 @@ title: Home
 layout: layouts/page.html
 ---
 
-<img src="/assets/images/header.webp" alt="Me, surrounded by dogs on the sofa" class="header-img">
+<img src="/assets/images/header.webp" alt="Me, surrounded by dogs on the sofa" class="header-img" eleventy:ignore>
 
 Welcome to my site!  I live in Burnley, UK, with my wife Victoria, our canine children, and our hens.
 
