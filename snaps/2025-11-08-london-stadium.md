@@ -1,5 +1,5 @@
 ---
-title: London Stadium November 2025
+title: London Stadium Nov 2025
 link: london-stadium
 bear: /london-stadium-2511
 date: 2025-11-08

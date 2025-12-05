@@ -6,6 +6,7 @@
  <meta name="fediverse:creator" content="@lee@prry.uk">
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+ <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
  <link rel="webmention" href="https://webmention.io/l.prry.uk/webmention">
  <link rel="pingback" href="https://webmention.io/l.prry.uk/xmlrpc">
  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
@@ -33,297 +34,6 @@
  <meta property="twitter:description" content="Burnley based, I share from here about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.">
  <meta property="twitter:image" content="https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/header.webp">
  
- <style>
- @font-face {
-   font-family: "Atkinson Hyperlegible";
-   src:
-     url("/assets/fonts/atkinsonhyperlegiblenext-regular.woff2") format("woff2");
-   font-weight: normal;
-   font-style: normal;
- }
- 
- @font-face {
-   font-family: "Atkinson Hyperlegible Bold";
-   src:
-     url("/assets/fonts/atkinsonhyperlegiblenext-extrabold.woff2") format("woff2");
-   font-weight: normal;
-   font-style: normal;
- }
- 
- @font-face {
-   font-family: "Atkinson Hyperlegible Mono";
-   src:
-     url("/assets/fonts/atkinsonhyperlegiblemono-regular.woff2") format("woff2");
-   font-weight: normal;
-   font-style: normal;
- }
- 
- @font-face {
-   font-family: "Gloria Hallelujah";
-   src:
-     url("/assets/fonts/gloria-hallelujah-latin-400-normal.woff2") format("woff2");
-   font-weight: normal;
-   font-style: normal;
- }
- 
- :root {
-   --background-color: whitesmoke;
-   --focus-color: #630C2B;
-   --font-main: 'Atkinson Hyperlegible Bold';
-   --font-secondary: 'Atkinson Hyperlegible';
-   --font-code: 'Atkinson Hyperlegible Mono';
-   --font-scrawl: 'Gloria Hallelujah';
- }
- 
- @media (prefers-color-scheme: dark) {
-   :root {
-     --background-color: #222222;
-     --focus-color: #F8B319;
-     --text-color: whitesmoke;
-   }
- }
- 
- html {
-   color: var(--text-color);
- }
- 
- header > a {
-   text-decoration: none;
- }
- 
- header h1 {
-   font-size: 4em;
-   margin-top: 50px;
-   margin-bottom: 30px;
- }
- 
- main {
-   margin-top: 50px;
- }
- 
- body {
-   width: 900px;
-   max-width: 95%;
-   margin: 0 auto;
-   font-family: var(--font-secondary);
-   font-size: 1.25em;
-   line-height: 1.5em;
-   background-color: var(--background-color);
- }
- 
- h1, h2 {
-   font-family: var(--font-main);
-   color:var(--focus-color);
- }
- 
- em {
-   font-family: var(--font-scrawl);
- }
- 
- main > h1 {
-  font-size: 1.6em;
- }
- main > h2 {
-  font-size: 1.4em; 
- }
- 
- a {
-   color: var(--focus-color);
- }
- 
- nav a {
-   font-size: 0.8em;
-   margin-right: 5px;
-   text-decoration: none;
- }
- 
- img {
-   max-width: 100%;
-   text-align: center;
-   border-radius: 10px;
-   border: 2px solid var(--focus-color);
- }
- 
- ul.embedded.blog-posts {
-   list-style-type: none;
-   padding-left: 0;
- }
- 
- ul.blog-posts li {
-   font-variant-numeric: tabular-nums;
-   letter-spacing: 0.02em;
-   margin: 0;
-   padding: 0;
- }
- 
- pre, .highlight {
-   font-family: var(--font-code); 
- }
- 
- footer {
-   text-align: center;
- }
- 
- .social {
-   margin-top: 75px;
-   text-align: center;
- }
- 
- .social a {
-   text-decoration: none;
- }
- 
- .h-card {
-   margin-top: 75px;
- }
- 
- .h-card-header {
-   text-align: left;
-   font-size: 1.4em; 
-   font-family: var(--font-main);
- }
- 
- .h-card-header a {
-   text-decoration: none;
- }
- 
- .h-card-img {
-   float: left;
-   max-width: 200px;
-   margin-right: 20px;
- }
- 
- .h-card-text {
-   text-align: left;
- }
- 
- .ph {
-   font-size: 1.3em;
-   vertical-align: -20%;
- }
- 
- iframe, .video {
-     aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
-     width: 100%;          /* Full width of the container */
-     height: auto;        /* Height adjusts automatically */
- }
- 
- ul.embedded.blog-posts > li > img{
-     display: flex;
-     flex-flow: row wrap;
-     max-width: 295px
- }
- 
- blockquote {
-  border-left: 10px solid var(--focus-color); 
-  padding-left: 5px;
- }
- 
- .header-img {
-   float: right; 
-   width: 300px; 
-   max-width: 50%;
-   margin-left: 15px;
-   margin-bottom: 10px;
-   border: 3px solid var(--focus-color);
- }
- 
- .hidden {
-  display: none;
- }
- 
- .highlight {
-   max-width: 95%;
-   margin-left: auto;
-   margin-right: auto;
-   text-wrap: wrap;
- /*  overflow: scroll; */
- }
- 
- .highlight pre {
-   text-wrap: wrap;
-   font-size: 0.8em;
- }
- 
- iframe {
-   border: 3px solid var(--focus-color);
- }
- 
- .webmentions h2 {
-   text-align: left;
- }
- 
- .webmentions {
-   text-align: left;
-   margin-bottom: 25px;
- }
- 
- .webmentions blockquote {
-   border-left: 3px solid var(--focus-color);
- }
- 
- .snaps ul {
-   margin: 0 auto;
-   text-align: left;
- }
- 
- .snaps li {
-   display: inline-block;
-   vertical-align: top;
-   text-wrap: wrap;
-   text-align: left;
- }
- 
- .snaps ul li span {
-   display: table; 
- }
- 
- .snaps ul li img {
-   width: 291px; 
-   margin-bottom: 20px;
- }
- 
- .snaps-vertical img {
-   width: clamp(215px, 95%, 300px);
-   transition: 300ms transform;
-   height: auto;
- }
- 
- .snaps-vertical img:hover, .snaps-vertical img:active {
-   /* transform: scale(1.5); */
-   /* transform-origin: left; */
-   transform: scale(1.1);
-   transform-origin: left bottom;
-   z-index: 2;
- }
- 
- img {
-   width: clamp(290px, 95%, 890px); 
-   height: auto;
-   z-index: 1;
-   position: relative;
- }
- 
- .snaps-horizontal img {
-   width: clamp(290px, 95%, 435px); 
-   transition: 300ms transform;
-   height: auto;
- }
- 
- .snaps-horizontal img:hover, .snaps-horizontal img:focus {
-   transform: scale(1.1);
-   transform-origin: left bottom;
-   z-index: 2;
- }
- 
- .webmention-avatar {
-   border-radius: 50%; 
-   margin-right: -20px;
-   background-color: whitesmoke;
-   width:64px;
-   height:64px;
- }
- </style>
  
  
  <style type="text/css" media="all">
@@ -346,7 +56,7 @@
 	  </h1>
 	</a>
 	<nav>
-	  <p><a href="/articles"><i class="ph ph-article"></i>Blog</a> <a href="/notes"><i class="ph ph-notepad"></i>Note</a> <a href="/snaps"><i class="ph ph-image"></i>Snap</a> <a href="/clips"><i class="ph ph-video"></i>Clip</a> <a href="/training-log"><i class="ph ph-person-simple-bike"></i>Log</a> <a href="/mentions"><i class="ph ph-chats"></i></a> <a href="/directory"><i class="ph ph-list"></i></a></p>
+	  <p><a href="/articles"><i class="ph ph-article"></i>Blog</a> <a href="/notes"><i class="ph ph-notepad"></i>Note</a> <a href="/snaps"><i class="ph ph-image"></i>Snap</a> <a href="/clips"><i class="ph ph-video"></i>Clip</a> <a href="/training-log"><i class="ph ph-person-simple-bike"></i>Log</a> <a href="#"><i class="ph ph-chats"></i></a> <a href="/directory"><i class="ph ph-list"></i></a></p>
 	</nav>
 </header>
  
@@ -387,15 +97,13 @@
   <a href="/feeds"><i class="ph ph-rss-simple"></i></a>
 </div>
 </div>
-<br><br>
-Made with <i class="ph ph-coffee"></i> in Burnley by lprry <i class="ph ph-copyright"></i>1979-2025 - 
-
 </span>
-
+<br>
 <span>
-	Powered by <a href="https://bearblog.dev">Bear <span role="img" class="bear" aria-label="ASCII bear logo">ʕ•ᴥ•ʔ</span></a>
+Made with <i class="ph ph-coffee"></i> &amp; <a href="https://www.11ty.dev">11ty</a> in Burnley by lprry.
+<br><br>
+All content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0</a> except where stated.
 </span>
-
   </footer>
 
  

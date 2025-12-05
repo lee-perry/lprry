@@ -66,7 +66,7 @@ module.exports = function (eleventyConfig) {
       language: "en",
       title: "lprry",
       subtitle: "Dispatches from Burnley - Talking about running, cycling, learning code, dogs, our allotment, and Burnley FC",
-      base: "https://l.prry.uk",
+      base: "https://l.prryuk",
       author: {
         name: "Lee Perry",
         email: "lee@prry.uk", // Optional
