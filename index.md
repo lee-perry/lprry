@@ -20,7 +20,7 @@ On this site I write notes and longer articles about learning to code, exploring
 ## Latest Articles
 
 <ul class="embedded blog-posts">
-{% for item in collections.articles | reverse %}
+{% for item in collections.articles reversed %}
  <li>
    {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
  </li>
@@ -31,7 +31,7 @@ On this site I write notes and longer articles about learning to code, exploring
 
 ## Latest Notes
 <ul class="embedded blog-posts">
-{% for item in collections.notes | reversed %}
+{% for item in collections.notes reversed %}
  <li>
    {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
  </li>
@@ -42,7 +42,7 @@ On this site I write notes and longer articles about learning to code, exploring
 
 ## Latest Training
 <ul class="embedded blog-posts">
-{% for activity in collections.training-log | reversed %}
+{% for activity in collections.training-log reversed %}
  <li>
    {{ activity.date | date: "%Y-%m-%d" }} <a href="{{ activity.url }}">{% if activity.data.type == "ride" %}🚴‍♂️ {% endif %}{% if activity.data.type == "run" %}🏃‍♂️ {% endif %}{% if activity.data.type == "swim" %}🏊‍♂️ {% endif %}{% if activity.data.type == "climb" %}🧗‍♂️ {% endif %}{{ activity.data.time }} {{ activity.data.distance }}km {% if activity.data.type == "run" %}{{ activity.data.pace }}min/km {% endif %}{{ activity.data.climb }}m+ {{ activity.data.hr }}bpm {% if activity.data.type == "ride" %}{{ activity.data.w }}w {% endif %}{{ activity.data.kcal }}kcal</a>
  </li>
@@ -56,7 +56,7 @@ On this site I write notes and longer articles about learning to code, exploring
 <!--<div class="snaps"> -->
 
 <ul class="embedded blog-posts">
-{% for item in collections.snaps | reversed %}
+{% for item in collections.snaps reversed %}
  <li>
    {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}"> {{ item.data.title }}</a>
  </li>
@@ -69,7 +69,7 @@ On this site I write notes and longer articles about learning to code, exploring
 ## Latest Clip
 
 <ul class="embedded blog-posts">
-{% for item in collections.clips | reversed %}
+{% for item in collections.clips reversed %}
  <li>
    {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
  </li>
