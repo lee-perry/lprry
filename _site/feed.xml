@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Blog Title</title>
+  <subtitle>This is a longer description about your blog.</subtitle>
+  <link href="https://example.com/feed.xml" rel="self" />
+  <link href="https://example.com/" />
+  <updated>2025-12-02T00:00:00Z</updated>
+  <id>https://example.com/</id>
+  <author>
+    <name>Your Name</name>
+  </author>
+  <entry>
+    <title>pending</title>
+    <link href="https://example.com/training-log/2025-12-02-ride/" />
+    <updated>2025-12-02T00:00:00Z</updated>
+    <id>https://example.com/training-log/2025-12-02-ride/</id>
+    <content type="html"></content>
+  </entry>
+  <entry>
+    <title>Regular Running Routes</title>
+    <link href="https://example.com/regular-running-routes/" />
+    <updated>2025-11-30T16:53:42Z</updated>
+    <id>https://example.com/regular-running-routes/</id>
+    <content type="html">&lt;h1&gt;Running Routes&lt;/h1&gt;
+&lt;p&gt;As the page grows I &lt;em&gt;may&lt;/em&gt; break this out into a page for  each route.&lt;/p&gt;
+&lt;h2&gt;Barden Lane to B&amp;amp;Q Circuit CCW&lt;/h2&gt;
+&lt;div class=&quot;snaps-horizontal&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;https://example.com/assets/images/25-1.webp&quot; alt=&quot;/assets/images/25-1.webp&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;16 Nov 2025 &lt;a href=&quot;https://example.com/2025-11-16-run&quot;&gt;🏃‍♂️ ⏰00:43:06 📏7.52km ⏱️05:44/km 🛫052m ❤️‍🔥165bpm 🧁817 Kcal&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Blacko (short) from HHP&lt;/h2&gt;
+&lt;div class=&quot;snaps-horizontal&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;https://example.com/assets/images/blacko-short.jpeg&quot; alt=&quot;/assets/images/blacko-short.jpeg&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;01 Dec 2025 🏃‍♂️ ⏰00:48:48 📏7.53km ⏱️06:29/km 🛫113m ❤️‍🔥158bpm 🧁702 Kcal&lt;/p&gt;
+&lt;h2&gt;Foulridge Loop (short) from HHP&lt;/h2&gt;
+&lt;div class=&quot;snaps-horizontal&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;https://example.com/assets/images/10-1.webp&quot; alt=&quot;/assets/images/10-1.webp&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;17 Nov 2025 &lt;a href=&quot;https://example.com/2025-11-17-run&quot;&gt;🏃‍♂️ ⏰00:49:14 📏7.76km ⏱️06:20/km 🛫148m ❤️‍🔥157bpm 🧁877 Kcal&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Laneshawbridge Loop (short) from HHP&lt;/h2&gt;
+&lt;div class=&quot;snaps-horizontal&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;https://example.com/assets/images/40-2.webp&quot; alt=&quot;Screenshot from Veloviewer showing route map and elevation profile&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;24 Nov 2025&lt;a href=&quot;https://example.com/2025-11-24-run&quot;&gt;🏃‍♂️ ⏰00:46:00 📏7.00km ⏱️06:34/km 🛫110m ❤️‍🔥158bpm 🧁574 Kcal&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Training Log</title>
+    <link href="https://example.com/training-log/" />
+    <updated>2025-11-30T14:58:56Z</updated>
+    <id>https://example.com/training-log/</id>
+    <content type="html">&lt;h1&gt;My Activities&lt;/h1&gt;
+&lt;ul&gt;
+
+ &lt;li&gt;
+   2025-12-02 &lt;a href=&quot;https://example.com/training-log/2025-12-02-ride/&quot;&gt;🚴‍♂️ 00:33:00 21.78km 233m+ 177bpm 212w 474kcal&lt;/a&gt;
+ &lt;/li&gt;
+
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Clips</title>
+    <link href="https://example.com/clips/" />
+    <updated>2025-11-30T14:55:26Z</updated>
+    <id>https://example.com/clips/</id>
+    <content type="html">&lt;h1&gt;My clips&lt;/h1&gt;
+&lt;ul&gt;
+
+ &lt;li&gt;
+   2025-10-25 - &lt;a href=&quot;https://example.com/clips/2025-10-25-clip/&quot;&gt;Ajay Weston Freekick (FCUM)&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-01 - &lt;a href=&quot;https://example.com/clips/2025-11-01-molineux-clip/&quot;&gt;Clip from the Molineux&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-20 - &lt;a href=&quot;https://example.com/clips/2025-11-20-clip/&quot;&gt;Lovely Podenco swimming video&lt;/a&gt;
+ &lt;/li&gt;
+
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Snaps</title>
+    <link href="https://example.com/snaps/" />
+    <updated>2025-11-30T14:55:19Z</updated>
+    <id>https://example.com/snaps/</id>
+    <content type="html">&lt;h1&gt;My Snaps&lt;/h1&gt;
+&lt;ul&gt;
+
+ &lt;li&gt;
+   2025-10-20 - &lt;a href=&quot;https://example.com/snaps/2025-10-20-snap/&quot;&gt;Podenco Meets Dinosaurs&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-10-23 - &lt;a href=&quot;https://example.com/snaps/2025-10-23-snap/&quot;&gt;Three Podencos under the desk&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-10-24 - &lt;a href=&quot;https://example.com/snaps/2025-10-24-snap/&quot;&gt;Stevie hogging the fire&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-10-26 - &lt;a href=&quot;https://example.com/snaps/2025-10-26-snap/&quot;&gt;Molineux pre kick off&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-02 - &lt;a href=&quot;https://example.com/snaps/2025-11-02-snap/&quot;&gt;Spaniel in charge&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-07 - &lt;a href=&quot;https://example.com/snaps/2025-11-07-loughborough-train-station/&quot;&gt;Loughborough Train Station&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-08 - &lt;a href=&quot;https://example.com/snaps/2025-11-08-london-stadium/&quot;&gt;London Stadium November 2025&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-08 - &lt;a href=&quot;https://example.com/snaps/2025-11-08-spaniel-sewing/&quot;&gt;Spaniel sewing&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-29 - &lt;a href=&quot;https://example.com/snaps/2025-11-29-gtech-community-stadium/&quot;&gt;Gtech Community Stadium&lt;/a&gt;
+ &lt;/li&gt;
+
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Notes</title>
+    <link href="https://example.com/notes/" />
+    <updated>2025-11-30T14:55:05Z</updated>
+    <id>https://example.com/notes/</id>
+    <content type="html">&lt;h1&gt;My notes&lt;/h1&gt;
+&lt;ul&gt;
+
+ &lt;li&gt;
+   2025-09-06 - &lt;a href=&quot;https://example.com/notes/2025-09-06-hartlepool-parkrun/&quot;&gt;Hartlepool Parkrun 521&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-10-23 - &lt;a href=&quot;https://example.com/notes/2025-10-23-fan-forum/&quot;&gt;Fan Forum - October 2025&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-10-23 - &lt;a href=&quot;https://example.com/notes/2025-10-23-note/&quot;&gt;Weblog.lol interactions&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-10-24 - &lt;a href=&quot;https://example.com/notes/2025-10-24-note/&quot;&gt;Plaid win in Caerphilly&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-10-25 - &lt;a href=&quot;https://example.com/notes/2025-10-25-note/&quot;&gt;FC United of Manchester 1 Bamber Bridge 0&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-10-26 - &lt;a href=&quot;https://example.com/notes/2025-10-26-video-hosting-for-my-bearblog/&quot;&gt;Video hosting for my BearBlog&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-01 - &lt;a href=&quot;https://example.com/notes/2025-11-01-working-webmentions-on-bear/&quot;&gt;Working Webmentions on Bear&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-10 - &lt;a href=&quot;https://example.com/notes/2025-11-10-note/&quot;&gt;Webmentions finally sending from Bearblog&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-14 - &lt;a href=&quot;https://example.com/notes/2025-11-14-liquid-glass-screensaver/&quot;&gt;Liquid Glass Screensaver&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-25 - &lt;a href=&quot;https://example.com/notes/2025-11-25-note/&quot;&gt;Next previous steps&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-29 - &lt;a href=&quot;https://example.com/notes/2025-11-29-post-match-thoughts/&quot;&gt;Post Match Thoughts&lt;/a&gt;
+ &lt;/li&gt;
+
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Articles</title>
+    <link href="https://example.com/articles/" />
+    <updated>2025-11-30T14:54:15Z</updated>
+    <id>https://example.com/articles/</id>
+    <content type="html">&lt;h1&gt;My Articles&lt;/h1&gt;
+&lt;ul&gt;
+
+ &lt;li&gt;
+   2025-07-10 - &lt;a href=&quot;https://example.com/articles/2025-07-10-hello-bear/&quot;&gt;Hello Bear?&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-07-11 - &lt;a href=&quot;https://example.com/articles/2025-07-11-a-favicon-and-site-logo-in-bear/&quot;&gt;Setting a favicon and site logo in Bear&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-07-11 - &lt;a href=&quot;https://example.com/articles/2025-07-11-using-microformats-with-bear/&quot;&gt;Using Microformats with Bear&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-08-31 - &lt;a href=&quot;https://example.com/articles/2025-08-31-starting-over/&quot;&gt;Starting Over&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-09-05 - &lt;a href=&quot;https://example.com/articles/2025-09-05-scrimba-business-card-project/&quot;&gt;Scrimba Business Card Project&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-09-07 - &lt;a href=&quot;https://example.com/articles/2025-07-09-great-north-run/&quot;&gt;Great North Run 2025&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-10-25 - &lt;a href=&quot;https://example.com/articles/2025-10-25-bearly-here/&quot;&gt;Bearly here&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-05 - &lt;a href=&quot;https://example.com/articles/2025-11-05-whats-in-my-inventory/&quot;&gt;What&#39;s in my inventory?&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-08 - &lt;a href=&quot;https://example.com/articles/2025-11-08-west-ham-united-3-burnley-2/&quot;&gt;West Ham United 3 Burnley 2&lt;/a&gt;
+ &lt;/li&gt;
+
+ &lt;li&gt;
+   2025-11-15 - &lt;a href=&quot;https://example.com/articles/2025-11-15-finalising-my-bearblog-theme-for-now/&quot;&gt;Finalising my bearblog theme. For now...&lt;/a&gt;
+ &lt;/li&gt;
+
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>About</title>
+    <link href="https://example.com/about/" />
+    <updated>2025-11-30T13:09:30Z</updated>
+    <id>https://example.com/about/</id>
+    <content type="html">&lt;p&gt;I&#39;m an Opossum joey building my first Eleventy site.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Home</title>
+    <link href="https://example.com/" />
+    <updated>2025-11-30T12:57:59Z</updated>
+    <id>https://example.com/</id>
+    <content type="html">&lt;img src=&quot;https://example.com/assets/images/header.webp&quot; alt=&quot;Me, surrounded by dogs on the sofa&quot; class=&quot;header-img&quot;&gt;
+&lt;p&gt;Welcome to my site!  I live in Burnley, UK, with my wife Victoria, our canine children, and our hens.&lt;/p&gt;
+&lt;p&gt;On this site I write notes and longer articles about learning to code, exploring, following &lt;a href=&quot;https://example.com/burnley-fc&quot;&gt;Burnley FC&lt;/a&gt; around the country, and &lt;a href=&quot;https://example.com/training-log&quot;&gt;training&lt;/a&gt; and &lt;a href=&quot;https://example.com/archive?q=race&quot;&gt;racing&lt;/a&gt;.  I snap images along the way, that appear in my dedicated snaps section.  I also record all of my training, &lt;a href=&quot;https://example.com/runs&quot;&gt;run&lt;/a&gt;, &lt;a href=&quot;https://example.com/rides&quot;&gt;ride&lt;/a&gt; and &lt;a href=&quot;https://example.com/weigh-ins&quot;&gt;weigh-in&lt;/a&gt; data.&lt;/p&gt;
+&lt;h2&gt;Topics&lt;/h2&gt;
+&lt;nav&gt;
+&lt;p&gt;&lt;a href=&quot;https://example.com/code&quot;&gt;&lt;i class=&quot;ph ph-code&quot;&gt;&lt;/i&gt; &lt;/a&gt; &lt;a href=&quot;https://example.com/dogs&quot;&gt;&lt;i class=&quot;ph ph-dog&quot;&gt;&lt;/i&gt; &lt;/a&gt; &lt;a href=&quot;https://example.com/grow&quot;&gt;&lt;i class=&quot;ph ph-plant&quot;&gt;&lt;/i&gt; &lt;/a&gt; &lt;a href=&quot;https://example.com/football&quot;&gt;&lt;i class=&quot;ph ph-soccer-ball&quot;&gt;&lt;/i&gt; &lt;/a&gt; &lt;a href=&quot;https://example.com/exploring&quot;&gt;&lt;i class=&quot;ph ph-van&quot;&gt;&lt;/i&gt; &lt;/a&gt;&lt;a href=&quot;https://example.com/reading&quot;&gt;&lt;i class=&quot;ph ph-book&quot;&gt;&lt;/i&gt; &lt;/a&gt; &lt;a href=&quot;https://example.com/watching&quot;&gt;&lt;i class=&quot;ph ph-television&quot;&gt;&lt;/i&gt; &lt;/a&gt; &lt;a href=&quot;https://example.com/vinyl&quot;&gt;&lt;i class=&quot;ph ph-guitar&quot;&gt;&lt;/i&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;/nav&gt;
+&lt;h2&gt;Latest Articles&lt;/h2&gt;
+&lt;ul class=&quot;embedded blog-posts&quot;&gt;&lt;li&gt;
+   2025-07-10 - &lt;a href=&quot;https://example.com/articles/2025-07-10-hello-bear/&quot;&gt;Hello Bear?&lt;/a&gt;
+ &lt;/li&gt;&lt;li&gt;
+   2025-07-11 - &lt;a href=&quot;https://example.com/articles/2025-07-11-a-favicon-and-site-logo-in-bear/&quot;&gt;Setting a favicon and site logo in Bear&lt;/a&gt;
+ &lt;/li&gt;&lt;li&gt;
+   2025-07-11 - &lt;a href=&quot;https://example.com/articles/2025-07-11-using-microformats-with-bear/&quot;&gt;Using Microformats with Bear&lt;/a&gt;
+ &lt;/li&gt;&lt;li&gt;
+   2025-08-31 - &lt;a href=&quot;https://example.com/articles/2025-08-31-starting-over/&quot;&gt;Starting Over&lt;/a&gt;
+ &lt;/li&gt;&lt;li&gt;
+   2025-09-05 - &lt;a href=&quot;https://example.com/articles/2025-09-05-scrimba-business-card-project/&quot;&gt;Scrimba Business Card Project&lt;/a&gt;
+ &lt;/li&gt;&lt;li&gt;
+   2025-09-07 - &lt;a href=&quot;https://example.com/articles/2025-07-09-great-north-run/&quot;&gt;Great North Run 2025&lt;/a&gt;
+ &lt;/li&gt;&lt;li&gt;
+   2025-10-25 - &lt;a href=&quot;https://example.com/articles/2025-10-25-bearly-here/&quot;&gt;Bearly here&lt;/a&gt;
+ &lt;/li&gt;&lt;li&gt;
+   2025-11-05 - &lt;a href=&quot;https://example.com/articles/2025-11-05-whats-in-my-inventory/&quot;&gt;What&#39;s in my inventory?&lt;/a&gt;
+ &lt;/li&gt;&lt;li&gt;
+   2025-11-08 - &lt;a href=&quot;https://example.com/articles/2025-11-08-west-ham-united-3-burnley-2/&quot;&gt;West Ham United 3 Burnley 2&lt;/a&gt;
+ &lt;/li&gt;&lt;li&gt;
+   2025-11-15 - &lt;a href=&quot;https://example.com/articles/2025-11-15-finalising-my-bearblog-theme-for-now/&quot;&gt;Finalising my bearblog theme. For now...&lt;/a&gt;
+ &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://example.com/articles&quot;&gt;View all articles&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Latest Notes&lt;/h2&gt;
+&lt;ul class=&quot;embedded blog-posts&quot;&gt;
+ &lt;li&gt;
+   2025-09-06 - &lt;a href=&quot;https://example.com/notes/2025-09-06-hartlepool-parkrun/&quot;&gt;Hartlepool Parkrun 521&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-10-23 - &lt;a href=&quot;https://example.com/notes/2025-10-23-fan-forum/&quot;&gt;Fan Forum - October 2025&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-10-23 - &lt;a href=&quot;https://example.com/notes/2025-10-23-note/&quot;&gt;Weblog.lol interactions&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-10-24 - &lt;a href=&quot;https://example.com/notes/2025-10-24-note/&quot;&gt;Plaid win in Caerphilly&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-10-25 - &lt;a href=&quot;https://example.com/notes/2025-10-25-note/&quot;&gt;FC United of Manchester 1 Bamber Bridge 0&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-10-26 - &lt;a href=&quot;https://example.com/notes/2025-10-26-video-hosting-for-my-bearblog/&quot;&gt;Video hosting for my BearBlog&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-01 - &lt;a href=&quot;https://example.com/notes/2025-11-01-working-webmentions-on-bear/&quot;&gt;Working Webmentions on Bear&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-10 - &lt;a href=&quot;https://example.com/notes/2025-11-10-note/&quot;&gt;Webmentions finally sending from Bearblog&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-14 - &lt;a href=&quot;https://example.com/notes/2025-11-14-liquid-glass-screensaver/&quot;&gt;Liquid Glass Screensaver&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-25 - &lt;a href=&quot;https://example.com/notes/2025-11-25-note/&quot;&gt;Next previous steps&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-29 - &lt;a href=&quot;https://example.com/notes/2025-11-29-post-match-thoughts/&quot;&gt;Post Match Thoughts&lt;/a&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://example.com/notes&quot;&gt;View all microposts&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Latest Training&lt;/h2&gt;
+&lt;ul class=&quot;embedded blog-posts&quot;&gt;
+ &lt;li&gt;
+   2025-12-02 &lt;a href=&quot;https://example.com/training-log/2025-12-02-ride/&quot;&gt;🚴‍♂️ 00:33:00 21.78km 233m+ 177bpm 212w 474kcal&lt;/a&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://example.com/training-log&quot;&gt;View all training data&lt;/a&gt; | &lt;a href=&quot;https://example.com/regular-running-routes&quot;&gt;Runs by Route&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Latest Images&lt;/h2&gt;
+&lt;!--&lt;div class=&quot;snaps&quot;&gt; --&gt;
+&lt;ul class=&quot;embedded blog-posts&quot;&gt;
+ &lt;li&gt;
+   2025-10-20 - &lt;a href=&quot;https://example.com/snaps/2025-10-20-snap/&quot;&gt; Podenco Meets Dinosaurs&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-10-23 - &lt;a href=&quot;https://example.com/snaps/2025-10-23-snap/&quot;&gt; Three Podencos under the desk&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-10-24 - &lt;a href=&quot;https://example.com/snaps/2025-10-24-snap/&quot;&gt; Stevie hogging the fire&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-10-26 - &lt;a href=&quot;https://example.com/snaps/2025-10-26-snap/&quot;&gt; Molineux pre kick off&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-02 - &lt;a href=&quot;https://example.com/snaps/2025-11-02-snap/&quot;&gt; Spaniel in charge&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-07 - &lt;a href=&quot;https://example.com/snaps/2025-11-07-loughborough-train-station/&quot;&gt; Loughborough Train Station&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-08 - &lt;a href=&quot;https://example.com/snaps/2025-11-08-london-stadium/&quot;&gt; London Stadium November 2025&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-08 - &lt;a href=&quot;https://example.com/snaps/2025-11-08-spaniel-sewing/&quot;&gt; Spaniel sewing&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-29 - &lt;a href=&quot;https://example.com/snaps/2025-11-29-gtech-community-stadium/&quot;&gt; Gtech Community Stadium&lt;/a&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- &lt;/div&gt; --&gt;
+&lt;p&gt;&lt;a href=&quot;https://example.com/snaps&quot;&gt;View all imageposts&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Latest Clip&lt;/h2&gt;
+&lt;ul class=&quot;embedded blog-posts&quot;&gt;
+ &lt;li&gt;
+   2025-10-25 - &lt;a href=&quot;https://example.com/clips/2025-10-25-clip/&quot;&gt;Ajay Weston Freekick (FCUM)&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-01 - &lt;a href=&quot;https://example.com/clips/2025-11-01-molineux-clip/&quot;&gt;Clip from the Molineux&lt;/a&gt;
+ &lt;/li&gt;
+ &lt;li&gt;
+   2025-11-20 - &lt;a href=&quot;https://example.com/clips/2025-11-20-clip/&quot;&gt;Lovely Podenco swimming video&lt;/a&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://example.com/clips&quot;&gt;View all clips&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title></title>
+    <link href="https://example.com/README/" />
+    <updated>2025-11-30T10:33:03Z</updated>
+    <id>https://example.com/README/</id>
+    <content type="html">&lt;h1&gt;lprry&lt;/h1&gt;
+</content>
+  </entry>
+</feed>
