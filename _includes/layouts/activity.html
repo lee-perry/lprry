@@ -1,7 +1,12 @@
 ---
 layout: /layouts/page.html
 ---
-<h1>{% if type == "ride" %}🚴‍♂️ {% endif %}{% if type == "run" %}🏃‍♂️ {% endif %}{% if type == "swim" %}🏊‍♂️ {% endif %}{% if type == "climb" %}🧗‍♂️ {% endif %}{{ time }} {{ distance }}km {% if type == "run" %}{{ pace }}min/km {% endif %}{{ climb }}m+ {{ hr }}bpm {% if type == "ride" %}{{ w }}w {% endif %}{{ kcal }}kcal</h1>
-<p>{{ date | date: "%Y-%m-%d" }}</p>
-<img src="/assets/images/{{cover}}" alt="cover_alt">
-{{ content }}
+<article class="h-entry">
+  <div class="e-content p-name">
+	<h1>{% if type == "ride" %}🚴‍♂️ {% endif %}{% if type == "run" %}🏃‍♂️ {% endif %}{% if type == "swim" %}🏊‍♂️ {% endif %}{% if type == "climb" %}🧗‍♂️ {% endif %}{{ time }} {{ distance }}km {% if type == "run" %}{{ pace }}min/km {% endif %}{{ climb }}m+ {{ hr }}bpm {% if type == "ride" %}{{ w }}w {% endif %}{{ kcal }}kcal</h1>
+	<p class="dt-published" datetime="{{ date | date: "%Y-%m-%dT00:00Z" }}">{{ date | date: "%Y-%m-%d" }}</p>
+	<p class="hidden"><a class="u-url" href={{ url }}>{{ title }}</a></p>
+	<img src="/assets/images/{{cover}}" alt="cover_alt">
+	{{ content }}
+  </div>
+</article>
