@@ -1,6 +1,8 @@
 ---
-title: Home
+title: My home on the IndieWeb
 layout: layouts/page.html
+description: Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.
+cover: /assets/images/header.webp
 ---
 
 <img src="/assets/images/header.webp" alt="Me, surrounded by dogs on the sofa" class="header-img" >
