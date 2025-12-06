@@ -3,7 +3,7 @@ layout: /layouts/page.html
 ---
 <article class="h-entry">
   <div class="e-content p-name">
-	<h1><a class="u-url" href={{ url }}>{{ title }}</a></h1>
+	<h1><a class="u-url" href="{{ page.url }}">{{ title }}</a></h1>
 	<p>Published by <a rel="author" href="{{ site.url }}">Lee Perry</a> on <span class="dt-published" datetime="{{ date | date: "%Y-%m-%dT00:00Z" }}">{{ date | date: "%Y-%m-%d" }}</span></p>
 	{{ description }}
 	{{ content }}
