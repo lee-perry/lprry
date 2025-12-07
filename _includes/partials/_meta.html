@@ -26,13 +26,15 @@
  <meta property="og:type" content="website">
  <meta property="og:url" content="https://l.prry.uk{{ page.url }}">
  <meta property="og:description" content="{{ description }}">
+ {% if cover %}
  <meta property="og:image" content="https://l.prry.uk/assets/images/{{ cover }}"> 
- 
+ {% endif %}
  <!-- Twitter -->
  <meta property="twitter:card" content="summary">
  <meta property="twitter:url" content="https://l.prry.uk{{ page.url }}">
  <meta property="twitter:title" content="{{ title }}">
  <meta property="twitter:description" content="{{ description }}">
+ {% if cover %}
  <meta property="twitter:image" content="https://l.prry.uk/assets/images/{{ cover }}">
- 
+ {% endif %}
  
