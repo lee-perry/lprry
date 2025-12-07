@@ -2,7 +2,7 @@
 title: Weigh-in Data
 layout: layouts/page.html
 description: Data rendered from a simple json file showing changes in my weight and body composition over time. 
-cover: /assets/images/header.webp
+cover: header.webp
 ---
 <h1>{{ title }}</h1>
 <p>{{ description }}

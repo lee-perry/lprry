@@ -1,6 +1,7 @@
 ---
 title: Regular Running Routes
 layout: layouts/page.html
+cover: header.webp
 ---
 # Running Routes
 
