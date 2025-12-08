@@ -8,7 +8,6 @@ npm-debug.*
 .env
 .cache
 .obsidian
-_site
 
 # Node modules and output
 node_modules

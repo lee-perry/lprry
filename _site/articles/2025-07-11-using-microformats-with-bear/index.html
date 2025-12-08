@@ -51,7 +51,7 @@
 	  </h1>
 	</a>
 	<nav>
-	  <p><a href="/articles"><i class="ph ph-article"></i>Blog</a> <a href="/notes"><i class="ph ph-notepad"></i>Note</a> <a href="/snaps"><i class="ph ph-image"></i>Snap</a> <a href="/clips"><i class="ph ph-video"></i>Clip</a> <a href="/training-log"><i class="ph ph-person-simple-bike"></i>Log</a> <a href="#"><i class="ph ph-chats"></i></a> <a href="/directory"><i class="ph ph-list"></i></a></p>
+	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='#'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
 	</nav>
 </header>
  
@@ -67,7 +67,7 @@
   &lt;p class=&quot;p-note&quot;&gt;&lt;img src=&quot;https://bear-images.sfo2.cdn.digitaloceanspaces.com/leeperry/header.webp&quot; class=&quot;u-photo u-featured&quot; style=&quot;max-width: 50%; border-radius: 20px; float: right; margin-left: 20px; margin-bottom:20px; border: 2px solid whitesmoke&quot; alt=&quot;&quot;&gt;Burnley based, I run, ride online, climb rocks and mountains, and explore the world in our motorhome with my Social Secretary, Vickie.&lt;br&gt;&lt;br&gt;Expect lots of talk about running, virtual cycling on my Wattbike Atom (NG), Burnley FC, retrogaming and code.  Accompanied by lots of cute photographs of our podenco oriented spaniel infiltrated family. Find out what I'm up to &lt;a href=&quot;/now/&quot;&gt;now&lt;/a&gt;&lt;/p&gt;	
 &lt;/div&gt;
 </code></pre>
-<p><picture><source type="image/webp" srcset="/img/KoZAb5Chv2-295.webp 295w, /img/KoZAb5Chv2-445.webp 445w, /img/KoZAb5Chv2-895.webp 895w, /img/KoZAb5Chv2-1200.webp 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/img/KoZAb5Chv2-295.jpeg" alt="Screenshot from the front page of my Bear website showing my h-card ash the top of the page" width="1200" height="750" srcset="/img/KoZAb5Chv2-295.jpeg 295w, /img/KoZAb5Chv2-445.jpeg 445w, /img/KoZAb5Chv2-895.jpeg 895w, /img/KoZAb5Chv2-1200.jpeg 1200w" sizes="auto"></picture></p>
+<p><img src="/assets/images/47.webp" alt="Screenshot from the front page of my Bear website showing my h-card ash the top of the page"></p>
 <p>Easy enough so far, but my first real frustrations with bear were about to begin.  As far as I can tell the only difference between the themes available in Bear is the css applied to them, so it would be super simple to make microformats work out of the box.</p>
 <p>I very quickly came up with a way through the post template to implement microformats, but that is exposed in the post editor for every post, which is ugly.  I had hoped to insert the opening tags into the header settings, and information and closing tags into the footer settings.  This did not work though, header settings insert in the <code>&lt;head&gt;</code> section of the html, and there is no obvious way to control the appearance of the footer settings on pages that are not posts.</p>
 <p>For now I have inserted the opening tags at the top of the post editor.</p>
@@ -78,9 +78,9 @@
 <pre><code>&lt;p&gt;#&lt;span class=&quot;p-name&quot;&gt;&lt;/span&gt; &lt;a href=&quot;&quot; class=&quot;u-url&quot;&gt;&lt;time datetime=&quot;&quot; class=&quot;dt-published&quot;&gt;&lt;/time&gt;&lt;/a&gt; by &lt;a href=&quot;/&quot; rel=&quot;author&quot; class=&quot;h-card p-author&quot;&gt;Lee Perry&lt;/a&gt; last updated:  ago.&lt;/p&gt;
 </code></pre>
 <p>So the lovely plaintext markdown view now looks like this:</p>
-<p><picture><source type="image/webp" srcset="/img/9G3PdqNeRl-295.webp 295w, /img/9G3PdqNeRl-445.webp 445w, /img/9G3PdqNeRl-895.webp 895w, /img/9G3PdqNeRl-1200.webp 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/img/9G3PdqNeRl-295.jpeg" alt="Screenshot showing the bear post editor with microformats code above and below" width="1200" height="750" srcset="/img/9G3PdqNeRl-295.jpeg 295w, /img/9G3PdqNeRl-445.jpeg 445w, /img/9G3PdqNeRl-895.jpeg 895w, /img/9G3PdqNeRl-1200.jpeg 1200w" sizes="auto"></picture></p>
+<p><img src="/assets/images/36-1.webp" alt="Screenshot showing the bear post editor with microformats code above and below"></p>
 <p>Not as obtrusive as my earlier attempts, but I dislike this and it could be a dealbreaker with either microformats coming out, or this site not being viable beyond this experiment.</p>
-<p><picture><source type="image/webp" srcset="/img/ewlvpf-64u-295.webp 295w, /img/ewlvpf-64u-445.webp 445w, /img/ewlvpf-64u-895.webp 895w, /img/ewlvpf-64u-1200.webp 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/img/ewlvpf-64u-295.jpeg" alt="Screenshot showing a post on this website passing the h-entry tests on indiewebify" width="1200" height="750" srcset="/img/ewlvpf-64u-295.jpeg 295w, /img/ewlvpf-64u-445.jpeg 445w, /img/ewlvpf-64u-895.jpeg 895w, /img/ewlvpf-64u-1200.jpeg 1200w" sizes="auto"></picture></p>
+<p><img src="/assets/images/56.webp" alt="Screenshot showing a post on this website passing the h-entry tests on indiewebify"></p>
 <p>The good news is that the site now passes the microformats tests on <a href="indiewebify.me">indiewebify</a> - but I do need to work out whether I can live with that, or without microformats.</p>
 
   </div>
@@ -90,11 +90,11 @@
 	
 <span id="footer-directive">
 	<div class="h-card">
-  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy">
+  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy" eleventy:ignore>
   <p class="h-card-header"><a class="p-name p-author u-url" rel="author" href="https://l.prry.uk">Lee Perry</a></p>
   <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
 <nav>
-<p><a href="/code"><i class="ph ph-code"></i> </a> <a href="/dogs"><i class="ph ph-dog"></i> </a> <a href="/grow"><i class="ph ph-plant"></i> </a> <a href="/football"><i class="ph ph-soccer-ball"></i> </a> <a href="/exploring"><i class="ph ph-van"></i> </a><a href="/reading"><i class="ph ph-book"></i> </a> <a href="/watching"><i class="ph ph-television"></i> </a> <a href="/vinyl"><i class="ph ph-guitar"></i> </a></p>
+<p><a href='/code'><i class="ph ph-code"></i> </a> <a href='/dogs'><i class="ph ph-dog"></i> </a> <a href='/grow'><i class="ph ph-plant"></i> </a> <a href='/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/exploring'><i class="ph ph-van"></i> </a><a href='/reading'><i class="ph ph-book"></i> </a> <a href='/watching'><i class="ph ph-television"></i> </a> <a href='/vinyl'><i class="ph ph-guitar"></i> </a></p>
 </nav>
 <div class="social">  
 <a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>
