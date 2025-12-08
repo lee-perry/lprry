@@ -7,6 +7,8 @@ npm-debug.*
 .sass-cache
 .env
 .cache
+.obsidian
+_site
 
 # Node modules and output
 node_modules
