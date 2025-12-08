@@ -42,7 +42,7 @@
  
  
 </head>
-<body>
+<body class="post">
 <main>
  <header>
 	<a class="title" href="/">
@@ -100,5 +100,61 @@ All content licensed under <a href="https://creativecommons.org/licenses/by-nc-s
   </footer>
 
 </main>
+<script>
+if (document.querySelector("body").classList.contains("post")) {
+  async function fetchInteractions() {
+    const response = await fetch("https://webmention.io/api/mentions.jf2?target=" + document.URL);
+    const data = await response.json();
+
+    if (data && data.children.length > 0) {
+      const interactionsByType = { likes: [], reposts: [], replies: [], mentions: [] };
+      const totalInteractions = data.children.length;
+      
+      for (const child of data.children) {
+        const authorUrl = child.author.url || child["wm-source"] || "#";
+        const authorPhoto = child.author.photo || "https://via.placeholder.com/50?text=No+Image";
+        
+        const avatarElement = `<a href="${authorUrl}" target="_blank"><img src="${authorPhoto}" alt="Avatar" class="webmention-avatar"  ></a>`;
+
+        switch (child["wm-property"]) {
+          case "like-of":
+            interactionsByType.likes.push(avatarElement);
+            break;
+          case "repost-of":
+            interactionsByType.reposts.push(avatarElement);
+            break;
+          case "in-reply-to":
+            interactionsByType.replies.push(`<div>${avatarElement} 💬 <blockquote>${child.content?.text ?? ""}</blockquote></div>`);
+            break;
+          case "mention-of":
+            interactionsByType.mentions.push(`<a href="${child["wm-source"]}" target="_blank">${child["wm-source"]}</a>`);
+            break;
+        }
+      }
+      
+      const interactions = document.createElement("div");
+      interactions.className = "webmentions";
+      interactions.innerHTML = `<h2>Web interactions (${totalInteractions})</h2>`;
+      
+      if (interactionsByType.likes.length) {
+        interactions.innerHTML += `<p>❤️ Likes: </p>${interactionsByType.likes.join(" ")}`;
+      }
+      if (interactionsByType.reposts.length) {
+        interactions.innerHTML += `<p>🚀 Reposts: </p>${interactionsByType.reposts.join(" ")}`;
+      }
+      if (interactionsByType.replies.length) {
+        interactions.innerHTML += `<p>💬 Replies:</p>${interactionsByType.replies.join(" ")}`;
+      }
+      if (interactionsByType.mentions.length) {
+        interactions.innerHTML += `<p>✍️ Mentions:</p><ul><li>${interactionsByType.mentions.join("</li><li>")}</li></ul>`;
+      }   
+      const upvoteForm = document.getElementById("footer-directive");
+      upvoteForm.parentNode.insertBefore(interactions, upvoteForm);
+    }
+  }
+
+  fetchInteractions();
+}
+</script>
 </body>
 </html>
