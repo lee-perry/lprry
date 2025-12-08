@@ -248,7 +248,7 @@
  }
  
  .snaps-vertical img {
-   width: clamp(215px, 95%, 300px);
+   width: clamp(215px, 95%, 290px);
    transition: 300ms transform;
    height: auto;
  }

@@ -4,10 +4,15 @@ layout: /layouts/page.html
 cover: header.webp
 ---
 <h1>My Snaps</h1>
-<ul>
-{% for snap in collections.snaps reversed %}
+<div class="snaps">
+<ul class="embedded blog-posts">
+{% assign latestSnaps = collections.snaps | reverse %}
+{% for item in latestSnaps %}
  <li>
-   {{ snap.date | date: "%Y-%m-%d" }} - <a href="{{ snap.url }}">{{ snap.data.title }}</a>
+    <time datetime="">{{ item.date | date: "%Y-%m-%d" }}</time><br>
+    <a href="{{ item.url }}">{{ item.data.title }}</a><br>
+     <a href="{{ item.url }}"><img src="/assets/images/{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
  </li>
 {% endfor %}
 </ul>
+</div>

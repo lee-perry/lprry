@@ -166,24 +166,27 @@ module.exports = function (eleventyConfig) {
   passthroughFileCopy: true
   };
   
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    // output image formats
-    formats: ["webp", "jpeg"],
-
-    // output image widths
-    widths: [295, 445, 895, 1395],
-    heights: "auto",
-
-    // optional, attributes assigned on <img> nodes override these values
-    htmlOptions: {
-      imgAttributes: {
-        loading: "lazy",
-        decoding: "async",
-        heights: "auto",
-      },
-      pictureAttributes: {}
-    },
-  });
+  
   
 };
+module.exports = function (eleventyConfig) {
 
+eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+  // output image formats
+  formats: ["webp", "jpeg"],
+
+  // output image widths
+  widths: [295, 445, 895, 1395],
+  heights: "auto",
+
+  // optional, attributes assigned on <img> nodes override these values
+  htmlOptions: {
+    imgAttributes: {
+      loading: "lazy",
+      decoding: "async",
+      heights: "auto",
+    },
+    pictureAttributes: {}
+  },
+});
+};

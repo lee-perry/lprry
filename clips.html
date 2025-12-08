@@ -3,10 +3,12 @@ title: Clips
 layout: /layouts/page.html
 ---
 <h1>My clips</h1>
-<ul>
+<ul class="embedded blog-posts">
 {% for clip in collections.clips reversed %}
  <li>
    {{ clip.date | date: "%Y-%m-%d" }} - <a href="{{ clip.url }}">{{ clip.data.title }}</a>
+   {{ clip.content }}
+   <br>
  </li>
 {% endfor %}
 </ul>

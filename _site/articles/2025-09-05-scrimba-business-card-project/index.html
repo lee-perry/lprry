@@ -42,7 +42,7 @@
  
  
 </head>
-<body class="post">
+<body>
 <main>
  <header>
 	<a class="title" href="/">
@@ -51,7 +51,7 @@
 	  </h1>
 	</a>
 	<nav>
-	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='#'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	  <p><a href="/articles"><i class="ph ph-article"></i>Blog</a> <a href="/notes"><i class="ph ph-notepad"></i>Note</a> <a href="/snaps"><i class="ph ph-image"></i>Snap</a> <a href="/clips"><i class="ph ph-video"></i>Clip</a> <a href="/training-log"><i class="ph ph-person-simple-bike"></i>Log</a> <a href="#"><i class="ph ph-chats"></i></a> <a href="/directory"><i class="ph ph-list"></i></a></p>
 	</nav>
 </header>
  
@@ -61,7 +61,7 @@
 	<p>Published by <a rel="author" href="https://l.prry.uk">Lee Perry</a> on <span class="dt-published" datetime="2025-09-05T00:00Z">2025-09-05</span></p>
 	<p>When I wrote my first article on this site <a href="https://code.prry.uk/starting-over/">last week</a> I explained that I had decided to work back through the Scrimba curriculum from the beginning to try to really master the basics before moving forwards to more complicated projects.I also explained that I was trying to complete the project with alternatives to big tech - Codeberg and Statichost.</p>
 <p>This first exercise builds a simple html and css business card, customised on the back of a walk through project.  The project uses flexbox to split the images and content onto separate columns.  I always struggle to remember flexbox, though it seems straightforward, splitting the direct children of the flexbox container into columns.</p>
-<p><img src="/assets/images/17-1.webp" alt="Screenshot showing a business card with a styled avatar image and information about my interests on blue and claret."></p>
+<p><picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2F17-1.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F17-1.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F17-1.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F17-1.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2F17-1.webp&width=295&format=jpeg&via=transform" alt="Screenshot showing a business card with a styled avatar image and information about my interests on blue and claret." width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F17-1.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F17-1.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F17-1.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F17-1.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture></p>
 <p>The main changes that I made to the project where the introductions of a slight border-radius to the card, another to the avatar, and a light text shadow.  Obviously I also introduced a slight claret and blue Burnley color palette too.</p>
 <p>This was the first project that I had deployed to Statichost via Codeberg replacing the Github via Netlify workflow in Scrimba.  It worked fine other than needing to enter my Codeberg credentials - I think I cloned via HTTPS rater than SSH, so hopefully this will just work in the next project.</p>
 <p><a href="https://codeberg.org/leeperry/scrimba-business-card.git">Codeberg Repo</a> | <a href="https://leeperry-scrimba-business-card.statichost.eu/">Deployment</a></p>
@@ -75,11 +75,11 @@
 	
 <span id="footer-directive">
 	<div class="h-card">
-  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy" eleventy:ignore>
+  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy">
   <p class="h-card-header"><a class="p-name p-author u-url" rel="author" href="https://l.prry.uk">Lee Perry</a></p>
   <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
 <nav>
-<p><a href='/code'><i class="ph ph-code"></i> </a> <a href='/dogs'><i class="ph ph-dog"></i> </a> <a href='/grow'><i class="ph ph-plant"></i> </a> <a href='/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/exploring'><i class="ph ph-van"></i> </a><a href='/reading'><i class="ph ph-book"></i> </a> <a href='/watching'><i class="ph ph-television"></i> </a> <a href='/vinyl'><i class="ph ph-guitar"></i> </a></p>
+<p><a href="/code"><i class="ph ph-code"></i> </a> <a href="/dogs"><i class="ph ph-dog"></i> </a> <a href="/grow"><i class="ph ph-plant"></i> </a> <a href="/football"><i class="ph ph-soccer-ball"></i> </a> <a href="/exploring"><i class="ph ph-van"></i> </a><a href="/reading"><i class="ph ph-book"></i> </a> <a href="/watching"><i class="ph ph-television"></i> </a> <a href="/vinyl"><i class="ph ph-guitar"></i> </a></p>
 </nav>
 <div class="social">  
 <a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>
@@ -100,57 +100,57 @@ All content licensed under <a href="https://creativecommons.org/licenses/by-nc-s
   </footer>
 
 </main>
-<script>
-if (document.querySelector("body").classList.contains("post")) {
+ <script>
+if (document.querySelector("article").classList.contains("h-entry")) {
   async function fetchInteractions() {
-    const response = await fetch("https://webmention.io/api/mentions.jf2?target=" + document.URL);
-    const data = await response.json();
+	const response = await fetch("https://webmention.io/api/mentions.jf2?target=" + document.URL);
+	const data = await response.json();
 
-    if (data && data.children.length > 0) {
-      const interactionsByType = { likes: [], reposts: [], replies: [], mentions: [] };
-      const totalInteractions = data.children.length;
-      
-      for (const child of data.children) {
-        const authorUrl = child.author.url || child["wm-source"] || "#";
-        const authorPhoto = child.author.photo || "https://via.placeholder.com/50?text=No+Image";
-        
-        const avatarElement = `<a href="${authorUrl}" target="_blank"><img src="${authorPhoto}" alt="Avatar" class="webmention-avatar"  ></a>`;
+	if (data && data.children.length > 0) {
+	  const interactionsByType = { likes: [], reposts: [], replies: [], mentions: [] };
+	  const totalInteractions = data.children.length;
+	  
+	  for (const child of data.children) {
+		const authorUrl = child.author.url || child["wm-source"] || "#";
+		const authorPhoto = child.author.photo || "https://via.placeholder.com/50?text=No+Image";
+		
+		const avatarElement = `<a href="${authorUrl}" target="_blank"><img src="${authorPhoto}" alt="Avatar" class="webmention-avatar"  ></a>`;
 
-        switch (child["wm-property"]) {
-          case "like-of":
-            interactionsByType.likes.push(avatarElement);
-            break;
-          case "repost-of":
-            interactionsByType.reposts.push(avatarElement);
-            break;
-          case "in-reply-to":
-            interactionsByType.replies.push(`<div>${avatarElement} 💬 <blockquote>${child.content?.text ?? ""}</blockquote></div>`);
-            break;
-          case "mention-of":
-            interactionsByType.mentions.push(`<a href="${child["wm-source"]}" target="_blank">${child["wm-source"]}</a>`);
-            break;
-        }
-      }
-      
-      const interactions = document.createElement("div");
-      interactions.className = "webmentions";
-      interactions.innerHTML = `<h2>Web interactions (${totalInteractions})</h2>`;
-      
-      if (interactionsByType.likes.length) {
-        interactions.innerHTML += `<p>❤️ Likes: </p>${interactionsByType.likes.join(" ")}`;
-      }
-      if (interactionsByType.reposts.length) {
-        interactions.innerHTML += `<p>🚀 Reposts: </p>${interactionsByType.reposts.join(" ")}`;
-      }
-      if (interactionsByType.replies.length) {
-        interactions.innerHTML += `<p>💬 Replies:</p>${interactionsByType.replies.join(" ")}`;
-      }
-      if (interactionsByType.mentions.length) {
-        interactions.innerHTML += `<p>✍️ Mentions:</p><ul><li>${interactionsByType.mentions.join("</li><li>")}</li></ul>`;
-      }   
-      const upvoteForm = document.getElementById("footer-directive");
-      upvoteForm.parentNode.insertBefore(interactions, upvoteForm);
-    }
+		switch (child["wm-property"]) {
+		  case "like-of":
+			interactionsByType.likes.push(avatarElement);
+			break;
+		  case "repost-of":
+			interactionsByType.reposts.push(avatarElement);
+			break;
+		  case "in-reply-to":
+			interactionsByType.replies.push(`<div>${avatarElement} 💬 <blockquote>${child.content?.text ?? ""}</blockquote></div>`);
+			break;
+		  case "mention-of":
+			interactionsByType.mentions.push(`<a href="${child["wm-source"]}" target="_blank">${child["wm-source"]}</a>`);
+			break;
+		}
+	  }
+	  
+	  const interactions = document.createElement("div");
+	  interactions.className = "webmentions";
+	  interactions.innerHTML = `<h2>Web interactions (${totalInteractions})</h2>`;
+	  
+	  if (interactionsByType.likes.length) {
+		interactions.innerHTML += `<p>❤️ Likes: </p>${interactionsByType.likes.join(" ")}`;
+	  }
+	  if (interactionsByType.reposts.length) {
+		interactions.innerHTML += `<p>🚀 Reposts: </p>${interactionsByType.reposts.join(" ")}`;
+	  }
+	  if (interactionsByType.replies.length) {
+		interactions.innerHTML += `<p>💬 Replies:</p>${interactionsByType.replies.join(" ")}`;
+	  }
+	  if (interactionsByType.mentions.length) {
+		interactions.innerHTML += `<p>✍️ Mentions:</p><ul><li>${interactionsByType.mentions.join("</li><li>")}</li></ul>`;
+	  }   
+	  const upvoteForm = document.getElementById("footer-directive");
+	  upvoteForm.parentNode.insertBefore(interactions, upvoteForm);
+	}
   }
 
   fetchInteractions();

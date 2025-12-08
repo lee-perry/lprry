@@ -42,7 +42,7 @@
  
  
 </head>
-<body class="post">
+<body>
 <main>
  <header>
 	<a class="title" href="/">
@@ -51,32 +51,31 @@
 	  </h1>
 	</a>
 	<nav>
-	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='#'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	  <p><a href="/articles"><i class="ph ph-article"></i>Blog</a> <a href="/notes"><i class="ph ph-notepad"></i>Note</a> <a href="/snaps"><i class="ph ph-image"></i>Snap</a> <a href="/clips"><i class="ph ph-video"></i>Clip</a> <a href="/training-log"><i class="ph ph-person-simple-bike"></i>Log</a> <a href="#"><i class="ph ph-chats"></i></a> <a href="/directory"><i class="ph ph-list"></i></a></p>
 	</nav>
 </header>
  
  <h1>My Activities</h1>
-<ul>
-
+<p><a href="/runs">🏃‍♂️Runs</a> | <a href="/rides">🚴‍♂️Rides</a> | <a href="/swims">🏊‍♂️Swims</a> | <a href="/climbs">🧗‍♂️Climbs</a> | <a href="/weigh-in">⚖️Weigh-ins</a></p>
+<ul class="embedded blog-posts">
  <li>
-   2025-12-07 <a href="/training-log/2025-12-07-ride/">🚴‍♂️ 01:55:15 49.32km 931m+ 179bpm 172w 1,137kcal</a>
+   2025-12-07 <a href="/training-log/2025-12-07-ride/">🚴‍♂️  ⏰01:55:15 📏49.32km  🛫931m+ ❤️‍🔥179bpm  🪫172w  🧁1,137kcal</a>
  </li>
-
  <li>
-   2025-12-02 <a href="/training-log/2025-12-02-ride/">🚴‍♂️ 00:33:00 21.78km 233m+ 177bpm 212w 474kcal</a>
+   2025-12-02 <a href="/training-log/2025-12-02-ride/">🚴‍♂️  ⏰00:33:00 📏21.78km  🛫233m+ ❤️‍🔥177bpm  🪫212w  🧁474kcal</a>
  </li>
-
 </ul>
+
  
  <footer style="padding:25px 0;">
 	
 <span id="footer-directive">
 	<div class="h-card">
-  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy" eleventy:ignore>
+  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy">
   <p class="h-card-header"><a class="p-name p-author u-url" rel="author" href="https://l.prry.uk">Lee Perry</a></p>
   <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
 <nav>
-<p><a href='/code'><i class="ph ph-code"></i> </a> <a href='/dogs'><i class="ph ph-dog"></i> </a> <a href='/grow'><i class="ph ph-plant"></i> </a> <a href='/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/exploring'><i class="ph ph-van"></i> </a><a href='/reading'><i class="ph ph-book"></i> </a> <a href='/watching'><i class="ph ph-television"></i> </a> <a href='/vinyl'><i class="ph ph-guitar"></i> </a></p>
+<p><a href="/code"><i class="ph ph-code"></i> </a> <a href="/dogs"><i class="ph ph-dog"></i> </a> <a href="/grow"><i class="ph ph-plant"></i> </a> <a href="/football"><i class="ph ph-soccer-ball"></i> </a> <a href="/exploring"><i class="ph ph-van"></i> </a><a href="/reading"><i class="ph ph-book"></i> </a> <a href="/watching"><i class="ph ph-television"></i> </a> <a href="/vinyl"><i class="ph ph-guitar"></i> </a></p>
 </nav>
 <div class="social">  
 <a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>
@@ -97,57 +96,57 @@ All content licensed under <a href="https://creativecommons.org/licenses/by-nc-s
   </footer>
 
 </main>
-<script>
-if (document.querySelector("body").classList.contains("post")) {
+ <script>
+if (document.querySelector("article").classList.contains("h-entry")) {
   async function fetchInteractions() {
-    const response = await fetch("https://webmention.io/api/mentions.jf2?target=" + document.URL);
-    const data = await response.json();
+	const response = await fetch("https://webmention.io/api/mentions.jf2?target=" + document.URL);
+	const data = await response.json();
 
-    if (data && data.children.length > 0) {
-      const interactionsByType = { likes: [], reposts: [], replies: [], mentions: [] };
-      const totalInteractions = data.children.length;
-      
-      for (const child of data.children) {
-        const authorUrl = child.author.url || child["wm-source"] || "#";
-        const authorPhoto = child.author.photo || "https://via.placeholder.com/50?text=No+Image";
-        
-        const avatarElement = `<a href="${authorUrl}" target="_blank"><img src="${authorPhoto}" alt="Avatar" class="webmention-avatar"  ></a>`;
+	if (data && data.children.length > 0) {
+	  const interactionsByType = { likes: [], reposts: [], replies: [], mentions: [] };
+	  const totalInteractions = data.children.length;
+	  
+	  for (const child of data.children) {
+		const authorUrl = child.author.url || child["wm-source"] || "#";
+		const authorPhoto = child.author.photo || "https://via.placeholder.com/50?text=No+Image";
+		
+		const avatarElement = `<a href="${authorUrl}" target="_blank"><img src="${authorPhoto}" alt="Avatar" class="webmention-avatar"  ></a>`;
 
-        switch (child["wm-property"]) {
-          case "like-of":
-            interactionsByType.likes.push(avatarElement);
-            break;
-          case "repost-of":
-            interactionsByType.reposts.push(avatarElement);
-            break;
-          case "in-reply-to":
-            interactionsByType.replies.push(`<div>${avatarElement} 💬 <blockquote>${child.content?.text ?? ""}</blockquote></div>`);
-            break;
-          case "mention-of":
-            interactionsByType.mentions.push(`<a href="${child["wm-source"]}" target="_blank">${child["wm-source"]}</a>`);
-            break;
-        }
-      }
-      
-      const interactions = document.createElement("div");
-      interactions.className = "webmentions";
-      interactions.innerHTML = `<h2>Web interactions (${totalInteractions})</h2>`;
-      
-      if (interactionsByType.likes.length) {
-        interactions.innerHTML += `<p>❤️ Likes: </p>${interactionsByType.likes.join(" ")}`;
-      }
-      if (interactionsByType.reposts.length) {
-        interactions.innerHTML += `<p>🚀 Reposts: </p>${interactionsByType.reposts.join(" ")}`;
-      }
-      if (interactionsByType.replies.length) {
-        interactions.innerHTML += `<p>💬 Replies:</p>${interactionsByType.replies.join(" ")}`;
-      }
-      if (interactionsByType.mentions.length) {
-        interactions.innerHTML += `<p>✍️ Mentions:</p><ul><li>${interactionsByType.mentions.join("</li><li>")}</li></ul>`;
-      }   
-      const upvoteForm = document.getElementById("footer-directive");
-      upvoteForm.parentNode.insertBefore(interactions, upvoteForm);
-    }
+		switch (child["wm-property"]) {
+		  case "like-of":
+			interactionsByType.likes.push(avatarElement);
+			break;
+		  case "repost-of":
+			interactionsByType.reposts.push(avatarElement);
+			break;
+		  case "in-reply-to":
+			interactionsByType.replies.push(`<div>${avatarElement} 💬 <blockquote>${child.content?.text ?? ""}</blockquote></div>`);
+			break;
+		  case "mention-of":
+			interactionsByType.mentions.push(`<a href="${child["wm-source"]}" target="_blank">${child["wm-source"]}</a>`);
+			break;
+		}
+	  }
+	  
+	  const interactions = document.createElement("div");
+	  interactions.className = "webmentions";
+	  interactions.innerHTML = `<h2>Web interactions (${totalInteractions})</h2>`;
+	  
+	  if (interactionsByType.likes.length) {
+		interactions.innerHTML += `<p>❤️ Likes: </p>${interactionsByType.likes.join(" ")}`;
+	  }
+	  if (interactionsByType.reposts.length) {
+		interactions.innerHTML += `<p>🚀 Reposts: </p>${interactionsByType.reposts.join(" ")}`;
+	  }
+	  if (interactionsByType.replies.length) {
+		interactions.innerHTML += `<p>💬 Replies:</p>${interactionsByType.replies.join(" ")}`;
+	  }
+	  if (interactionsByType.mentions.length) {
+		interactions.innerHTML += `<p>✍️ Mentions:</p><ul><li>${interactionsByType.mentions.join("</li><li>")}</li></ul>`;
+	  }   
+	  const upvoteForm = document.getElementById("footer-directive");
+	  upvoteForm.parentNode.insertBefore(interactions, upvoteForm);
+	}
   }
 
   fetchInteractions();

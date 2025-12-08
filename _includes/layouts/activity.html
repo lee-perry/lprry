@@ -5,7 +5,7 @@ layout: /layouts/page.html
   <div class="e-content p-name">
 	<h1><a class="u-url" href="{{ page.url }}">{{ title }}</a></h1>
 	<p>Published by <a rel="author" href="https://l.prry.uk">Lee Perry</a> on <span class="dt-published" datetime="{{ date | date: "%Y-%m-%dT00:00Z" }}">{{ date | date: "%Y-%m-%d" }}</span></p>
-	<h2>{% if type == "ride" %}🚴‍♂️ {% endif %}{% if type == "run" %}🏃‍♂️ {% endif %}{% if type == "swim" %}🏊‍♂️ {% endif %}{% if type == "climb" %}🧗‍♂️ {% endif %}{{ time }} {{ distance }}km {% if type == "run" %}{{ pace }}min/km {% endif %}{{ climb }}m+ {{ hr }}bpm {% if type == "ride" %}{{ w }}w {% endif %}{{ kcal }}kcal</h2>
+	<h2>{% if type == "ride" %}🚴‍♂️ {% endif %}{% if type == "run" %}🏃‍♂️ {% endif %}{% if type == "swim" %}🏊‍♂️ {% endif %}{% if type == "climb" %}🧗‍♂️ {% endif %} ⏰{{ time }} 📏{{ distance }}km {% if type == "run" %} ⏱️{{ pace }}min/km {% endif %} 🛫{{ climb }}m+ ❤️‍🔥{{ hr }}bpm {% if type == "ride" %} 🪫{{ w }}w {% endif %} 🧁{{ kcal }}kcal</h2>
 	<img src="/assets/images/{{cover}}" alt="cover_alt">
 	{{ content }}
   </div>

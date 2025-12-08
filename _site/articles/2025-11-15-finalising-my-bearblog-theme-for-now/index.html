@@ -42,7 +42,7 @@
  
  
 </head>
-<body class="post">
+<body>
 <main>
  <header>
 	<a class="title" href="/">
@@ -51,7 +51,7 @@
 	  </h1>
 	</a>
 	<nav>
-	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='#'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	  <p><a href="/articles"><i class="ph ph-article"></i>Blog</a> <a href="/notes"><i class="ph ph-notepad"></i>Note</a> <a href="/snaps"><i class="ph ph-image"></i>Snap</a> <a href="/clips"><i class="ph ph-video"></i>Clip</a> <a href="/training-log"><i class="ph ph-person-simple-bike"></i>Log</a> <a href="#"><i class="ph ph-chats"></i></a> <a href="/directory"><i class="ph ph-list"></i></a></p>
 	</nav>
 </header>
  
@@ -62,7 +62,7 @@
 	<p>I've been experimenting with bearblog for the last month, trying to see if I could find a leaner way to do what my <a href="https://lee-perry.co.uk">Kirby CMS</a> site does in a leaner way, but without introducing complicated build cycles so that I can still write effectively on the go.</p>
 <p>I had largely achieved that, using the tag structure to recreate article, note, snap, clip and other content types, custom post lists to index those types, and setting the post template to not be discoverable to avoid spamming the bearblog discover timeline with my training data and other errata.</p>
 <p>I enjoyed it so much that I took a little time out to build a project for my wife to use to chronicle her misadventures with wool (aka her knitting problem) - <a href="https://craftedbypanda.co.uk">craftedbypanda.co.uk</a>, training her in use of markdown could be interesting.</p>
-<p><img src="/assets/images/38-2.webp" alt="Screenshot 2025-11-15 at 11"></p>
+<p><picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2F38-2.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F38-2.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F38-2.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F38-2.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2F38-2.webp&width=295&format=jpeg&via=transform" alt="Screenshot 2025-11-15 at 11" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F38-2.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F38-2.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F38-2.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F38-2.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture></p>
 <p>I was not completely happy with how graphical post types rendered, or with some aspects of the custom post lists, but I had an idea that I could resolve most of those in the css.</p>
 <p>On the post lists I started by removing the list bullet styling, and removing the indentation to set the content inline with the headings above - I think that looks far better now.</p>
 <h2>Data</h2>
@@ -72,14 +72,14 @@ letter-spacing: 0.02em;
 </code></pre>
 <p>I was happy with the improvement, which I have now applied to all date rendering on the site.</p>
 <div class="snaps-horizontal">
-<p><img src="/assets/images/48-1.webp" alt="Screenshot 2025-11-14 at 22">
-<img src="/assets/images/16-1.webp" alt="Screenshot 2025-11-14 at 21"></p>
+<p><picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2F48-1.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F48-1.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F48-1.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F48-1.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2F48-1.webp&width=295&format=jpeg&via=transform" alt="Screenshot 2025-11-14 at 22" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F48-1.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F48-1.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F48-1.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F48-1.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture>
+<picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2F16-1.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F16-1.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F16-1.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F16-1.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2F16-1.webp&width=295&format=jpeg&via=transform" alt="Screenshot 2025-11-14 at 21" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F16-1.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F16-1.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F16-1.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F16-1.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture></p>
 </div>
 <h2>Snapwall</h2>
 <p>I'd also had in mind that I wanted to display lists of image posts as a gallery making more use of the white space across the screen.  I set the lists to display as inline blocks, introducing a linebreak between the data and title to create that effect, with three posts to each line on the big screen.</p>
 <div class="snaps-horizontal">
-<p><img src="/assets/images/31-1.webp" alt="Screenshot 2025-11-14 at 21">
-<img src="/assets/images/35-1.webp" alt="Screenshot 2025-11-14 at 21"></p>
+<p><picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2F31-1.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F31-1.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F31-1.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F31-1.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2F31-1.webp&width=295&format=jpeg&via=transform" alt="Screenshot 2025-11-14 at 21" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F31-1.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F31-1.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F31-1.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F31-1.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture>
+<picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2F35-1.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F35-1.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F35-1.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F35-1.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2F35-1.webp&width=295&format=jpeg&via=transform" alt="Screenshot 2025-11-14 at 21" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F35-1.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F35-1.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F35-1.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F35-1.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture></p>
 </div>
 <pre><code>.snaps ul {
   margin: 0 auto;
@@ -106,8 +106,8 @@ letter-spacing: 0.02em;
 <p>Having done that, I thought it would be useful to be able to display images within posts two wide, again to make better use of page space on large screens, which I have completed by creating a div of an appropriate class to embed the images within.</p>
 <p>I also then introduced a little scale-transform into the galleries to allow the reader to zoom on the image by hover or selection.</p>
 <div class="snaps-horizontal">
-<p><img src="/assets/images/27-1.webp" alt="Screenshot 2025-11-14 at 22">
-<img src="/assets/images/41-1.webp" alt="Screenshot 2025-11-14 at 22"></p>
+<p><picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2F27-1.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F27-1.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F27-1.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F27-1.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2F27-1.webp&width=295&format=jpeg&via=transform" alt="Screenshot 2025-11-14 at 22" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F27-1.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F27-1.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F27-1.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F27-1.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture>
+<picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2F41-1.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F41-1.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F41-1.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F41-1.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2F41-1.webp&width=295&format=jpeg&via=transform" alt="Screenshot 2025-11-14 at 22" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F41-1.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F41-1.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F41-1.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F41-1.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture></p>
 </div>
 <pre><code>.snaps-horizontal img {
   width: 440px; 
@@ -121,7 +121,7 @@ letter-spacing: 0.02em;
 </code></pre>
 <h2>Vertical Galleries</h2>
 <p>I'd also been planning to do something similar for pictures taken in portrait resolution, which rendered especially badly on horizontal screen views, and here they are now set to display three images side by side in that orientation, using the same technique.</p>
-<p><img src="/assets/images/23.webp" alt="Screenshot 2025-11-14 at 22"></p>
+<p><picture><source type="image/webp" srcset="/.11ty/image/?src=assets%2Fimages%2F23.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F23.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F23.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F23.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"><img loading="lazy" decoding="async" heights="auto" src="/.11ty/image/?src=assets%2Fimages%2F23.webp&width=295&format=jpeg&via=transform" alt="Screenshot 2025-11-14 at 22" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F23.webp&width=295&format=jpeg&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F23.webp&width=445&format=jpeg&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F23.webp&width=895&format=jpeg&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F23.webp&width=1200&format=jpeg&via=transform 1200w" sizes="auto"></picture></p>
 <h2>Wishlist</h2>
 <p>I think at this point the first stage of my project is complete, my website looks broadly how I want it to, I have webmentions both sending and displaying. I still have many of the content section pages to build out, and the usual meta/slash pages to add, which I can take my time over..</p>
 <p>There are a few things that I cannot control that I need for this build not to become unwieldy / unmanageable as the site grows:</p>
@@ -140,11 +140,11 @@ letter-spacing: 0.02em;
 	
 <span id="footer-directive">
 	<div class="h-card">
-  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy" eleventy:ignore>
+  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy">
   <p class="h-card-header"><a class="p-name p-author u-url" rel="author" href="https://l.prry.uk">Lee Perry</a></p>
   <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
 <nav>
-<p><a href='/code'><i class="ph ph-code"></i> </a> <a href='/dogs'><i class="ph ph-dog"></i> </a> <a href='/grow'><i class="ph ph-plant"></i> </a> <a href='/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/exploring'><i class="ph ph-van"></i> </a><a href='/reading'><i class="ph ph-book"></i> </a> <a href='/watching'><i class="ph ph-television"></i> </a> <a href='/vinyl'><i class="ph ph-guitar"></i> </a></p>
+<p><a href="/code"><i class="ph ph-code"></i> </a> <a href="/dogs"><i class="ph ph-dog"></i> </a> <a href="/grow"><i class="ph ph-plant"></i> </a> <a href="/football"><i class="ph ph-soccer-ball"></i> </a> <a href="/exploring"><i class="ph ph-van"></i> </a><a href="/reading"><i class="ph ph-book"></i> </a> <a href="/watching"><i class="ph ph-television"></i> </a> <a href="/vinyl"><i class="ph ph-guitar"></i> </a></p>
 </nav>
 <div class="social">  
 <a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>
@@ -165,57 +165,57 @@ All content licensed under <a href="https://creativecommons.org/licenses/by-nc-s
   </footer>
 
 </main>
-<script>
-if (document.querySelector("body").classList.contains("post")) {
+ <script>
+if (document.querySelector("article").classList.contains("h-entry")) {
   async function fetchInteractions() {
-    const response = await fetch("https://webmention.io/api/mentions.jf2?target=" + document.URL);
-    const data = await response.json();
+	const response = await fetch("https://webmention.io/api/mentions.jf2?target=" + document.URL);
+	const data = await response.json();
 
-    if (data && data.children.length > 0) {
-      const interactionsByType = { likes: [], reposts: [], replies: [], mentions: [] };
-      const totalInteractions = data.children.length;
-      
-      for (const child of data.children) {
-        const authorUrl = child.author.url || child["wm-source"] || "#";
-        const authorPhoto = child.author.photo || "https://via.placeholder.com/50?text=No+Image";
-        
-        const avatarElement = `<a href="${authorUrl}" target="_blank"><img src="${authorPhoto}" alt="Avatar" class="webmention-avatar"  ></a>`;
+	if (data && data.children.length > 0) {
+	  const interactionsByType = { likes: [], reposts: [], replies: [], mentions: [] };
+	  const totalInteractions = data.children.length;
+	  
+	  for (const child of data.children) {
+		const authorUrl = child.author.url || child["wm-source"] || "#";
+		const authorPhoto = child.author.photo || "https://via.placeholder.com/50?text=No+Image";
+		
+		const avatarElement = `<a href="${authorUrl}" target="_blank"><img src="${authorPhoto}" alt="Avatar" class="webmention-avatar"  ></a>`;
 
-        switch (child["wm-property"]) {
-          case "like-of":
-            interactionsByType.likes.push(avatarElement);
-            break;
-          case "repost-of":
-            interactionsByType.reposts.push(avatarElement);
-            break;
-          case "in-reply-to":
-            interactionsByType.replies.push(`<div>${avatarElement} 💬 <blockquote>${child.content?.text ?? ""}</blockquote></div>`);
-            break;
-          case "mention-of":
-            interactionsByType.mentions.push(`<a href="${child["wm-source"]}" target="_blank">${child["wm-source"]}</a>`);
-            break;
-        }
-      }
-      
-      const interactions = document.createElement("div");
-      interactions.className = "webmentions";
-      interactions.innerHTML = `<h2>Web interactions (${totalInteractions})</h2>`;
-      
-      if (interactionsByType.likes.length) {
-        interactions.innerHTML += `<p>❤️ Likes: </p>${interactionsByType.likes.join(" ")}`;
-      }
-      if (interactionsByType.reposts.length) {
-        interactions.innerHTML += `<p>🚀 Reposts: </p>${interactionsByType.reposts.join(" ")}`;
-      }
-      if (interactionsByType.replies.length) {
-        interactions.innerHTML += `<p>💬 Replies:</p>${interactionsByType.replies.join(" ")}`;
-      }
-      if (interactionsByType.mentions.length) {
-        interactions.innerHTML += `<p>✍️ Mentions:</p><ul><li>${interactionsByType.mentions.join("</li><li>")}</li></ul>`;
-      }   
-      const upvoteForm = document.getElementById("footer-directive");
-      upvoteForm.parentNode.insertBefore(interactions, upvoteForm);
-    }
+		switch (child["wm-property"]) {
+		  case "like-of":
+			interactionsByType.likes.push(avatarElement);
+			break;
+		  case "repost-of":
+			interactionsByType.reposts.push(avatarElement);
+			break;
+		  case "in-reply-to":
+			interactionsByType.replies.push(`<div>${avatarElement} 💬 <blockquote>${child.content?.text ?? ""}</blockquote></div>`);
+			break;
+		  case "mention-of":
+			interactionsByType.mentions.push(`<a href="${child["wm-source"]}" target="_blank">${child["wm-source"]}</a>`);
+			break;
+		}
+	  }
+	  
+	  const interactions = document.createElement("div");
+	  interactions.className = "webmentions";
+	  interactions.innerHTML = `<h2>Web interactions (${totalInteractions})</h2>`;
+	  
+	  if (interactionsByType.likes.length) {
+		interactions.innerHTML += `<p>❤️ Likes: </p>${interactionsByType.likes.join(" ")}`;
+	  }
+	  if (interactionsByType.reposts.length) {
+		interactions.innerHTML += `<p>🚀 Reposts: </p>${interactionsByType.reposts.join(" ")}`;
+	  }
+	  if (interactionsByType.replies.length) {
+		interactions.innerHTML += `<p>💬 Replies:</p>${interactionsByType.replies.join(" ")}`;
+	  }
+	  if (interactionsByType.mentions.length) {
+		interactions.innerHTML += `<p>✍️ Mentions:</p><ul><li>${interactionsByType.mentions.join("</li><li>")}</li></ul>`;
+	  }   
+	  const upvoteForm = document.getElementById("footer-directive");
+	  upvoteForm.parentNode.insertBefore(interactions, upvoteForm);
+	}
   }
 
   fetchInteractions();
