@@ -1,6 +1,22 @@
 {
 	"checks": [
 		{
+			"date": "09/12/2025",
+			"weight": "74.3kg",
+			"body-fat": "20.8%",
+			"muscle": "33.6%",
+			"hydration": "53.8%",
+			"bmi": "24.8"
+		},
+		{
+			"date": "02/12/2025",
+			"weight": "74.5kg",
+			"body-fat": "20.9%",
+			"muscle": "33.5%",
+			"hydration": "53.7%",
+			"bmi": "24.9"
+		},
+		{
 			"date": "25/11/2025",
 			"weight": "74.6kg",
 			"body-fat": "21.0%",
