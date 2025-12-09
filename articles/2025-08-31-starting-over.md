@@ -30,7 +30,7 @@ Here is the html that I provided to meet the design specification:
 		Challenge 1:
 		Write the HTML for your personal website.
 		-->
-		<img src="lee.jpg" alt="">
+		<img src="lee.webp" alt="">
 		<h1>Hi, my name is Lee</h1>
 		<h2>Fun facts about me:</h2>
 		<ul>
