@@ -77,7 +77,7 @@ module.exports = function (eleventyConfig) {
       language: "en",
       title: "lprry indieWeb garden",
       subtitle: "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-      base: "https://l.prry.uk/",
+      base: "/",
       author: {
         name: "Lee Perry",
         email: "lee@prry.uk", // Optional
