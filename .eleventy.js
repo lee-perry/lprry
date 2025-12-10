@@ -9,11 +9,33 @@ module.exports.config = {
 };
 
 module.exports = function (eleventyConfig) {
+  
+  eleventyConfig.addCollection("everything", function (collectionApi) {
+    // Get the individual collections
+    const notes = collectionApi.getFilteredByTag("notes");
+    const articles = collectionApi.getFilteredByTag("articles");
+    const snaps = collectionApi.getFilteredByTag("snaps");
+    const trainingLog = collectionApi.getFilteredByTag("training-log");
+  
+    // Merge them into one array
+    const combined = [
+      ...notes,
+      ...articles,
+      ...snaps,
+      ...trainingLog
+    ];
+  
+    // Optionally sort by date (newest first)
+    combined.sort((a, b) => b.date - a.date);
+  
+    return combined;
+  });
+  
   eleventyConfig.addPlugin(feedPlugin, {
     type: "atom", // or "rss", "json"
     outputPath: "/atom/",
     collection: {
-      name: "all", // iterate over `collections.posts`
+      name: "everything", // iterate over `collections.everything`
       limit: 10,     // 0 means no limit
     },
     metadata: {
@@ -32,7 +54,7 @@ module.exports = function (eleventyConfig) {
     type: "rss", // or "rss", "json"
     outputPath: "/feed/",
     collection: {
-      name: "all", // iterate over `collections.posts`
+      name: "everything", // iterate over `collections.posts`
       limit: 10,     // 0 means no limit
     },
     metadata: {
@@ -160,6 +182,9 @@ module.exports = function (eleventyConfig) {
       }
     }
   });
+  
+
+
   
   eleventyConfig.addPassthroughCopy('assets')
   return {
