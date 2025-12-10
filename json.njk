@@ -1,0 +1,44 @@
+---json
+{
+  "permalink": "json/",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+	"title": "lprry indieWeb home",
+	"description": "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
+	"language": "en",
+	"base": "https://l.prry.uk",
+	"author": {
+	  "name": "Lee Perry"
+	}
+  }
+}
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "{{ metadata.title }}",
+  "language": "{{ metadata.language or page.lang }}",
+  "home_page_url": "{{ metadata.base | addPathPrefixToFullUrl }}",
+  "feed_url": "{{ permalink | htmlBaseUrl(metadata.base) }}",
+  "description": "{{ metadata.description }}",
+  "authors": [
+	{
+	  "name": "{{ metadata.author.name }}"
+	}
+  ],
+  "items": [
+	{%- for post in collections.everything | reverse %}
+	{%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
+	{
+	  "id": "{{ absolutePostUrl }}",
+	  "url": "{{ absolutePostUrl }}",
+	  "title": "{{ post.data.title }}",
+	  {% if post.data.description %}
+	  "summary": "{{ post.data.description | dump}}",
+	  {% endif %}
+	  "content_html": "<img src="/assets/images/{{ post.data.cover }}" alt="{{ post.data.cover_alt }}"><br>{{ post.templateContent | dump }}<br>#{{ post.data.tags | join(" #") }}\nThanks for finding my JSON feed!",
+	  "date_published": "{{ post.date | dateToRfc3339 }}"
+	}
+	{% if not loop.last %},{% endif %}
+	{%- endfor %}
+  ]
+}

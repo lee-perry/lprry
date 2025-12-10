@@ -1,5 +1,6 @@
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports.config = {
   markdownTemplateEngine: 'njk',
@@ -23,162 +24,13 @@ module.exports = function (eleventyConfig) {
       ...snaps,
       ...trainingLog,
     ];
-  
+    combined.sort((a, b) => a.date - b.date);
     return combined;
   });
 
+  eleventyConfig.addPlugin(pluginRss);
   
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom", // or "rss", "json"
-    outputPath: "/atom/",
-    collection: {
-      name: "everything", // iterate over `collections.everything`
-      limit: 10,     // 0 means no limit
-    },
-    metadata: {
-      language: "en",
-      title: "lprry indieWeb garden",
-      subtitle: "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-      base: "https://l.prry.uk",
-      author: {
-        name: "Lee Perry",
-        email: "lee@prry.uk", // Optional
-      }
-    }
-  });
-  
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "rss", // or "rss", "json"
-    outputPath: "/feed/",
-    collection: {
-      name: "everything", // iterate over `collections.posts`
-      limit: 10,     // 0 means no limit
-    },
-    metadata: {
-      language: "en",
-      title: "lprry indieWeb garden",
-      subtitle: "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-      base: "https://l.prry.uk/",
-      author: {
-        name: "Lee Perry",
-        email: "lee@prry.uk", // Optional
-      }
-    }
-  });  
-  
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "json", // or "rss", "json"
-    outputPath: "/json/",
-    collection: {
-      name: "everything", // iterate over `collections.posts`
-      limit: 10,     // 0 means no limit
-    },
-    metadata: {
-      language: "en",
-      title: "lprry indieWeb garden",
-      subtitle: "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-      base: "https://l.prry.uk/",
-      author: {
-        name: "Lee Perry",
-        email: "lee@prry.uk", // Optional
-      }
-    }
-  });
-  
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom", // or "rss", "json"
-    outputPath: "/atom/snaps/",
-    collection: {
-      name: "snaps", // iterate over `collections.posts`
-      limit: 10,     // 0 means no limit
-    },
-    metadata: {
-      language: "en",
-      title: "lprry indieWeb garden - snaps",
-      subtitle: "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-      base: "https://l.prry.uk/",
-      author: {
-        name: "Lee Perry",
-        email: "lee@prry.uk", // Optional
-      }
-    }
-  });
-  
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom", // or "rss", "json"
-    outputPath: "/atom/articles/",
-    collection: {
-      name: "articles", // iterate over `collections.posts`
-      limit: 10,     // 0 means no limit
-    },
-    metadata: {
-      language: "en",
-      title: "lprry indieWeb garden - articles",
-      subtitle: "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-      base: "https://l.prry.uk/",
-      author: {
-        name: "Lee Perry",
-        email: "lee@prry.uk", // Optional
-      }
-    }
-  });
-  
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom", // or "rss", "json"
-    outputPath: "/atom/notes/",
-    collection: {
-      name: "notes", // iterate over `collections.posts`
-      limit: 10,     // 0 means no limit
-    },
-    metadata: {
-      language: "en",
-      title: "lprry indieWeb garden - notes",
-      subtitle: "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-      base: "https://l.prry.uk/",
-      author: {
-        name: "Lee Perry",
-        email: "lee@prry.uk", // Optional
-      }
-    }
-  });
-  
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom", // or "rss", "json"
-    outputPath: "/atom/activities/",
-    collection: {
-      name: "training-log", // iterate over `collections.posts`
-      limit: 10,     // 0 means no limit
-    },
-    metadata: {
-      language: "en",
-      title: "lprry indieWeb garden - activities",
-      subtitle: "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-      base: "https://l.prry.uk/",
-      author: {
-        name: "Lee Perry",
-        email: "lee@prry.uk", // Optional
-      }
-    }
-  });
-  
-  eleventyConfig.addPlugin(feedPlugin, {
-    type: "atom", // or "rss", "json"
-    outputPath: "/atom/clips/",
-    collection: {
-      name: "clips", // iterate over `collections.posts`
-      limit: 10,     // 0 means no limit
-    },
-    metadata: {
-      language: "en",
-      title: "lprry indieWeb garden - clips",
-      subtitle: "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-      base: "https://l.prry.uk/",
-      author: {
-        name: "Lee Perry",
-        email: "lee@prry.uk", // Optional
-      }
-    }
-  });
+  eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
   
   eleventyConfig.addPassthroughCopy('assets')
   return {
