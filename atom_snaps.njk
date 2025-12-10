@@ -1,6 +1,6 @@
 ---json
 {
-  "permalink": "atom/notes/",
+  "permalink": "atom/snaps/",
   "eleventyExcludeFromCollections": true,
   "metadata": {
 	"title": "lprry indieWeb home",
@@ -24,7 +24,7 @@
   <author>
 	<name>{{ metadata.author.name }}</name>
   </author>
-  {%- for post in collections.notes | reverse %}
+  {%- for post in collections.snaps | reverse %}
   {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
   <entry>
 	<title>{{ post.data.title }}</title>
