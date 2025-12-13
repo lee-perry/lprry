@@ -1,0 +1,22 @@
+---
+layout: /layouts/page.html
+---
+
+<h1>My {{ subject-pretty }} notes</h1>
+<ul class="embedded blog-posts">
+{% assign latestNotes = collections.notes | reverse %}
+{% for item in latestNotes %}
+{% if item.data.tags contains subject %}
+ <li>
+   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
+   <hr>
+   {{ item.data.description }}
+   
+   {{ item.content }}
+   <br><br>
+   {{ item.data.tags | join: " 🔖" | prepend: "🔖" }}
+   <br><br>
+ </li>
+ {% endif %}
+{% endfor %}
+</ul>

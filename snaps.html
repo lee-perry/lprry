@@ -1,18 +1,6 @@
 ---
 title: Snaps
-layout: /layouts/page.html
+layout: /layouts/snaps.html
 cover: header.webp
+subject: snaps
 ---
-<h1>My Snaps</h1>
-<div class="snaps">
-<ul class="embedded blog-posts">
-{% assign latestSnaps = collections.snaps | reverse %}
-{% for item in latestSnaps %}
- <li>
-    <time datetime="">{{ item.date | date: "%Y-%m-%d" }}</time><br>
-    <a href="{{ item.url }}">{{ item.data.title }}</a><br>
-     <a href="{{ item.url }}"><img src="/assets/images/{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
- </li>
-{% endfor %}
-</ul>
-</div>

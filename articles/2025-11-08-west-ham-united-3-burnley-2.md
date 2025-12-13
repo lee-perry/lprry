@@ -4,7 +4,7 @@ bear: /west-ham-united-3-burnley-2
 date: 2025-11-08
 description: Images and brief thoughts from the London Stafium where Burnley managed to throw away a game they were well in control of.
 cover: https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8432.webp
-tags: ['article', 'burnleyfc', 'match-report']
+tags: ['article', 'burnleyfc', 'matchreport']
 ---
 
 Burnley actually started the game well, controlling the first half of the game.  Zian Flemming almost getting on the end of a screaming pass from Hartman, before deservedly heading Burnley ahead in the 36th.

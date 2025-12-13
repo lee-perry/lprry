@@ -1,0 +1,19 @@
+---
+layout: /layouts/page.html
+---
+
+<h1>My {{ subject-pretty }} Snaps</h1>
+<div class="snaps">
+<ul class="embedded blog-posts">
+{% assign latestSnaps = collections.snaps | reverse %}
+{% for item in latestSnaps %}
+{% if item.data.tags contains subject %}
+ <li>
+	<time datetime="">{{ item.date | date: "%Y-%m-%d" }}</time><br>
+	<a href="{{ item.url }}">{{ item.data.title }}</a><br>
+	 <a href="{{ item.url }}"><img src="/assets/images/{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
+ </li>
+ {% endif %} 
+{% endfor %}
+</ul>
+</div>

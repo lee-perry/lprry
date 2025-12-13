@@ -1,0 +1,101 @@
+---
+layout: /layouts/page.html
+---
+<h1>{{ subject-pretty }}</h1>
+{{ content }}
+{% assign latestArticles = collections.articles | reverse %}
+{% assign filteredArticles = latestArticles | where_exp: "item", "item.data.tags contains subject" %}
+{% assign shownArticles = 0 %}
+
+{% if filteredArticles.size > 0 %}
+<h2>Latest Articles</h2>
+
+<ul class="embedded blog-posts">
+{% for item in filteredArticles %}
+{% if shownArticles == 5 %}
+  {% break %}
+{% endif %}
+ <li>
+   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
+ </li>
+ {% assign shownArticles = shownArticles | plus: 1 %}
+{% endfor %}
+</ul>
+<a href="/topics/{{ subject }}/articles">View all {{ subject-pretty }} articles</a>
+<br><br>
+{% endif %}
+
+{% assign latestNotes = collections.notes | reverse %}
+{% assign filteredNotes = latestNotes | where_exp: "item", "item.data.tags contains subject" %}
+{% assign shownNotes = 0 %}
+
+{% if filteredNotes.size > 0 %}
+<h2>Latest Notes</h2>
+<ul class="embedded blog-posts">
+  {% for item in filteredNotes %}
+	{% if shownNotes == 5 %}
+	  {% break %}
+	{% endif %}
+	<li>
+	  {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
+	</li>
+	{% assign shownNotes = shownNotes | plus: 1 %}
+  {% endfor %}
+</ul>
+
+<a href="/topics/{{ subject }}/notes">View all {{ subject-pretty }} notes</a>
+<br><br>
+{% endif %}
+
+
+{% assign latestSnaps = collections.snaps | reverse %}
+{% assign filteredSnaps = latestSnaps | where_exp: "item", "item.data.tags contains subject" %}
+{% assign shownSnaps = 0 %}
+
+{% if filteredSnaps.size > 0 %}
+<h2>Latest Images</h2>
+<div class="snaps">
+<ul class="embedded blog-posts">
+{% for item in filteredSnaps %}
+{% if shownSnaps == 9 %}
+  {% break %}
+{% endif %}
+ <li>
+	<time datetime="">{{ item.date | date: "%Y-%m-%d" }}</time><br>
+	<a href="{{ item.url }}">{{ item.data.title }}</a><br>
+	 <a href="{{ item.url }}"><img src="/assets/images/{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
+ </li>
+ {% assign shownSnaps = shownSnaps | plus: 1 %}
+{% endfor %}
+</ul>
+</div>
+<a href="/topics/{{ subject }}/snaps">View all {{ subject-pretty }} imageposts</a>
+<br><br>
+{% endif %}
+
+{% assign latestClips = collections.clips | reverse %}
+{% assign filteredClips = latestClips | where_exp: "item", "item.data.tags contains subject" %}
+{% assign shownClips = 0 %}
+
+{% if filteredClips.size > 0 %}
+<h2>Latest Clip</h2>
+
+<ul class="embedded blog-posts">
+{% for item in filteredClips %}
+{% if shownClips == 9 %}
+  {% break %}
+{% endif %}
+ <li>
+   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
+   {{ item.content }}
+ </li>
+ {% assign shownClips = shownClips | plus: 1 %}
+{% endfor %}
+</ul>
+
+<a href="/topics/{{ subject }}/clips">View all {{ subject-pretty }} clips</a>
+<br><br>
+{% endif %}
+
+
+

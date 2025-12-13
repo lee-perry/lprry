@@ -1,20 +1,6 @@
 ---
 title: Notes
-layout: /layouts/page.html
+layout: /layouts/notes.html
 cover: header.webp
+subject: notes
 ---
-<h1>My notes</h1>
-<ul class="embedded blog-posts">
-{% for note in collections.notes reversed %}
- <li>
-   {{ note.date | date: "%Y-%m-%d" }} - <a href="{{ note.url }}">{{ note.data.title }}</a>
-   <hr>
-   {{ note.data.description }}
-   
-   {{ note.content }}
-   <br><br>
-   {{ note.data.tags | join: " 🔖" | prepend: "🔖" }}
-   <br><br>
- </li>
-{% endfor %}
-</ul>

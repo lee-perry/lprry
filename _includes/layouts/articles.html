@@ -1,0 +1,16 @@
+---
+layout: /layouts/page.html
+---
+<h1>My {{ subject-pretty }} Articles</h1>
+<ul class="embedded blog-posts">
+{% assign latestArticles = collections.articles | reverse %}
+{% for item in latestArticles %}
+{% if item.data.tags contains subject %}
+ <li>
+   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ article.url }}">{{ item.data.title }}</a> 
+   <hr>
+ </li>
+ {% endif %} 
+{% endfor %}
+</ul>
+

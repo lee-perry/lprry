@@ -2,6 +2,7 @@
 title: Training Log
 layout: /layouts/page.html
 cover: header.webp
+subject: training-log
 ---
 <h1>My Activities</h1>
 

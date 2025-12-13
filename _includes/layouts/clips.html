@@ -1,0 +1,17 @@
+---
+layout: /layouts/page.html
+---
+
+<h1>My {{ subject-pretty }}clips</h1>
+<ul class="embedded blog-posts">
+{% assign latestClips = collections.clips | reverse %}
+{% for item in latestClips %}
+{% if item.data.tags contains subject %}
+ <li>
+   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ clip.url }}">{{ item.data.title }}</a>
+   {{ item.content }}
+   <br>
+ </li>
+ {% endif %} 
+{% endfor %}
+</ul>
