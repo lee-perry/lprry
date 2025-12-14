@@ -3,7 +3,7 @@ title: Hartlepool Parkrun 521
 bear: /hartlepool-parkrun-521
 date: 2025-09-06
 escription: Warming up ahead of the Great North Run with a visit to Hartlepool Parkrun
-cover: https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_7982.webp
+cover: img_7982.webp
 cover_alt: Looking along the course at Hartlepool Parkrun above participants at the start line on a clear day
 tags: ['note', 'race', 'running']
 ---

@@ -4,7 +4,7 @@ bear: /2025-09-05-scrimba-business-card-project
 date: 2025-09-05
 description: Illustrating my Scrimba Business Card project
 cover: /assets/images/17.webp
-tags: ['css', 'devlog', 'html', 'scrimba']
+tags: ['css', 'code', 'html', 'scrimba']
 ---
 
 When I wrote my first article on this site [last week](https://code.prry.uk/starting-over/) I explained that I had decided to work back through the Scrimba curriculum from the beginning to try to really master the basics before moving forwards to more complicated projects.I also explained that I was trying to complete the project with alternatives to big tech - Codeberg and Statichost.

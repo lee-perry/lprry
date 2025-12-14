@@ -8,13 +8,13 @@ tags: ['iphone']
 ---
 <div class="snaps-vertical">
 
-![https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8453.webp](/assets/images/img_8453.webp)
-![https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8457.webp](/assets/images/img_8457.webp)
-![https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8458.webp](/assets/images/img_8458.webp)
-![https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8461.webp](/assets/images/img_8461.webp)
-![https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8464.webp](/assets/images/img_8464.webp)
-![https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8465.webp](/assets/images/img_8465.webp)
-![https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8467.webp](/assets/images/img_8467.webp)
-![https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8477.webp](/assets/images/img_8477.webp)
+![img_8453.webp](/assets/images/img_8453.webp)
+![img_8457.webp](/assets/images/img_8457.webp)
+![img_8458.webp](/assets/images/img_8458.webp)
+![img_8461.webp](/assets/images/img_8461.webp)
+![img_8464.webp](/assets/images/img_8464.webp)
+![img_8465.webp](/assets/images/img_8465.webp)
+![img_8467.webp](/assets/images/img_8467.webp)
+![img_8477.webp](/assets/images/img_8477.webp)
 
 </div>

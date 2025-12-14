@@ -1,0 +1,18 @@
+<p>Published by <a rel="author" href="https://l.prry.uk">Lee Perry</a> on 
+  <span class="dt-published" datetime="{{ date | date: "%Y-%m-%dT00:00Z" }}">
+	{{ date | date: "%Y-%m-%d" }}
+  </span> in 
+  {% assign tag_links = "" %}
+  {% for tag in tags %}
+	{% if tag != "snaps" and tag != "article" and tag != "articles" and tag != "clip" and tag != "clips" and tag != "note" and tag != "notes" and tag != "activity" and tag != "training-log"%}
+	  {% assign tag_url = "/topics/" | append: tag | downcase | replace: " ", "-" %}
+	  {% assign tag_link = '<a href="' | append: tag_url | append: '">' | append: tag | append: '</a>' %}
+	  {% if forloop.first or tag_links == "" %}
+		{% assign tag_links = tag_link | prepend: " 🔖 " %}
+	  {% else %}
+		{% assign tag_links = tag_links | append: " 🔖 " | append: tag_link %}
+	  {% endif %}
+	{% endif %}
+  {% endfor %}
+  {{ tag_links }}
+</p>

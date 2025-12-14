@@ -4,7 +4,7 @@ bear: /setting-a-favicon-and-site-logo-in-bear
 date: 2025-07-11
 description: Setting the favicon on my Bear blog site to an existing png file
 cover: 35.webp
-tags: 'bearblog'
+tags: ['bearblog', 'indieweb']
 ---
 Setting a personalised favicon for your website is one of the features that can help your site's tab stand out in the browser for the reader.  I designed a wee favicon for my website a while back.  I'm not especially creative, so while it might not be particularly special, I wanted to see if I could work out how to use it.
 

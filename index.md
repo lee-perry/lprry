@@ -9,7 +9,7 @@ cover: /header.webp
 
 Welcome to my site!  I live in Burnley, UK, with my wife Victoria, our canine children, and our hens.
 
-On this site I write notes and longer articles about learning to code, exploring, following [Burnley FC](/burnley-fc) around the country, and [training](/training-log) and [racing](/archive?q=race).  I snap images along the way, that appear in my dedicated snaps section.  I also record all of my training, [run](/runs), [ride](/rides) and [weigh-in](/weigh-ins) data.
+On this site I write notes and longer articles about learning to code, exploring, following [Burnley FC](/topics/burnleyfc) around the country, and [training](/training-log) and [racing](/topics/race).  I snap images along the way, that appear in my dedicated snaps section.  I also record all of my training, [run](/runs), [ride](/rides), [swim](/swims), [climb](/climbs) and [weigh-in](/weigh-in) data.
 
 ## Topics
 

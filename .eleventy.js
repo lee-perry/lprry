@@ -1,4 +1,3 @@
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
@@ -17,6 +16,11 @@ module.exports = function (eleventyConfig) {
     ];
     combined.sort((a, b) => a.date - b.date);
     return combined;
+  });
+  
+  eleventyConfig.addCollection("topics", function(collectionApi) {
+    // Filter only items in the 'topics' folder
+    return collectionApi.getFilteredByGlob("topics/*/index.md");
   });
 
   eleventyConfig.addPlugin(pluginRss);

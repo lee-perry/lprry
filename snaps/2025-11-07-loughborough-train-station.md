@@ -5,7 +5,7 @@ date: 2025-11-07
 description: I headed down to Loughborough today to celebrate my friend and supplier’s 25 year business anniversary. A few photographs from the train station.
 cover: img_8407.webp
 lang: en
-tags: ['train-station']
+tags: ['trainstation', 'exploring']
 ---
 
 <div class="snaps-horizontal">
