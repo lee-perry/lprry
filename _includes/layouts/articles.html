@@ -7,7 +7,7 @@ layout: /layouts/page.html
 {% for item in latestArticles %}
 {% if item.data.tags contains subject %}
  <li>
-   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ article.url }}">{{ item.data.title }}</a> 
+   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a> 
    <hr>
  </li>
  {% endif %} 

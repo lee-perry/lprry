@@ -1,14 +1,5 @@
-const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-
-module.exports.config = {
-  markdownTemplateEngine: 'njk',
-  dataTemplateEngine: 'njk',
-  htmlTemplateEngine: 'njk',
-  templateFormats: ["html", "liquid", "njk", "md"],
-};
-
 
 module.exports = function (eleventyConfig) {
   
