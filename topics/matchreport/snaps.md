@@ -1,5 +1,5 @@
 ---
 layout : /layouts/snaps.html
-subject: match-report
+subject: matchreport
 subject-pretty: Match Report
 ---

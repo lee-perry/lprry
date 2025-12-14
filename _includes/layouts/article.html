@@ -5,6 +5,8 @@ layout: /layouts/page.html
   <div class="e-content p-name">
   	<h1><a class="u-url" href="{{ page.url }}">{{ title }}</a></h1>
 	{% include 'partials/_publishedBy.html' %}
-	{{ content }}
+  {{ description }}
+  <img src="/assets/images/{{ cover }}" alt="{{ cover_alt }}">
+  {{ content }}
   </div>
 </article>

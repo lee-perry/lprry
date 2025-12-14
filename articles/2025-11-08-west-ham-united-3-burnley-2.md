@@ -3,7 +3,7 @@ title: West Ham United 3 Burnley 2
 bear: /west-ham-united-3-burnley-2
 date: 2025-11-08
 description: Images and brief thoughts from the London Stafium where Burnley managed to throw away a game they were well in control of.
-cover: https://bear-images.sfo2.cdn.digitaloceanspaces.com/lprry/img_8432.webp
+cover: img_8432.webp
 tags: ['article', 'burnleyfc', 'matchreport']
 ---
 
