@@ -1,16 +1,16 @@
 ---
 layout: /layouts/page.html
 ---
-
+<div class="h-feed">
 <h1>My {{ subject-pretty }} notes</h1>
 <ul class="embedded blog-posts">
 {% assign latestNotes = collections.notes | reverse %}
 {% for item in latestNotes %}
 {% if item.data.tags contains subject %}
- <li>
-   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
+ <li class="h-entry">
+   <span class="dt-published">{{ item.date | date: "%Y-%m-%d" }}</span> - <a href="{{ item.url }}" class="u-url" rel="bookmark"><span class="p-name">{{ item.data.title }}</span></a>
    <hr>
-   {{ item.data.description }}
+   <span class="p-name">{{ item.data.description }}</span>
    
    {{ item.content }}
    <br><br>
@@ -20,3 +20,4 @@ layout: /layouts/page.html
  {% endif %}
 {% endfor %}
 </ul>
+</div>

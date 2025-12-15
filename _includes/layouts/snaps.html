@@ -1,19 +1,20 @@
 ---
 layout: /layouts/page.html
 ---
-
+<div class="h-feed">
 <h1>My {{ subject-pretty }} Snaps</h1>
 <div class="snaps">
 <ul class="embedded blog-posts">
 {% assign latestSnaps = collections.snaps | reverse %}
 {% for item in latestSnaps %}
 {% if item.data.tags contains subject %}
- <li>
-	<time datetime="">{{ item.date | date: "%Y-%m-%d" }}</time><br>
-	<a href="{{ item.url }}">{{ item.data.title }}</a><br>
+ <li class="h-entry">
+	<time datetime="" class="dt-published">{{ item.date | date: "%Y-%m-%d" }}</time><br>
+	<a href="{{ item.url }}" class="u-url" rel="bookmark"><span class="p-name">{{ item.data.title }}</span></a><br>
 	 <a href="{{ item.url }}"><img src="/assets/images/{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
  </li>
  {% endif %} 
 {% endfor %}
 </ul>
+</div>
 </div>

@@ -1,17 +1,18 @@
 ---
 layout: /layouts/page.html
 ---
-
+<div class="h-feed">
 <h1>My {{ subject-pretty }}clips</h1>
 <ul class="embedded blog-posts">
 {% assign latestClips = collections.clips | reverse %}
 {% for item in latestClips %}
 {% if item.data.tags contains subject %}
- <li>
-   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ clip.url }}">{{ item.data.title }}</a>
+ <li class="h-entry">
+   <span class="dt-published">{{ item.date | date: "%Y-%m-%d" }}</span> - <a href="{{ clip.url }}" class="u-url" rel="bookmark"><span class="p-name">{{ item.data.title }}</span></a>
    {{ item.content }}
    <br>
  </li>
  {% endif %} 
 {% endfor %}
 </ul>
+</div>
