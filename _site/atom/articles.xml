@@ -4,7 +4,7 @@
   <subtitle>Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.</subtitle>
   <link href="https://l.prry.uk/atom/atom/articles.xml" rel="self" />
   <link href="https://l.prry.uk/" />
-  <updated>2025-12-15T19:51:15Z</updated>
+  <updated>2025-12-15T20:30:32Z</updated>
   <id>https://l.prry.uk/</id>
   <author>
   <name>Lee Perry</name>
@@ -14,30 +14,26 @@
   <link href="https://l.prry.uk/articles/2025-11-15-finalising-my-bearblog-theme-for-now/" />
   <updated>2025-11-15T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-11-15-finalising-my-bearblog-theme-for-now/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/38-2.webp"
-          alt="" />
-        <br />
-      
-  
-      Having spent the last few weeks of my bearblog project focusing on function, I used the first day of my long weekend to complete the first iteration of my theme, here's a run through of the changes.
-      <br />
-      <p>I've been experimenting with bearblog for the last month, trying to see if I could find a leaner way to do what my <a href="https://lee-perry.co.uk">Kirby CMS</a> site does in a leaner way, but without introducing complicated build cycles so that I can still write effectively on the go.</p><br /><p>I had largely achieved that, using the tag structure to recreate article, note, snap, clip and other content types, custom post lists to index those types, and setting the post template to not be discoverable to avoid spamming the bearblog discover timeline with my training data and other errata.</p><br /><p>I enjoyed it so much that I took a little time out to build a project for my wife to use to chronicle her misadventures with wool (aka her knitting problem) - <a href="https://craftedbypanda.co.uk">craftedbypanda.co.uk</a>, training her in use of markdown could be interesting.</p><br /><p><img src="/assets/images/38-2.webp" alt="Screenshot 2025-11-15 at 11"></p><br /><p>I was not completely happy with how graphical post types rendered, or with some aspects of the custom post lists, but I had an idea that I could resolve most of those in the css.</p><br /><p>On the post lists I started by removing the list bullet styling, and removing the indentation to set the content inline with the headings above - I think that looks far better now.</p><br /><h2>Data</h2><br /><p>My lists of posts displaying data were annoying me though, due to all of the content being out of line due to varying character widths.  I tried using a monospace font on these lists, which worked fine, but the spaces in dates looked disproportionately large.  I spotted that the dates in <a href="https://robertbirming.com">Robert Birming</a>'s Bearly theme rendered basically how I wanted mine to - so I borrowed the following code from that which essentially sets monospace numbers, with defined width gaps in between.  When looking at <a href="/rides">ride</a>, <a href="/runs">run</a> and <a href="/weigh-ins">weigh-in</a> pages in particular, it is now much easier to compare data across lines.</p><br /><pre><code>font-variant-numeric: tabular-nums;<br />letter-spacing: 0.02em;<br /></code></pre><br /><p>I was happy with the improvement, which I have now applied to all date rendering on the site.</p><br /><div class="snaps-horizontal"><br /><p><img src="/assets/images/48-1.webp" alt="Screenshot 2025-11-14 at 22"><br /><img src="/assets/images/16-1.webp" alt="Screenshot 2025-11-14 at 21"></p><br /></div><br /><h2>Snapwall</h2><br /><p>I'd also had in mind that I wanted to display lists of image posts as a gallery making more use of the white space across the screen.  I set the lists to display as inline blocks, introducing a linebreak between the data and title to create that effect, with three posts to each line on the big screen.</p><br /><div class="snaps-horizontal"><br /><p><img src="/assets/images/31-1.webp" alt="Screenshot 2025-11-14 at 21"><br /><img src="/assets/images/35-1.webp" alt="Screenshot 2025-11-14 at 21"></p><br /></div><br /><pre><code>.snaps ul {<br />  margin: 0 auto;<br />  text-align: left;<br />}<br /><br />.snaps li {<br />  display: inline-block;<br />  vertical-align: top;<br />  text-wrap: wrap;<br />  text-align: left;<br />}<br /><br />.snaps ul li span {<br />  display: table; <br />}<br /><br />.snaps ul li img {<br />  width: 291px; <br />  margin-bottom: 20px;<br />}<br /></code></pre><br /><h2>Image Galleries</h2><br /><p>Having done that, I thought it would be useful to be able to display images within posts two wide, again to make better use of page space on large screens, which I have completed by creating a div of an appropriate class to embed the images within.</p><br /><p>I also then introduced a little scale-transform into the galleries to allow the reader to zoom on the image by hover or selection.</p><br /><div class="snaps-horizontal"><br /><p><img src="/assets/images/27-1.webp" alt="Screenshot 2025-11-14 at 22"><br /><img src="/assets/images/41-1.webp" alt="Screenshot 2025-11-14 at 22"></p><br /></div><br /><pre><code>.snaps-horizontal img {<br />  width: 440px; <br />  margin-bottom: 20px;<br />}<br /><br />.snaps-horizontal img:hover, .snaps-horizontal img:focus {<br />  transform: scale(1.75);<br />  transform-origin: left;<br />}<br /></code></pre><br /><h2>Vertical Galleries</h2><br /><p>I'd also been planning to do something similar for pictures taken in portrait resolution, which rendered especially badly on horizontal screen views, and here they are now set to display three images side by side in that orientation, using the same technique.</p><br /><p><img src="/assets/images/23.webp" alt="Screenshot 2025-11-14 at 22"></p><br /><h2>Wishlist</h2><br /><p>I think at this point the first stage of my project is complete, my website looks broadly how I want it to, I have webmentions both sending and displaying. I still have many of the content section pages to build out, and the usual meta/slash pages to add, which I can take my time over..</p><br /><p>There are a few things that I cannot control that I need for this build not to become unwieldy / unmanageable as the site grows:</p><br /><ol><br /><li>The ability to paginate the bearblog custom posts lists.  This will allow my content type listings to scale without needing to load all of the content, but more contentfull than the <a href="/all">default bear archives</a>.  This sounds trivial, but it is really import to me because I want to be able to go to the page for one of our canine children, and be able to see all their image posts in an imagewall - the page size will grow to become unmanageable without being able to paginate.</li><br /><li>The ability to introduce code immediately after the opening main tag and before the closing main tag - similar to the header footer directives.  That would help to tidy up my webmention implementation immensely, making the writing experience much warmer in the process.</li><br /><li>The custom post lists can currently be built using comma delimited composites, this would be strengthened by being able to specify alternatives, and would make it much easier to build some of the dynamically populated pages that I want to, without managing (and remembering) a ridiculous number of tags.</li><br /></ol><br /><p>That's enough words about tinkering with my blog rather than writing on it for one day.  Will I continue with my BearBlog experiment? I probably will, I much prefer the writing experience (can't really tell you why!).  I might have to turn echofeed off while loading historic content though, I wasn't really expecting the posts I migrated from my other BearBlog experiments to be syndicated back out to Mastodon over the weekend (aoplogies for that).</p><br /><p>Until next time...</p><br />
-      <br />
-  
-      #articles #bearblog #indieWeb
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/38-2.webp"
+           alt="" />
+         <br />
+       
+   
+       Having spent the last few weeks of my bearblog project focusing on function, I used the first day of my long weekend to complete the first iteration of my theme, here's a run through of the changes.
+   
+       #articles #bearblog #indieWeb
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -45,30 +41,26 @@
   <link href="https://l.prry.uk/articles/2025-11-08-west-ham-united-3-burnley-2/" />
   <updated>2025-11-08T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-11-08-west-ham-united-3-burnley-2/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/img_8432.webp"
-          alt="" />
-        <br />
-      
-  
-      Images and brief thoughts from the London Stafium where Burnley managed to throw away a game they were well in control of.
-      <br />
-      <p>Burnley actually started the game well, controlling the first half of the game.  Zian Flemming almost getting on the end of a screaming pass from Hartman, before deservedly heading Burnley ahead in the 36th.</p><br /><p>West Ham always looked like they could threaten on the break, and were level just before half time - a fortunate deflection in a goalmouth scramble presenting Callum Wilson with a simple tap-in.</p><br /><p>Despite Burnley dominating possession for the next half an hour, there was very little threat save for a Flemming header that went narrowly over. That was punished when West Ham went ahead in the 76th minute, Soucek capitalising on a Dubravka mistake.</p><br /><p>West Ham doubled their advantage 8 minutes later, Kyle Walker-Peters tapping in a parried save from Soucek that he could not miss.</p><br /><p>The late consolation from Josh Cullen with practically the last kick of the ball was scant consolation.  If we are going to try to sit back and defend every lead we get in this league, then there will be more results like this.</p><br /><p>I’m not frustrated by the result, I’m frustrated by the manner of it, and by 90 minutes of awful football, awful gamesmanship, and awful refereeing rewarding it.</p><br /><p><img src="/assets/images/img_8427.webp" alt="IMG_8427"><br /><img src="/assets/images/img_8428.webp" alt="IMG_8428"><br /><img src="/assets/images/img_8429.webp" alt="IMG_8429"><br /><img src="/assets/images/img_8432.webp" alt="IMG_8432"><br /><img src="/assets/images/img_8438.webp" alt="IMG_8438"><br /><img src="/assets/images/img_8440.webp" alt="IMG_8440"></p><br />
-      <br />
-  
-      #articles #article #burnleyfc #matchreport
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/img_8432.webp"
+           alt="" />
+         <br />
+       
+   
+       Images and brief thoughts from the London Stafium where Burnley managed to throw away a game they were well in control of.
+   
+       #articles #article #burnleyfc #matchreport
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -76,30 +68,26 @@
   <link href="https://l.prry.uk/articles/2025-11-05-whats-in-my-inventory/" />
   <updated>2025-11-05T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-11-05-whats-in-my-inventory/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/img_4515.webp"
-          alt="" />
-        <br />
-      
-  
-      The topic for November's Bearblog Carnival is 'what's in my inventory?' Here I talk about the items that follow me everywhere.
-      <br />
-      <p>Hosted by <a href="https://blog.absurdpirate.com/bear-blog-carnival-november-whats-in-my-inventory/">Absurd Pirate</a>, the writing prompt for this month's bearblog carnival is focused on the items that we carry around on a daily basis.  If my sprite was to expire, what would be left behind.</p><br /><p>Selfishly, my minimalist approach to taking items anywhere with me, means that this is a relatively easy topic to talk about.  I decided about a year ago to revert back to an earlier experiment in which my mobile phone doubles as my wallet.</p><br /><p><img src="/assets/images/img_4515.webp" alt="A picture showing an iPhone in fold out case with card inserts, and airpods"></p><br /><p>Should my sprite suddenly get cornered by the snarks and expire into the long summer, all that would be left behind is my phone, and my airpods.</p><br /><h2>Phone</h2><br /><p>My phone is an iPhone 13 that I have owned for around 4 years now.  For quite a while I only carried a work phone, but in a tough period at work at a previous employer I decided to get myself a new phone and contract - picking up an iPhone 13 which is still going strong.  I avoid carrying two phones around again now, with a digital work SIM also installed in the same phone.</p><br /><p>My digital life has revolved around Apple for a number of years now, though I'm really weighing that up as they continue to chum up with the orange bawbags.  So I'm reconsidering my digital setup with changes likely over the next year, but staying on topic that means that at some point my iPhone will likely be replaced by something that is neither iOS nor Android or Android derived.</p><br /><p>My phone is pretty central to what I do, it is my digital and ticket wallet, my camera, I post to bearblog from it, and I consume RSS and read eBooks on it too.  So getting the replacement right is going to be important.</p><br /><h2>Case</h2><br /><p>My case is a leather folding case from Torro, which I really like, in black with red trim.  The case has three sleeves on the inside of the leaf, with a bigger pouch behind.  My sprite is very unlikely to leave any cash behind, but there will be a couple of payment cards and ID in there, as well as my Burnley FC season ticket, and my membership card for the Boulder UK bouldering center in Preston.</p><br /><h2>Airpods</h2><br /><p>My sprite will probably also expire because it was not paying attention to its surroundings while listening intently to Hole or My Chemical Romance through my original Airpods Pro - which I actually picked up at a very similar time to my phone.  If my sprite is feeling sensible though, it may well be listening to the Rest is Politics podcast instead.</p><br /><h2>Other</h2><br /><p>On the rare occasion that I actually leave the house properly, there may also be a key to my Nissan Leaf EV in my possession, though I very rarely carry a house key - usually Vickie will be in the house if I am not.</p><br />
-      <br />
-  
-      #articles #bearblog #carnival
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/img_4515.webp"
+           alt="" />
+         <br />
+       
+   
+       The topic for November's Bearblog Carnival is 'what's in my inventory?' Here I talk about the items that follow me everywhere.
+   
+       #articles #bearblog #carnival
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -107,30 +95,26 @@
   <link href="https://l.prry.uk/articles/2025-10-25-bearly-here/" />
   <updated>2025-10-25T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-10-25-bearly-here/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/07.webp"
-          alt="" />
-        <br />
-      
-  
-      Talking about my journey to Bear, and my plans for this blog
-      <br />
-      <p>I have been thinking about doing something different with my web presence for some time.  I have built a fantastic Kirby CMS based website over at <a href="https://lee-perry.co.uk">lee-perry.co.uk</a>.  For some reason though I find it frictious to work with, largely ceasing to post anything of consequence, mainly cataloguing image and micro posts within my digital garden.  I've posted on that domain for over 20 years though, so its not going anywhere, not yet at least.</p><br /><p>I first started experimenting with <a href="https://bearblog.dev">Bear</a> a couple months ago, with a new domain that I picked up <a href="https://l33.co.uk">l33.co.uk</a>. I promptly set about starting to rebuild something that replicated everything that my main website did, and of course that's not what Bear does.  I still find it weird that microformats are not baked in - but I think baking microformats into my post templates removed from the minimalist aesthetic of the writing experience.  Wrapping a stack of HTML around every post is just ugly.</p><br /><p>The reality probably is that functionally my original website comes pretty close to what I wanted.  My ideal is that my website syndicates all content out to Mastodon and Bluesky, and using indieconnector and komments comes very close to that.  Micro.blog comes pretty close too - but I thought it felt pretty lonely as a community, and I find the selective disregarding of certain types of webmentions strange, if built with good intentions.</p><br /><p>I've built in a stack of complexity though, that maybe I don't need.  Originally I had a vision that I would POSSE all of my online content, including training data, so I set about building a blueprint with separate fields for all of the metrics.  In practice though I just find it a drag to use.  If I was to start the whole project again, I'd simplify my content structure, and I'd simplify my blueprints with markdown throughout.  That is a huge job at this point though, and not one I can get excited about, even though potentially moving here to Bear is probably even more involved.</p><br /><p>So the Bear idea gnawed at me over the summer, and I revisited it after moving my personal mastodon hosting to self hosted server at yet another new domain that I love, <a href="https://prry.uk/@lee">prry.uk</a>, and which I have also moved my personal email to with Proton, as I begin to see signs of Apple collaborating with bad people.  Eventually I dived in and picked up a lifetime subscription, which I was wary about given that it is not the first lifetime subscription that I hold to a blogging platform that I hold.</p><br /><p>Vickie was away this week in Portugal, collecting her award as European Responsible Welding Coordinator of the Year for 2024 for the European Welding Jedi, so I took the opportunity when not working to experiment with Bear.</p><br /><p>So far I have set up Bear to have discreet <a href="article">blog</a>, <a href="/notes">note</a> (micropost) and <a href="/snaps">snap</a> (imagepost) sections, as well as dedicated sections for <a href="/training-log">training</a> and <a href="weigh-ins">weigh-in</a> data which are powered only by the post title at this point.  Strangely I seen to find the posting process less frictious, even though I am entering essentially the same information.</p><br /><p>I've also started using the post filters to start to create digital garden style pages that are potentially even easier to put together than templating new blueprints in my Krikby CMS site.  Once I had my key content types structured in my own mind at least, I then set EchoFeed up to post them out to Mastodon and Bluesky, bridging my Mastodon profile after struggling to get echofeed to log in to Bluesky.</p><br /><p>One thing I am conscious of is not spamming the discover timeline in Bear - for that reason I have set my post template default to produce posts that are not discoverable.  Microposts, Imageposts and Training Log entrie for the most part will be syndicated to Mastodon, but will never appear on the BearBlog timeline.  That does stop the 'toast' button appearing at the bottom of the page though, which Vickie likes clicking, so some imageposts that interesting will be made discoverable within Bear.</p><br /><p><img src="/assets/images/07.webp" alt="Screenshot of the homepage of this website in dark made, with black and orange colors reminiscent of the Burnley third strip in season 2025-6"></p><br /><p>I've spent the last night or two spinning the css into a whole new design, while using pages with filtered lists to allow even more customisation at the cost of setup.  But hey, that gives even more opportunity to tinker with things eh?  The light view is reminiscent of Burnley's third strip from last season, white, with a claret focus color.  The dark view resembles this season's third strip, black, with gold trim.  The main thing that makes writing simpler is the single content structure - albeit at a cost of some rigidity.</p><br /><p>I still have some work to do, but the main item on my list is to implement webmention send and receive, where I will be using the instructions provided and linked to by <a href="https://gobino.be/adding-webmentions-to-my-blog-tutorial/">gobino</a>.  If I can get that running and displaying anywhere near as well as it does on their blog, I'll probably hang out here for a while.</p><br /><p>I have found it extremely easy to dive in to Bear to write a couple of image and micro posts, and I've really enjoyed writing this one.  As I said at the beginning though, my main blog will not be going anywhere anytime soon, I'll just see how writing here feels for a while. So that's probably it for now. Hope that you like my post, and I'll be back real soon.</p><br />
-      <br />
-  
-      #articles #bearblog #indieWeb #posse
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/07.webp"
+           alt="" />
+         <br />
+       
+   
+       Talking about my journey to Bear, and my plans for this blog
+   
+       #articles #bearblog #indieWeb #posse
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -138,30 +122,26 @@
   <link href="https://l.prry.uk/articles/2025-07-09-great-north-run/" />
   <updated>2025-09-07T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-07-09-great-north-run/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/img_6655.webp"
-          alt="Me standing infront of the Wylam Brewery, with a lake in-between, ahead of the Great North Run in 2025" />
-        <br />
-      
-  
-      Talking about my race at the Great North Run, 2025
-      <br />
-      <p><img src="/assets/images/img_6655.webp" alt="Me standing infront of the Wylam Brewery, with a lake in-between, ahead of the Great North Run in 2025"></p><br /><p>Going into the Great North Run, I'd been really pleased with my pace, but a bit concerned about fuelling and endurance racing on Mounjaro.  I hoped to get under 2h, but I expected to suffer at some point, coming in around 2:10.</p><br /><p>The weather was much nicer than last year, and though it still took us best part of 90 minutes to walk through the funnel to the start, at least it was not in a torrential downpour.</p><br /><p>The run started quite well, with the first 2km in low 5min/km territory, starting to lose time on the Tyne Bridge though, I would not see 5min/km again for the rest of the race.</p><br /><p>The course felt much more congested this time around.  The last two years I've started with a later wave to avoid waiting around in the cold at the end for Vickie.  Next year I'll be running with my own wave.  I seemed to spend to whole race stopping, starting, weaving in, weaving out, just avoiding people walking in groups on the course.</p><br /><p>That wasn't the only reason I'd miss my goals for the day though, I struggled a little with the heat, and trying to keep my heart rate in the 170s, and not the 180s... ultimately I'd have to settle for low 180s.  I didn't really have it in my legs, reverting to walking hills between 13 and 19, slipping time at each interval, though I was able to run 19-21.</p><br /><p>Ultimately I'd run over the line in 2:22:14 - I'd have slowed by another 8 seconds had I known.  Faster than last year throughout, and running much more, I was surprised and a little disappointed to only be around 4 minutes inside that time.</p><br /><p>Until next year...</p><br />
-      <br />
-  
-      #articles #race #running
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/img_6655.webp"
+           alt="Me standing infront of the Wylam Brewery, with a lake in-between, ahead of the Great North Run in 2025" />
+         <br />
+       
+   
+       Talking about my race at the Great North Run, 2025
+   
+       #articles #race #running
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -169,30 +149,26 @@
   <link href="https://l.prry.uk/articles/2025-09-05-scrimba-business-card-project/" />
   <updated>2025-09-05T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-09-05-scrimba-business-card-project/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/17-1.webp"
-          alt="" />
-        <br />
-      
-  
-      Illustrating my Scrimba Business Card project
-      <br />
-      <p>When I wrote my first article on this site <a href="https://code.prry.uk/starting-over/">last week</a> I explained that I had decided to work back through the Scrimba curriculum from the beginning to try to really master the basics before moving forwards to more complicated projects.I also explained that I was trying to complete the project with alternatives to big tech - Codeberg and Statichost.</p><br /><p>This first exercise builds a simple html and css business card, customised on the back of a walk through project.  The project uses flexbox to split the images and content onto separate columns.  I always struggle to remember flexbox, though it seems straightforward, splitting the direct children of the flexbox container into columns.</p><br /><p><img src="/assets/images/17-1.webp" alt="Screenshot showing a business card with a styled avatar image and information about my interests on blue and claret."></p><br /><p>The main changes that I made to the project where the introductions of a slight border-radius to the card, another to the avatar, and a light text shadow.  Obviously I also introduced a slight claret and blue Burnley color palette too.</p><br /><p>This was the first project that I had deployed to Statichost via Codeberg replacing the Github via Netlify workflow in Scrimba.  It worked fine other than needing to enter my Codeberg credentials - I think I cloned via HTTPS rater than SSH, so hopefully this will just work in the next project.</p><br /><p><a href="https://codeberg.org/leeperry/scrimba-business-card.git">Codeberg Repo</a> | <a href="https://leeperry-scrimba-business-card.statichost.eu/">Deployment</a></p><br /><p>The fixed width avatar seems to be being vertically stretched as the card lengthens on my deployment - I'll need to look into how to control that.</p><br /><p>Until the next time...</p><br />
-      <br />
-  
-      #articles #css #code #html #scrimba
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/17-1.webp"
+           alt="" />
+         <br />
+       
+   
+       Illustrating my Scrimba Business Card project
+   
+       #articles #css #code #html #scrimba
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -200,30 +176,26 @@
   <link href="https://l.prry.uk/articles/2025-08-31-starting-over/" />
   <updated>2025-08-31T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-08-31-starting-over/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/48.webp"
-          alt="" />
-        <br />
-      
-  
-      I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.
-      <br />
-      <p>That inconsistency, combined with being fairly/partly proficient, makes it really difficult to just pick up a MOOC course and follow it through from the beginning.  It's pretty boring relearning simple concepts to pick up the 2% that you may not know or that has changed.</p><br /><p>I'm going to try just that though.  I've had a Scrimba subscription for a number of years, have always enjoyed the program, but have struggled to maintain progress for a variety of reasons, many external to the learning itself.  Scrimba have also recently introduced the back end to create a full-stack learning path for the first time too.</p><br /><p>So I've cleared my course and submission history, starting over from the beginning.  I'll be blogging about the journey here, partly to consolidate learning, partly to keep myself accountable, and part about rebelling against use of big tech, and finding alternatives where appropriate.</p><br /><p>I completed the Intro to HTML module in the HTML and CSS Fundamentals course today.  The assignment at the end of the module is to create a personal website, though really this task is html only - the stylesheet is provided and controlled by variables.</p><br /><p>Here is the html that I provided to meet the design specification:</p><br /><pre><code>&lt;!doctype html&gt;<br />&lt;html&gt;<br />	&lt;head&gt;<br />		&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot; /&gt;<br />		&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Bangers&amp;family=Black+Ops+One&amp;family=Creepster&amp;family=La+Belle+Aurore&amp;family=MedievalSharp&amp;family=Orbitron&amp;family=Rye&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;<br />		&lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;<br />	&lt;/head&gt;<br />	&lt;body&gt;<br />		&lt;!-- <br />		Challenge 1:<br />		Write the HTML for your personal website.<br />		--&gt;<br />		&lt;img src=&quot;lee.webp&quot; alt=&quot;&quot;&gt;<br />		&lt;h1&gt;Hi, my name is Lee&lt;/h1&gt;<br />		&lt;h2&gt;Fun facts about me:&lt;/h2&gt;<br />		&lt;ul&gt;<br />			&lt;li&gt;I watch Burnley FC&lt;/li&gt;<br />			&lt;li&gt;I write about playing old video games&lt;/li&gt;<br />			&lt;li&gt;I build things with code for fun&lt;/li&gt;<br />		&lt;/ul&gt;<br />		&lt;p&gt;Please connect with me on mastodon &lt;a href=&quot;https://prry.uk/@lee&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;<br />		&lt;input type=&quot;text&quot; placeholder=&quot;Enter email...&quot;&gt;<br />		&lt;button&gt;Join newsletter&lt;/button<br />	&lt;/body&gt;<br />&lt;/html&gt;<br /></code></pre><br /><p>The output is shown below, although the styling was largely provided I think this shows how minimal code is required to create something like a personal linktree page.</p><br /><p><img src="/assets/images/48.webp" alt="Screenshot of a personal website with avatar, key interests, and follow buttons"></p><br /><p>The Scrimba curriculum uses Github and Netlify, neither fit well with trying to find privacy conscious EU based alternatives to big tech.  So I have set myself up with a couple of alternatives for the first time.  I am trying out <a href="https://codeberg.org">Codeberg</a> in place of Github, and <a href="https://statichost.eu">Statichost</a> in place of Netlify.</p><br /><p>So far everything has gone to plan, and though this initial exercise deploys manually rather than from codeberg, I have my SSH keys setup ready and verified in codeberg ready to use.</p><br /><p>View the project on Statichost <a href="https://scrimba-personal-website.statichost.eu/">here</a></p><br />
-      <br />
-  
-      #articles #code #html #scrimba
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/48.webp"
+           alt="" />
+         <br />
+       
+   
+       I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.
+   
+       #articles #code #html #scrimba
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -231,30 +203,26 @@
   <link href="https://l.prry.uk/articles/2025-07-11-using-microformats-with-bear/" />
   <updated>2025-07-11T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-07-11-using-microformats-with-bear/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/56.webp"
-          alt="" />
-        <br />
-      
-  
-      Discussing implementation of microformats on my bearblog project.
-      <br />
-      <p>Microformats are tiny snippets of class data within html return author, title, date and content to indieWeb tools that rely on microformats to obtain structured data about your content for use elsewhere.</p><br /><p>Pretty abstract for the most part, but important if you want to participate directly in the IndieWeb as my <a href="https://lee-perry.co.uk">main site</a> does.</p><br /><p>The first problem that I solved last night was to create the h-card on my homepage, which is a short introduction to your site.  This was easy, and worked immediately, inserting the following code into the 'home' section:</p><br /><pre><code>&lt;div class=&quot;h-card&quot;&gt;<br />  &lt;a class=&quot;h-card p-name u-url&quot; href=&quot;https://l33.co.uk/&quot; rel=&quot;me&quot; style=&quot;display: none;&quot;&gt;Lee Perry&lt;/a&gt;<br />  &lt;p class=&quot;p-note&quot;&gt;&lt;img src=&quot;https://bear-images.sfo2.cdn.digitaloceanspaces.com/leeperry/header.webp&quot; class=&quot;u-photo u-featured&quot; style=&quot;max-width: 50%; border-radius: 20px; float: right; margin-left: 20px; margin-bottom:20px; border: 2px solid whitesmoke&quot; alt=&quot;&quot;&gt;Burnley based, I run, ride online, climb rocks and mountains, and explore the world in our motorhome with my Social Secretary, Vickie.&lt;br&gt;&lt;br&gt;Expect lots of talk about running, virtual cycling on my Wattbike Atom (NG), Burnley FC, retrogaming and code.  Accompanied by lots of cute photographs of our podenco oriented spaniel infiltrated family. Find out what I'm up to &lt;a href=&quot;/now/&quot;&gt;now&lt;/a&gt;&lt;/p&gt;	<br />&lt;/div&gt;<br /></code></pre><br /><p><img src="/assets/images/47.webp" alt="Screenshot from the front page of my Bear website showing my h-card ash the top of the page"></p><br /><p>Easy enough so far, but my first real frustrations with bear were about to begin.  As far as I can tell the only difference between the themes available in Bear is the css applied to them, so it would be super simple to make microformats work out of the box.</p><br /><p>I very quickly came up with a way through the post template to implement microformats, but that is exposed in the post editor for every post, which is ugly.  I had hoped to insert the opening tags into the header settings, and information and closing tags into the footer settings.  This did not work though, header settings insert in the <code>&lt;head&gt;</code> section of the html, and there is no obvious way to control the appearance of the footer settings on pages that are not posts.</p><br /><p>For now I have inserted the opening tags at the top of the post editor.</p><br /><pre><code>&lt;article class=&quot;h-entry&quot;&gt;<br />  &lt;div class=&quot;e-content&quot;&gt;<br /></code></pre><br /><p>And I have created an information section at the bottom of the post template (with closing <code>article</code> and <code>div</code> tags in the footer).</p><br /><pre><code>&lt;p&gt;#&lt;span class=&quot;p-name&quot;&gt;&lt;/span&gt; &lt;a href=&quot;&quot; class=&quot;u-url&quot;&gt;&lt;time datetime=&quot;&quot; class=&quot;dt-published&quot;&gt;&lt;/time&gt;&lt;/a&gt; by &lt;a href=&quot;/&quot; rel=&quot;author&quot; class=&quot;h-card p-author&quot;&gt;Lee Perry&lt;/a&gt; last updated:  ago.&lt;/p&gt;<br /></code></pre><br /><p>So the lovely plaintext markdown view now looks like this:</p><br /><p><img src="/assets/images/36-1.webp" alt="Screenshot showing the bear post editor with microformats code above and below"></p><br /><p>Not as obtrusive as my earlier attempts, but I dislike this and it could be a dealbreaker with either microformats coming out, or this site not being viable beyond this experiment.</p><br /><p><img src="/assets/images/56.webp" alt="Screenshot showing a post on this website passing the h-entry tests on indiewebify"></p><br /><p>The good news is that the site now passes the microformats tests on <a href="indiewebify.me">indiewebify</a> - but I do need to work out whether I can live with that, or without microformats.</p><br />
-      <br />
-  
-      #articles #bearblog #indieWeb #microformats
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/56.webp"
+           alt="" />
+         <br />
+       
+   
+       Discussing implementation of microformats on my bearblog project.
+   
+       #articles #bearblog #indieWeb #microformats
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -262,30 +230,26 @@
   <link href="https://l.prry.uk/articles/2025-07-11-a-favicon-and-site-logo-in-bear/" />
   <updated>2025-07-11T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-07-11-a-favicon-and-site-logo-in-bear/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/35.webp"
-          alt="" />
-        <br />
-      
-  
-      Setting the favicon on my Bear blog site to an existing png file
-      <br />
-      <p>Setting a personalised favicon for your website is one of the features that can help your site's tab stand out in the browser for the reader.  I designed a wee favicon for my website a while back.  I'm not especially creative, so while it might not be particularly special, I wanted to see if I could work out how to use it.</p><br /><p>It was easy enough.  As I am experimenting with a paid bear plan[^1] I can insert media, so on the home tab of the bear dashboard I have used the insert media link to upload my icon, and from there copied the url into the <code>meta_image</code> property in the frontmatter:</p><br /><p><img src="/assets/images/59.webp" alt="Screenshot of the Bear 'home' dashboard with favicon url pointing towards an uploaded file"></p><br /><p>I didn't really expect this to work, partly as the upload had converted the file to webp- but I flicked across to Vivaldi, and sure enough my logo appeared at the top of the tab.</p><br /><p>I then thought that it would be really cool to replace my site name at the top of the page with my logo, as it appears in my existing design.  I failed to come up with a decent css replacement method to achieve that so instead I used css to hide display of the title class:</p><br /><pre><code>.title {<br />  display: none;<br />}<br /></code></pre><br /><p>Then I used html to insert the same logo into the beginning of the navigation menu, linking through to the homepage, and providing a class for styling.</p><br /><pre><code>&lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;https://bear-images.sfo2.cdn.digitaloceanspaces.com/leeperry/favicon.webp&quot; alt=&quot;logo&quot; class=&quot;logo&quot;&gt;&lt;/a&gt; [Home](/) [Blog](/blog/) [Now](/now)<br /></code></pre><br /><p>Here is the result, the end of my first session looking at styling in Bear.</p><br /><p><img src="/assets/images/35.webp" alt="Screenshot showing my site logo appearing both in the browser tab, and at the front of my navigation menu"></p><br /><p>In my next update I'll look at adding an h-card to the home page in bear, to identify the site on the indieWeb.</p><br /><p>[^1]: A paid plan is necessary to upload media to Bear.</p><br />
-      <br />
-  
-      #articles #bearblog #indieweb
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/35.webp"
+           alt="" />
+         <br />
+       
+   
+       Setting the favicon on my Bear blog site to an existing png file
+   
+       #articles #bearblog #indieweb
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -293,30 +257,26 @@
   <link href="https://l.prry.uk/articles/2025-07-10-hello-bear/" />
   <updated>2025-07-10T00:00:00Z</updated>
   <id>https://l.prry.uk/articles/2025-07-10-hello-bear/</id>
- <content type="xhtml">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-  
-      
-  
-      
-        <img
-          src="https://l.prry.uk/assets/images/24-1.webp"
-          alt="" />
-        <br />
-      
-  
-      Talking about contemplating completely rebuilding my website on BearBlog.
-      <br />
-      <p>I've probably finally reached the point where I'm actually happy with my <a href="https://lee-perry.co.uk">website</a>.  So surely I'm not seriously contemplating rebuilding the whole thing?  Sure I am.</p><br /><p><img src="/assets/images/24-1.webp" alt="Screenshot from the microfeed page on my Kirby CMS powered website"></p><br /><p>I've built a website that does exactly what I want it to, but there is a certain amount of complexity to it that I would like to simplify.  I've been thinking a lot recently about rebuilding on a hosted solution flitting between <a href="https://micro.blog">micro.blog</a>, which I have used previously and like a lot, and <a href="https://bearblog.dev">bearblog.dev</a> which I have not.</p><br /><p>One of the biggest barriers to considering Bear for me was the absence of webmention support. That is one of the features that I like the most in my current setup, though at times it can also be amongst the most frustrating!</p><br /><p><img src="/assets/images/49-1.webp" alt="Screenshot showing current webmention and comment functionality on my existing website"></p><br /><p>I had been considering micro.blog more than Bear, due to the webmention and ActivityPub support. I knew though that the discarding of specific types of webmentions and interactions would frustrate me - it did previously.</p><br /><p>And then I stumbled upon <a href="https://gobino.be/adding-webmentions-to-my-blog-tutorial/">this tutorial</a> from <a href="https://gobino.be">gobino</a> walking through implementation of webmentions on their Bear based site.</p><br /><p>I've also spent a lot of time building out the interface with the <a href="https://lee-perry.co.uk/wiki">digital garden</a> section of my website. Though I think that I can make that work much more efficiently using the Bear <a href="https://docs.bearblog.dev/embedding-blog-post-lists/">content slices</a> that I have seen.</p><br /><p>I also did not want to mess around building one website on a temporary domain, while potentially deprecating another - after all, this experiment may fail.  The last time I rebuilt the site, I actually blogged very little for the following 6 weeks or so because of this.  So after 21 years I've also decided to build this out on a <a href="https://l33.co.uk">new, shorter, domain</a>.  I'm much less bothered about loss of domain authority than I've ever been before - even though an extraordinary number of people still use my instructions <a href="https://lee-perry.co.uk/notes/2023-05-31-install-championship-manager-01-02-on-macos-in-2023">to play CM0102 on Mac</a>!</p><br /><p>So that feels like a deal to me.  Building in public, I'm going to attempt to recreate my entire website here on Bear, lets see how it goes...  If this works the content migration is going to take a very long time!</p><br /><p>Until the next update...</p><br />
-      <br />
-  
-      #articles #bearblog #indieweb
-      <br /><br />
-  
-      Thanks for reading via RSS!
-  
-    </div>
-  </content>
+<content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/24-1.webp"
+           alt="" />
+         <br />
+       
+   
+       Talking about contemplating completely rebuilding my website on BearBlog.
+   
+       #articles #bearblog #indieweb
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
 </feed>

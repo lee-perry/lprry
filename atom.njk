@@ -56,11 +56,9 @@
  
      {{ post.data.description | replace("\n", "<br />") | safe }}
      <br />
-     {{ post.content | replace("\n", "<br />") | safe }}
-     <br />
  
      #{{ post.data.tags | join(" #") }}
-     <br /><br />
+     <br />
  
      Thanks for reading via RSS!
  

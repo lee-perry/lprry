@@ -31,7 +31,7 @@
   <link href="{{ absolutePostUrl }}" />
   <updated>{{ post.date | dateToRfc3339 }}</updated>
   <id>{{ absolutePostUrl }}</id>
-  <content type="xhtml">
+<content type="xhtml">
      <div xmlns="http://www.w3.org/1999/xhtml">
    
        {% if post.data.type in ["ride","run","swim","climb"] %}
@@ -55,12 +55,8 @@
        {% endif %}
    
        {{ post.data.description | replace("\n", "<br />") | safe }}
-       <br />
-       {{ post.content | replace("\n", "<br />") | safe }}
-       <br />
    
        #{{ post.data.tags | join(" #") }}
-       <br /><br />
    
        Thanks for reading via RSS!
    
