@@ -4,7 +4,7 @@
   <subtitle>Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.</subtitle>
   <link href="https://l.prry.uk/atom/atom/clips.xml" rel="self" />
   <link href="https://l.prry.uk/" />
-  <updated>2025-12-15T06:37:57Z</updated>
+  <updated>2025-12-15T19:51:15Z</updated>
   <id>https://l.prry.uk/</id>
   <author>
   <name>Lee Perry</name>
@@ -14,22 +14,30 @@
   <link href="https://l.prry.uk/clips/2025-11-20-clip/" />
   <updated>2025-11-20T00:00:00Z</updated>
   <id>https://l.prry.uk/clips/2025-11-20-clip/</id>
-  <content type="html">
-  
-  
-  
-    <img src="/assets/images/img_8505.webp" alt="" /><br>
-  
-  
-  A quick clip of Podenco Ibicenco bayLee swimming laps of the hydrotherapy pool at Canine Health & Hydro in Rimington
-  <br>
-  <p>bayLee has been visiting Canine Health and Hydro at Rimington for around 18 months now, ever since complications from a then undiagnosed under-active thyroid caused weight gain, muscle wastage, and back pain.</p><br><p>He is doing really well now, with his weight where it should be, and his pain largely prevented by regular K9 laser and swim sessions here, and ongoing thyroxin medication.</p><br><p>As you can see, his monthly swim sessions are one of the best bits of my month!</p><br><div style="position:relative;padding-top:56.25%;"><iframe src="https://player.mediadelivery.net/embed/518708/d22b294b-6d16-44ed-ae78-c097271e56d6?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div><br>
-  
-  <br>
-  #clips #baylee #dogs<br><br>
-  
-  Thanks for reading via RSS!
-  </content>
+  <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+         <img
+           src="https://l.prry.uk/assets/images/img_8505.webp"
+           alt="" />
+         <br />
+       
+   
+       A quick clip of Podenco Ibicenco bayLee swimming laps of the hydrotherapy pool at Canine Health & Hydro in Rimington
+       <br />
+       <p>bayLee has been visiting Canine Health and Hydro at Rimington for around 18 months now, ever since complications from a then undiagnosed under-active thyroid caused weight gain, muscle wastage, and back pain.</p><br /><p>He is doing really well now, with his weight where it should be, and his pain largely prevented by regular K9 laser and swim sessions here, and ongoing thyroxin medication.</p><br /><p>As you can see, his monthly swim sessions are one of the best bits of my month!</p><br /><div style="position:relative;padding-top:56.25%;"><iframe src="https://player.mediadelivery.net/embed/518708/d22b294b-6d16-44ed-ae78-c097271e56d6?autoplay=false&loop=false&muted=false&preload=true&responsive=true" loading="lazy" style="position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div><br />
+       <br />
+   
+       #clips #baylee #dogs
+       <br /><br />
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -37,20 +45,25 @@
   <link href="https://l.prry.uk/clips/2025-11-01-molineux-clip/" />
   <updated>2025-11-01T00:00:00Z</updated>
   <id>https://l.prry.uk/clips/2025-11-01-molineux-clip/</id>
-  <content type="html">
-  
-  
-  
-  
-  As we prepare to face Arsenal this afternoon, here's a quick clip I took after the final whistle on Sunday at the Molineux.
-  <br>
-  <iframe src="https://player.mediadelivery.net/embed/518708/935709f9-cf3b-49a4-842b-61689b4245b3"><br></iframe>
-  
-  <br>
-  #clips #football #burnleyfc<br><br>
-  
-  Thanks for reading via RSS!
-  </content>
+  <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+   
+       As we prepare to face Arsenal this afternoon, here's a quick clip I took after the final whistle on Sunday at the Molineux.
+       <br />
+       <iframe src="https://player.mediadelivery.net/embed/518708/935709f9-cf3b-49a4-842b-61689b4245b3"><br /></iframe>
+       <br />
+   
+       #clips #football #burnleyfc
+       <br /><br />
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
   <entry>
@@ -58,20 +71,25 @@
   <link href="https://l.prry.uk/clips/2025-10-25-clip/" />
   <updated>2025-10-25T00:00:00Z</updated>
   <id>https://l.prry.uk/clips/2025-10-25-clip/</id>
-  <content type="html">
-  
-  
-  
-  
-  FC United of Manchester take a freekick against Bamber Bridge in the second half of an FA Trophy tie today.
-  <br>
-  <iframe src="https://player.mediadelivery.net/embed/518708/7cec4476-5946-4885-8daa-4ddbbe9990fa"><br></iframe>
-  
-  <br>
-  #clips #clip #fcunited #football<br><br>
-  
-  Thanks for reading via RSS!
-  </content>
+  <content type="xhtml">
+     <div xmlns="http://www.w3.org/1999/xhtml">
+   
+       
+   
+       
+   
+       FC United of Manchester take a freekick against Bamber Bridge in the second half of an FA Trophy tie today.
+       <br />
+       <iframe src="https://player.mediadelivery.net/embed/518708/7cec4476-5946-4885-8daa-4ddbbe9990fa"><br /></iframe>
+       <br />
+   
+       #clips #clip #fcunited #football
+       <br /><br />
+   
+       Thanks for reading via RSS!
+   
+     </div>
+   </content>
 
   </entry>
 </feed>

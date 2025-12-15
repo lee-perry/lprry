@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss
+  version="2.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xml:base="https://l.prry.uk/"
+>
+  <channel>
+	<title>lprry indieWeb home</title>
+	<link>https://l.prry.uk/</link>
+	<atom:link
+	  href="https://l.prry.uk/feed/feed/echo.rss"
+	  rel="self"
+	  type="application/rss+xml"
+	/>
+	<description>Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.</description>
+	<language>en</language>
+
+	
+	  
+	  <item>
+		<title>£7+ Coffee?</title>
+		<link>https://l.prry.uk/snaps/2025-12-15-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-12-15-snap/</guid>
+		<pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/IMG_8738.jpeg"
+				 alt="Looking along the platform at Preston Railway Station towards Starbucks, illuminated by street lighting early morning."
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Fresh from my shock at finding Starbucks open for my 6am train came my shock at buying my first ever +£7 coffee.  Finishing off last nights work getting image transforms and feeds working together in the first 15 minutes of my journey did soften the blow.
+		  
+			  #snaps #indieweb #eleventy #coffee
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/IMG_8738.jpeg"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Almost finalising my 11ty build</title>
+		<link>https://l.prry.uk/notes/2025-12-14-note/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-12-14-note/</guid>
+		<pubDate>Sun, 14 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/IMG251214-1.webp"
+				 alt="Split screen view with a atg page broken into article, note and imagepost sections to the left, and a post showing linked tags on the right"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  I've made good progress on my 11ty site this weekend with new topic archives collating content types for each topic, and linking through from content meta sections, with a topics index page.  I'm struggling to paginate archive pages though due to the dynamic content filtering inside my templates.
+		  
+			  #notes #indieweb #eleventy
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/IMG251214-1.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Spaniel?</title>
+		<link>https://l.prry.uk/snaps/2025-12-13-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-12-13-snap/</guid>
+		<pubDate>Sat, 13 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/IMG_8733.webp"
+				 alt="A spaniel with fluff spikey hair ruffled up from the head."
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Ruairidh cannot decide if he is Spaniel, or highland coo.
+		  
+			  #snaps #dogs #ruairidh
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/IMG_8733.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>RMC Stage 6</title>
+		<link>https://l.prry.uk/training-log/2025-12-11-ride/</link>
+		<guid isPermaLink="true">https://l.prry.uk/training-log/2025-12-11-ride/</guid>
+		<pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/IMG_4681.webp"
+				 alt="Riders avatars cycling on Rouvy with a sandy beach and fjord beyond, and a mountain col in the background."
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  I completed stage 5 of the RMC challenge on Rouvy this evening, an hour long effort on the Nusfjord to Haukland Beach AR route.  Like all routes in Norway, there is up, down, and fantastic scenery - but never flat!
+		  
+			  #training-log #cycling #rouvy
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/IMG_4681.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Chicken Run</title>
+		<link>https://l.prry.uk/snaps/2025-12-11-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-12-11-snap/</guid>
+		<pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/IMG_8706.webp"
+				 alt="Three hens wonder around on grass with their new water and feeding stations beyond."
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  I created a temporary chicken run for three special ladies being pecked by their sisters. A frizzle, A brahma, and a Warren
+		  
+			  #snaps #hens #latte #bully
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/IMG_8706.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>ZRL Round 2 Race 6</title>
+		<link>https://l.prry.uk/training-log/2025-12-09-ride/</link>
+		<guid isPermaLink="true">https://l.prry.uk/training-log/2025-12-09-ride/</guid>
+		<pubDate>Tue, 09 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/IMG_4656.webp"
+				 alt="Riders avatars cycling in a colorful futuristic setting on Zwift"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Last race of round two of the ZRL was my strongest of the season, holding onto the lead pack until half way up the final climb, and pulling my ranking back to the cusp of silver on zwiftracing.
+		  
+			  #training-log #cycling #zwift
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/IMG_4656.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Fearghus raiding the chicken</title>
+		<link>https://l.prry.uk/snaps/2025-12-09-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-12-09-snap/</guid>
+		<pubDate>Tue, 09 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/IMG_8982.webp"
+				 alt="A small podenco tucked up in bed with a toy chicken."
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Today's dailydog entrant is Mr Fearghus running off to bed with the Spaniel's chicken.  This might not end well.
+		  
+			  #snaps #dogs #fearghus
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/IMG_8982.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Haggis in the wild</title>
+		<link>https://l.prry.uk/snaps/2025-12-08-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-12-08-snap/</guid>
+		<pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/IMG_8965.webp"
+				 alt="Haggis in the wild"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Here is Ruairidh, the wee haggis, taking over my desk spanielling while I was away today.
+		  
+			  #snaps #dogs #ruairidh #dailydog
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/IMG_8965.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>RMC Stage 5</title>
+		<link>https://l.prry.uk/training-log/2025-12-07-ride/</link>
+		<guid isPermaLink="true">https://l.prry.uk/training-log/2025-12-07-ride/</guid>
+		<pubDate>Sun, 07 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/IMG_4647.webp"
+				 alt="Screenshot from Rouvy showing a rider&#39;s avatar cycling towards white cliffs and blue skies"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Rode steady on this weeks' RMC stage, as I've been ill, and it was the longest stage with the biggest climb I've ridden in a number of years in any case.  Really pleased with the effort, if not the group placement.
+		  
+			  #training-log #cycling #rouvy
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/IMG_4647.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Eleventy up and running</title>
+		<link>https://l.prry.uk/notes/2025-12-07-note/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-12-07-note/</guid>
+		<pubDate>Sun, 07 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+		
+		  So I have my site running on 11ty now. I still have a lot of work to do on content ingestion into feeds - I'll probably end up writing a feed template. I need to fix the conflict between my rss and image-transform plugin setup, and to finish various general template improvements.
+		  
+			  #notes #indieWeb #eleventy
+		  
+		]]></description>
+
+		
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>ZRL Points Race</title>
+		<link>https://l.prry.uk/training-log/2025-12-02-ride/</link>
+		<guid isPermaLink="true">https://l.prry.uk/training-log/2025-12-02-ride/</guid>
+		<pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/51-1.webp"
+				 alt="Screenshot from Veloviewer showing ride map and elevation profile"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  
+		  
+			  #training-log #cycling #zwift
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/51-1.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Gtech Community Stadium</title>
+		<link>https://l.prry.uk/snaps/2025-11-29-gtech-community-stadium/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-11-29-gtech-community-stadium/</guid>
+		<pubDate>Sat, 29 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8561.webp"
+				 alt="Gtech Community Stadium"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  At the Gtech Stadium where Burnley take on Brentford this afternoon.
+		  
+			  #snaps #burnleyfc #football #stadium #exploring
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8561.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Post Match Thoughts</title>
+		<link>https://l.prry.uk/notes/2025-11-29-post-match-thoughts/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-11-29-post-match-thoughts/</guid>
+		<pubDate>Sat, 29 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+		
+		  We will not collect enough points to stay in this division trying not to lose. Change approach, or change coach.
+		  
+			  #notes #football #burnleyfc
+		  
+		]]></description>
+
+		
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Next previous steps</title>
+		<link>https://l.prry.uk/notes/2025-11-25-note/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-11-25-note/</guid>
+		<pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+		
+		  I've been enjoying the simplicity of my bearblog, but am torn on whether to keep it, replicate it back into Kirby, or with an eye on the future recreate in maybe 11ty or Astro. Too much choice.
+		  
+			  #notes #bearblog #indieWeb
+		  
+		]]></description>
+
+		
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Finalising my bearblog theme. For now...</title>
+		<link>https://l.prry.uk/articles/2025-11-15-finalising-my-bearblog-theme-for-now/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-11-15-finalising-my-bearblog-theme-for-now/</guid>
+		<pubDate>Sat, 15 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/38-2.webp"
+				 alt="Finalising my bearblog theme. For now..."
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Having spent the last few weeks of my bearblog project focusing on function, I used the first day of my long weekend to complete the first iteration of my theme, here's a run through of the changes.
+		  
+			  #articles #bearblog #indieWeb
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/38-2.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Liquid Glass Screensaver</title>
+		<link>https://l.prry.uk/notes/2025-11-14-liquid-glass-screensaver/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-11-14-liquid-glass-screensaver/</guid>
+		<pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+		
+		  Though I found the transition to liquid glass painful, I absolutely love the rotating screensaver images, which never fail to brighten up my day.
+		  
+			  #notes #iphone
+		  
+		]]></description>
+
+		
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Webmentions finally sending from Bearblog</title>
+		<link>https://l.prry.uk/notes/2025-11-10-note/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-11-10-note/</guid>
+		<pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/16.webp"
+				 alt="Webmentions finally sending from Bearblog"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  This has taken such an unbelievable (days) amount of faff, but I finally have webmention likes that I send displaying as intended, and not just as 'mentions'.
+		  
+			  #notes #indieWeb
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/16.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Spaniel sewing</title>
+		<link>https://l.prry.uk/snaps/2025-11-08-spaniel-sewing/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-11-08-spaniel-sewing/</guid>
+		<pubDate>Sat, 08 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8319.webp"
+				 alt="Spaniel sewing"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  While I make my way down to East London today, the spaniel is supervising the crafting activities at home.
+		  
+			  #snaps #dogs #ruairidh
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8319.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>London Stadium Nov 2025</title>
+		<link>https://l.prry.uk/snaps/2025-11-08-london-stadium/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-11-08-london-stadium/</guid>
+		<pubDate>Sat, 08 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8426.webp"
+				 alt="London Stadium Nov 2025"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  A few images from the London Stadium ahead of West Ham United today.
+		  
+			  #snaps #exploring #stadium
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8426.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>West Ham United 3 Burnley 2</title>
+		<link>https://l.prry.uk/articles/2025-11-08-west-ham-united-3-burnley-2/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-11-08-west-ham-united-3-burnley-2/</guid>
+		<pubDate>Sat, 08 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8432.webp"
+				 alt="West Ham United 3 Burnley 2"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Images and brief thoughts from the London Stafium where Burnley managed to throw away a game they were well in control of.
+		  
+			  #articles #article #burnleyfc #matchreport
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8432.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Loughborough Train Station</title>
+		<link>https://l.prry.uk/snaps/2025-11-07-loughborough-train-station/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-11-07-loughborough-train-station/</guid>
+		<pubDate>Fri, 07 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8407.webp"
+				 alt="Loughborough Train Station"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  I headed down to Loughborough today to celebrate my friend and supplier’s 25 year business anniversary. A few photographs from the train station.
+		  
+			  #snaps #trainstation #exploring
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8407.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>What&#39;s in my inventory?</title>
+		<link>https://l.prry.uk/articles/2025-11-05-whats-in-my-inventory/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-11-05-whats-in-my-inventory/</guid>
+		<pubDate>Wed, 05 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_4515.webp"
+				 alt="What&#39;s in my inventory?"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  The topic for November's Bearblog Carnival is 'what's in my inventory?' Here I talk about the items that follow me everywhere.
+		  
+			  #articles #bearblog #carnival
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_4515.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Spaniel in charge</title>
+		<link>https://l.prry.uk/snaps/2025-11-02-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-11-02-snap/</guid>
+		<pubDate>Sun, 02 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8392.webp"
+				 alt="Spaniel in charge"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Here is Ruairidh the spaniel, directing from his command centre this evening.
+		  
+			  #snaps #dogs #ruairidh
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8392.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Working Webmentions on Bear</title>
+		<link>https://l.prry.uk/notes/2025-11-01-working-webmentions-on-bear/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-11-01-working-webmentions-on-bear/</guid>
+		<pubDate>Sat, 01 Nov 2025 00:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/40-1.webp"
+				 alt="Working Webmentions on Bear"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Working Webmentions on Bear
+		  
+			  #notes #bearblog #indieWeb
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/40-1.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Molineux pre kick off</title>
+		<link>https://l.prry.uk/snaps/2025-10-26-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-10-26-snap/</guid>
+		<pubDate>Sun, 26 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8340.webp"
+				 alt="View across a largely empty football stadium with curved black and gold stands to either side of the pitch"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Waiting for kick-off at an almost empty Molineux.
+		  
+			  #snaps #burnleyfc #stadium #exploring
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8340.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Video hosting for my BearBlog</title>
+		<link>https://l.prry.uk/notes/2025-10-26-video-hosting-for-my-bearblog/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-10-26-video-hosting-for-my-bearblog/</guid>
+		<pubDate>Sun, 26 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/55-1.webp"
+				 alt="Screenshot from my website showing a hosted video player in an iframe]"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Installing CDN video hosting into my BearBlog, along with a clips section, with plans to migrate all of my macretro youtube work into my own environ.
+		  
+			  #notes #bearblog #indieWeb
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/55-1.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Bearly here</title>
+		<link>https://l.prry.uk/articles/2025-10-25-bearly-here/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-10-25-bearly-here/</guid>
+		<pubDate>Sat, 25 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/07.webp"
+				 alt="Bearly here"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Talking about my journey to Bear, and my plans for this blog
+		  
+			  #articles #bearblog #indieWeb #posse
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/07.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>FC United of Manchester 1 Bamber Bridge 0</title>
+		<link>https://l.prry.uk/notes/2025-10-25-note/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-10-25-note/</guid>
+		<pubDate>Sat, 25 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8313.webp"
+				 alt="FC United of Manchester 1 Bamber Bridge 0"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  FC United of Manchester 1 Bamber Bridge 0
+		  
+			  #notes #fcunited #football
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8313.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Stevie hogging the fire</title>
+		<link>https://l.prry.uk/snaps/2025-10-24-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-10-24-snap/</guid>
+		<pubDate>Fri, 24 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8302.webp"
+				 alt="A long ginger dog lies with his nose towards the fire"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Here is Stevie hogging the fire in my office today.  Though Podenco, the labrador is strong in this one.
+		  
+			  #snaps #dogs #stevie
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8302.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Plaid win in Caerphilly</title>
+		<link>https://l.prry.uk/notes/2025-10-24-note/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-10-24-note/</guid>
+		<pubDate>Fri, 24 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+		
+		  Plaid win in Caerphilly
+		  
+			  #notes #politics
+		  
+		]]></description>
+
+		
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Three Podencos under the desk</title>
+		<link>https://l.prry.uk/snaps/2025-10-23-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-10-23-snap/</guid>
+		<pubDate>Thu, 23 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8297.webp"
+				 alt="Three podencos in bed under a sit stand desk, with blankets on and a pine background"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Three Podencos under the desk
+		  
+			  #snaps #baylee #dogs #fearghus #leo
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8297.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Weblog.lol interactions</title>
+		<link>https://l.prry.uk/notes/2025-10-23-note/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-10-23-note/</guid>
+		<pubDate>Thu, 23 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/52.webp"
+				 alt="Mastodon interactions displayed on a weblog.lol website"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Weblog.lol interactions
+		  
+			  #notes #indieWeb
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/52.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Fan Forum - October 2025</title>
+		<link>https://l.prry.uk/notes/2025-10-23-fan-forum/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-10-23-fan-forum/</guid>
+		<pubDate>Thu, 23 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/36.webp"
+				 alt="Fan Forum - October 2025"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Fan Forum - October 2025
+		  
+			  #notes #burnleyfc #football
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/36.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Podenco Meets Dinosaurs</title>
+		<link>https://l.prry.uk/snaps/2025-10-20-snap/</link>
+		<guid isPermaLink="true">https://l.prry.uk/snaps/2025-10-20-snap/</guid>
+		<pubDate>Mon, 20 Oct 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_8283.webp"
+				 alt="A podenco looking over to a display of dinosaurs at a crazy golf course"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  On his evening walk on Saturday, I took Mr. BayLee to meet the dinosaurs being constructed at the new crazy golf course at the Prairie in Burnley.  One prehistoric creature meets another.
+		  
+			  #snaps #baylee #dogs
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_8283.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Great North Run 2025</title>
+		<link>https://l.prry.uk/articles/2025-07-09-great-north-run/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-07-09-great-north-run/</guid>
+		<pubDate>Sun, 07 Sep 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_6655.webp"
+				 alt="Me standing infront of the Wylam Brewery, with a lake in-between, ahead of the Great North Run in 2025"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Talking about my race at the Great North Run, 2025
+		  
+			  #articles #race #running
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_6655.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Hartlepool Parkrun 521</title>
+		<link>https://l.prry.uk/notes/2025-09-06-hartlepool-parkrun/</link>
+		<guid isPermaLink="true">https://l.prry.uk/notes/2025-09-06-hartlepool-parkrun/</guid>
+		<pubDate>Sat, 06 Sep 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/img_7982.webp"
+				 alt="Looking along the course at Hartlepool Parkrun above participants at the start line on a clear day"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Hartlepool Parkrun 521
+		  
+			  #notes #note #race #running
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/img_7982.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Scrimba Business Card Project</title>
+		<link>https://l.prry.uk/articles/2025-09-05-scrimba-business-card-project/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-09-05-scrimba-business-card-project/</guid>
+		<pubDate>Fri, 05 Sep 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/17-1.webp"
+				 alt="Scrimba Business Card Project"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Illustrating my Scrimba Business Card project
+		  
+			  #articles #css #code #html #scrimba
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/17-1.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Starting Over</title>
+		<link>https://l.prry.uk/articles/2025-08-31-starting-over/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-08-31-starting-over/</guid>
+		<pubDate>Sun, 31 Aug 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/48.webp"
+				 alt="Starting Over"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.
+		  
+			  #articles #code #html #scrimba
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/48.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Using Microformats with Bear</title>
+		<link>https://l.prry.uk/articles/2025-07-11-using-microformats-with-bear/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-07-11-using-microformats-with-bear/</guid>
+		<pubDate>Fri, 11 Jul 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/56.webp"
+				 alt="Using Microformats with Bear"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Discussing implementation of microformats on my bearblog project.
+		  
+			  #articles #bearblog #indieWeb #microformats
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/56.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Setting a favicon and site logo in Bear</title>
+		<link>https://l.prry.uk/articles/2025-07-11-a-favicon-and-site-logo-in-bear/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-07-11-a-favicon-and-site-logo-in-bear/</guid>
+		<pubDate>Fri, 11 Jul 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/35.webp"
+				 alt="Setting a favicon and site logo in Bear"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Setting the favicon on my Bear blog site to an existing png file
+		  
+			  #articles #bearblog #indieweb
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/35.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+	  
+	  <item>
+		<title>Hello Bear?</title>
+		<link>https://l.prry.uk/articles/2025-07-10-hello-bear/</link>
+		<guid isPermaLink="true">https://l.prry.uk/articles/2025-07-10-hello-bear/</guid>
+		<pubDate>Thu, 10 Jul 2025 01:00:00 GMT</pubDate>
+		<dc:creator>Lee Perry</dc:creator>
+
+		
+		<description><![CDATA[
+		  
+			<img src="https://l.prry.uk/assets/images/24-1.webp"
+				 alt="Hello Bear?"
+				 style="max-width:100%; height:auto;"><br><br>
+		  
+		
+		  Talking about contemplating completely rebuilding my website on BearBlog.
+		  
+			  #articles #bearblog #indieweb
+		  
+		]]></description>
+
+		
+		
+		  <media:content
+			url="https://l.prry.uk/assets/images/24-1.webp"
+			medium="image"
+		  />
+		
+
+	  </item>
+	
+
+  </channel>
+</rss>
