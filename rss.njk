@@ -1,6 +1,6 @@
 ---json
 {
-  "permalink": "feed/",
+  "permalink": "feed.rss",
   "eleventyExcludeFromCollections": true,
   "metadata": {
 	"title": "lprry indieWeb home",
@@ -14,24 +14,96 @@
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.base | addPathPrefixToFullUrl }}" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss
+  version="2.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xml:base="{{ metadata.base | addPathPrefixToFullUrl }}"
+>
   <channel>
 	<title>{{ metadata.title }}</title>
 	<link>{{ metadata.base | addPathPrefixToFullUrl }}</link>
-	<atom:link href="{{ permalink | htmlBaseUrl(metadata.base) }}" rel="self" type="application/rss+xml" />
+	<atom:link
+	  href="{{ permalink | htmlBaseUrl(metadata.base) }}"
+	  rel="self"
+	  type="application/rss+xml"
+	/>
 	<description>{{ metadata.description }}</description>
 	<language>{{ metadata.language or page.lang }}</language>
-	{%- for post in collections.everything | reverse %}
-	{%- set absolutePostUrl = post.url | htmlBaseUrl(metadata.base) %}
-	<item>
-	  <title>{{ post.data.title }}</title>
-	  <link>{{ absolutePostUrl }}</link>
-	  <description>{% if (post.data.type == "ride") or (post.data.type == "run") or (post.data.type == "swim") %}{% if post.data.type == "ride" %}🚴‍♂️ {% endif %}{% if post.data.type == "run" %}🏃‍♂️ {% endif %}{% if post.data.type == "swim" %}🏊‍♂️ {% endif %}{% if post.data.type == "climb" %}🧗‍♂️ {% endif %} ⏰{{ post.data.time }} 📏{{ post.data.distance }}km {% if post.data.type == "run" %} ⏱️{{ post.data.pace }}min/km {% endif %} 🛫{{ post.data.climb }}m+ ❤️‍🔥{{ post.data.hr }}bpm {% if post.data.type == "ride" %} 🪫{{ post.data.w }}w {% endif %} 🧁{{ post.data.kcal }}kcal{% endif %}
-	  <![CDATA[<img src="/assets/images/{{ post.data.cover }}" alt="{{ post.data.cover_alt }}"><br>]]>{{ post.data.description }}{{ post.content | renderTransforms(post.data.page, metadata.base) }}<![CDATA[<br><br>]]>#{{ post.data.tags | join(" #") }}<![CDATA[<hr>]]>Thanks for reading via RSS!</description>
-	  <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
-	  <dc:creator>{{ metadata.author.name }}</dc:creator>
-	  <guid>{{ absolutePostUrl }}</guid>
-	</item>
-	{%- endfor %}
+
+	{% for post in collections.everything | reverse %}
+	  {% set absolutePostUrl = post.url | htmlBaseUrl(metadata.base) %}
+	  <item>
+		<title>{{ post.data.title }}</title>
+		<link>{{ absolutePostUrl }}</link>
+		<guid isPermaLink="true">{{ absolutePostUrl }}</guid>
+		<pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+		<dc:creator>{{ metadata.author.name }}</dc:creator>
+
+		{# --- TEXT SUMMARY --- #}
+		<description><![CDATA[
+		  {% if post.data.cover %}
+			<img src="{{ metadata.base }}/assets/images/{{ post.data.cover }}"
+				 alt="{{ post.data.cover_alt | default(post.data.title) }}"
+				 style="max-width:100%; height:auto;"><br><br>
+		  {% endif %}
+		
+		  {{ post.data.description | default(post.data.title) | safe }}
+		  {{ post.content | safe }}
+		  {% if post.data.tags %}
+			  #{{ post.data.tags | join(" #") }}
+		  {% endif %}
+		]]></description>
+
+		{# --- MEDIA THUMBNAIL --- #}
+		{% if post.data.cover %}
+		  <media:content
+			url="{{ metadata.base }}/assets/images/{{ post.data.cover }}"
+			medium="image"
+		  />
+		{% endif %}
+
+		{# --- FULL HTML CONTENT --- #}
+		<content:encoded><![CDATA[
+		  {% if post.data.type %}
+			{% if post.data.type == "ride" %}🚴‍♂️{% endif %}
+			{% if post.data.type == "run" %}🏃‍♂️{% endif %}
+			{% if post.data.type == "swim" %}🏊‍♂️{% endif %}
+			{% if post.data.type == "climb" %}🧗‍♂️{% endif %}
+
+			⏰ {{ post.data.time }}
+			📏 {{ post.data.distance }} km
+			{% if post.data.pace %}⏱️ {{ post.data.pace }} min/km{% endif %}
+			{% if post.data.climb %}🛫 {{ post.data.climb }} m+{% endif %}
+			{% if post.data.hr %}❤️‍🔥 {{ post.data.hr }} bpm{% endif %}
+			{% if post.data.w %}🪫 {{ post.data.w }} w{% endif %}
+			{% if post.data.kcal %}🧁 {{ post.data.kcal }} kcal{% endif %}
+			<br><br>
+		  {% endif %}
+
+		  {% if post.data.cover %}
+			<img
+			  src="{{ metadata.base }}/assets/images/{{ post.data.cover }}"
+			  alt="{{ post.data.cover_alt | default(post.data.title) }}"
+			><br><br>
+		  {% endif %}
+
+		  {{ post.data.description | default("") }}
+
+		  {{ post.templateContent | safe }}
+
+		  <br><br>
+		  {% if post.data.tags %}
+			#{{ post.data.tags | join(" #") }}
+		  {% endif %}
+
+		  <hr>
+		  Thanks for reading via RSS!
+		]]></content:encoded>
+	  </item>
+	{% endfor %}
+
   </channel>
 </rss>

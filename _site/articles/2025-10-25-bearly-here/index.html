@@ -5,9 +5,13 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
  <meta name="fediverse:creator" content="@lee@prry.uk">
- <link rel="alternate" type="application/atom+xml" href="/atom/" title="lprry">
- <link rel="alternate" type="application/atom+xml" href="/feed/" title="lprry">
- <link rel="alternate" type="application/json" href="/json/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/feed.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/articles.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/notes.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/snaps.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/clips.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/activities.xml/" title="lprry">
  
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
@@ -51,7 +55,7 @@
 	  </h1>
 	</a>
 	<nav>
-	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='#'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	  <p><a href="/articles"><i class="ph ph-article"></i>Blog</a> <a href="/notes"><i class="ph ph-notepad"></i>Note</a> <a href="/snaps"><i class="ph ph-image"></i>Snap</a> <a href="/clips"><i class="ph ph-video"></i>Clip</a> <a href="/training-log"><i class="ph ph-person-simple-bike"></i>Log</a> <a href="#"><i class="ph ph-chats"></i></a> <a href="/directory"><i class="ph ph-list"></i></a></p>
 	</nav>
 </header>
  
@@ -94,7 +98,7 @@
 </p>
 
   Talking about my journey to Bear, and my plans for this blog
-  <img src="/assets/images/07.webp" alt="">
+  <img src="/.11ty/image/?src=assets%2Fimages%2F07.webp&width=295&format=webp&via=transform" alt="" loading="lazy" decoding="async" heights="auto" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F07.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F07.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F07.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F07.webp&width=1200&format=webp&via=transform 1200w" sizes="auto">
   <p>I have been thinking about doing something different with my web presence for some time.  I have built a fantastic Kirby CMS based website over at <a href="https://lee-perry.co.uk">lee-perry.co.uk</a>.  For some reason though I find it frictious to work with, largely ceasing to post anything of consequence, mainly cataloguing image and micro posts within my digital garden.  I've posted on that domain for over 20 years though, so its not going anywhere, not yet at least.</p>
 <p>I first started experimenting with <a href="https://bearblog.dev">Bear</a> a couple months ago, with a new domain that I picked up <a href="https://l33.co.uk">l33.co.uk</a>. I promptly set about starting to rebuild something that replicated everything that my main website did, and of course that's not what Bear does.  I still find it weird that microformats are not baked in - but I think baking microformats into my post templates removed from the minimalist aesthetic of the writing experience.  Wrapping a stack of HTML around every post is just ugly.</p>
 <p>The reality probably is that functionally my original website comes pretty close to what I wanted.  My ideal is that my website syndicates all content out to Mastodon and Bluesky, and using indieconnector and komments comes very close to that.  Micro.blog comes pretty close too - but I thought it felt pretty lonely as a community, and I find the selective disregarding of certain types of webmentions strange, if built with good intentions.</p>
@@ -104,7 +108,7 @@
 <p>So far I have set up Bear to have discreet <a href="article">blog</a>, <a href="/notes">note</a> (micropost) and <a href="/snaps">snap</a> (imagepost) sections, as well as dedicated sections for <a href="/training-log">training</a> and <a href="weigh-ins">weigh-in</a> data which are powered only by the post title at this point.  Strangely I seen to find the posting process less frictious, even though I am entering essentially the same information.</p>
 <p>I've also started using the post filters to start to create digital garden style pages that are potentially even easier to put together than templating new blueprints in my Krikby CMS site.  Once I had my key content types structured in my own mind at least, I then set EchoFeed up to post them out to Mastodon and Bluesky, bridging my Mastodon profile after struggling to get echofeed to log in to Bluesky.</p>
 <p>One thing I am conscious of is not spamming the discover timeline in Bear - for that reason I have set my post template default to produce posts that are not discoverable.  Microposts, Imageposts and Training Log entrie for the most part will be syndicated to Mastodon, but will never appear on the BearBlog timeline.  That does stop the 'toast' button appearing at the bottom of the page though, which Vickie likes clicking, so some imageposts that interesting will be made discoverable within Bear.</p>
-<p><img src="/assets/images/07.webp" alt="Screenshot of the homepage of this website in dark made, with black and orange colors reminiscent of the Burnley third strip in season 2025-6"></p>
+<p><img src="/.11ty/image/?src=assets%2Fimages%2F07.webp&width=295&format=webp&via=transform" alt="Screenshot of the homepage of this website in dark made, with black and orange colors reminiscent of the Burnley third strip in season 2025-6" loading="lazy" decoding="async" heights="auto" width="1200" height="750" srcset="/.11ty/image/?src=assets%2Fimages%2F07.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F07.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F07.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F07.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"></p>
 <p>I've spent the last night or two spinning the css into a whole new design, while using pages with filtered lists to allow even more customisation at the cost of setup.  But hey, that gives even more opportunity to tinker with things eh?  The light view is reminiscent of Burnley's third strip from last season, white, with a claret focus color.  The dark view resembles this season's third strip, black, with gold trim.  The main thing that makes writing simpler is the single content structure - albeit at a cost of some rigidity.</p>
 <p>I still have some work to do, but the main item on my list is to implement webmention send and receive, where I will be using the instructions provided and linked to by <a href="https://gobino.be/adding-webmentions-to-my-blog-tutorial/">gobino</a>.  If I can get that running and displaying anywhere near as well as it does on their blog, I'll probably hang out here for a while.</p>
 <p>I have found it extremely easy to dive in to Bear to write a couple of image and micro posts, and I've really enjoyed writing this one.  As I said at the beginning though, my main blog will not be going anywhere anytime soon, I'll just see how writing here feels for a while. So that's probably it for now. Hope that you like my post, and I'll be back real soon.</p>
@@ -116,11 +120,11 @@
 	
 <span id="footer-directive">
 	<div class="h-card">
-  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy" eleventy:ignore>
+  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy">
   <p class="h-card-header"><a class="p-name p-author u-url" rel="author" href="https://l.prry.uk">Lee Perry</a></p>
   <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
 <nav>
-<p><a href='/topics/code'><i class="ph ph-code"></i> </a> <a href='/topics/dogs'><i class="ph ph-dog"></i> </a> <a href='/topics/allotment'><i class="ph ph-plant"></i> </a> <a href='/topics/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/topics/exploring'><i class="ph ph-van"></i> </a><a href='/topics/reading'><i class="ph ph-book"></i> </a> <a href='/topics/watched'><i class="ph ph-television"></i> </a> <a href='/topics/vinyl'><i class="ph ph-guitar"></i> </a></p>
+<p><a href="/topics/code"><i class="ph ph-code"></i> </a> <a href="/topics/dogs"><i class="ph ph-dog"></i> </a> <a href="/topics/allotment"><i class="ph ph-plant"></i> </a> <a href="/topics/football"><i class="ph ph-soccer-ball"></i> </a> <a href="/topics/exploring"><i class="ph ph-van"></i> </a><a href="/topics/reading"><i class="ph ph-book"></i> </a> <a href="/topics/watched"><i class="ph ph-television"></i> </a> <a href="/topics/vinyl"><i class="ph ph-guitar"></i> </a></p>
 </nav>
 <div class="social">  
 <a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>lprry indieWeb home</title>
+  <subtitle>Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.</subtitle>
+  <link href="https://l.prry.uk/atom/atom/notes.xml" rel="self" />
+  <link href="https://l.prry.uk/" />
+  <updated>2025-12-15T06:17:24Z</updated>
+  <id>https://l.prry.uk/</id>
+  <author>
+  <name>Lee Perry</name>
+  </author>
+  <entry>
+  <title>Almost finalising my 11ty build</title>
+  <link href="https://l.prry.uk/notes/2025-12-14-note/" />
+  <updated>2025-12-14T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-12-14-note/</id>
+  <content type="html">
+  
+  
+  
+    <img src="/assets/images/IMG251214-1.webp" alt="Split screen view with a atg page broken into article, note and imagepost sections to the left, and a post showing linked tags on the right" /><br>
+  
+  
+  I've made good progress on my 11ty site this weekend with new topic archives collating content types for each topic, and linking through from content meta sections, with a topics index page.  I'm struggling to paginate archive pages though due to the dynamic content filtering inside my templates.
+  <br>
+  
+  
+  <br>
+  #notes #indieweb #eleventy<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Eleventy up and running</title>
+  <link href="https://l.prry.uk/notes/2025-12-07-note/" />
+  <updated>2025-12-07T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-12-07-note/</id>
+  <content type="html">
+  
+  
+  
+  
+  So I have my site running on 11ty now. I still have a lot of work to do on content ingestion into feeds - I'll probably end up writing a feed template. I need to fix the conflict between my rss and image-transform plugin setup, and to finish various general template improvements.
+  <br>
+  
+  
+  <br>
+  #notes #indieWeb #eleventy<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Post Match Thoughts</title>
+  <link href="https://l.prry.uk/notes/2025-11-29-post-match-thoughts/" />
+  <updated>2025-11-29T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-11-29-post-match-thoughts/</id>
+  <content type="html">
+  
+  
+  
+  
+  We will not collect enough points to stay in this division trying not to lose. Change approach, or change coach.
+  <br>
+  
+  
+  <br>
+  #notes #football #burnleyfc<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Next previous steps</title>
+  <link href="https://l.prry.uk/notes/2025-11-25-note/" />
+  <updated>2025-11-25T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-11-25-note/</id>
+  <content type="html">
+  
+  
+  
+  
+  I've been enjoying the simplicity of my bearblog, but am torn on whether to keep it, replicate it back into Kirby, or with an eye on the future recreate in maybe 11ty or Astro. Too much choice.
+  <br>
+  
+  
+  <br>
+  #notes #bearblog #indieWeb<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Liquid Glass Screensaver</title>
+  <link href="https://l.prry.uk/notes/2025-11-14-liquid-glass-screensaver/" />
+  <updated>2025-11-14T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-11-14-liquid-glass-screensaver/</id>
+  <content type="html">
+  
+  
+  
+  
+  Though I found the transition to liquid glass painful, I absolutely love the rotating screensaver images, which never fail to brighten up my day.
+  <br>
+  <div class="snaps-vertical"><br><p><img src="/assets/images/img_8453.webp" alt="img_8453.webp"><br><img src="/assets/images/img_8457.webp" alt="img_8457.webp"><br><img src="/assets/images/img_8458.webp" alt="img_8458.webp"><br><img src="/assets/images/img_8461.webp" alt="img_8461.webp"><br><img src="/assets/images/img_8464.webp" alt="img_8464.webp"><br><img src="/assets/images/img_8465.webp" alt="img_8465.webp"><br><img src="/assets/images/img_8467.webp" alt="img_8467.webp"><br><img src="/assets/images/img_8477.webp" alt="img_8477.webp"></p><br></div>
+  
+  <br>
+  #notes #iphone<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Webmentions finally sending from Bearblog</title>
+  <link href="https://l.prry.uk/notes/2025-11-10-note/" />
+  <updated>2025-11-10T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-11-10-note/</id>
+  <content type="html">
+  
+  
+  
+    <img src="/assets/images/16.webp" alt="" /><br>
+  
+  
+  This has taken such an unbelievable (days) amount of faff, but I finally have webmention likes that I send displaying as intended, and not just as 'mentions'.
+  <br>
+  <p> <br><img src="/assets/images/16.webp" alt="Screenshot from my website showing my webmention avatar sliding in with the other likes below a post"></p><br>
+  
+  <br>
+  #notes #indieWeb<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Working Webmentions on Bear</title>
+  <link href="https://l.prry.uk/notes/2025-11-01-working-webmentions-on-bear/" />
+  <updated>2025-11-01T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-11-01-working-webmentions-on-bear/</id>
+  <content type="html">
+  
+  
+  
+    <img src="/assets/images/40-1.webp" alt="" /><br>
+  
+  
+  
+  <br>
+  <p>I had webmentions working pretty quickly on bear last night, displaying them where the upvote counter is not used took longer to refactor.</p><br><img src="/assets/images/40-1.webp" alt="Screenshot of this website showing like, boost and comment webmentions displayed below an article">
+  
+  <br>
+  #notes #bearblog #indieWeb<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Video hosting for my BearBlog</title>
+  <link href="https://l.prry.uk/notes/2025-10-26-video-hosting-for-my-bearblog/" />
+  <updated>2025-10-26T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-10-26-video-hosting-for-my-bearblog/</id>
+  <content type="html">
+  
+  
+  
+    <img src="/assets/images/55-1.webp" alt="Screenshot from my website showing a hosted video player in an iframe]" /><br>
+  
+  
+  Installing CDN video hosting into my BearBlog, along with a clips section, with plans to migrate all of my macretro youtube work into my own environ.
+  <br>
+  <p>In one quick experiment last night, I tested Bunny for video hosting.  That was really simple, embedding an iframe with the video url as src, and applying a minimal amount of styling in the theme to make the borders look better.</p><br><p>I then added my <a href="/clips">Clips</a> section to the site, which I'll need to replicate on my front page.  If costs are sensible, I will migrate all of my youtube hosted retro gaming content here.</p><br><p><img src="/assets/images/55-1.webp" alt="Screenshot from my website showing a hosted video player in an iframe"></p><br><p>It does seem to use a cookie, which I need to look at, but I don't think tracking anything beyond the session.</p><br>
+  
+  <br>
+  #notes #bearblog #indieWeb<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>FC United of Manchester 1 Bamber Bridge 0</title>
+  <link href="https://l.prry.uk/notes/2025-10-25-note/" />
+  <updated>2025-10-25T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-10-25-note/</id>
+  <content type="html">
+  
+  
+  
+    <img src="/assets/images/img_8313.webp" alt="" /><br>
+  
+  
+  
+  <br>
+  <p>I headed down to Manchester to catchup with Craig this afternoon, taking in FC United of Manchester's 1-0 Trophy win over Bamber Bridge.  Adam Le Fondre deflected a late ball into the net in front of the home terrace, in a largely uneventful game.</p><br><p><img src="/assets/images/img_8313.webp" alt="IMG_8313"><br><img src="/assets/images/img_8315.webp" alt="IMG_8315"></p><br>
+  
+  <br>
+  #notes #fcunited #football<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Plaid win in Caerphilly</title>
+  <link href="https://l.prry.uk/notes/2025-10-24-note/" />
+  <updated>2025-10-24T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-10-24-note/</id>
+  <content type="html">
+  
+  
+  
+  
+  
+  <br>
+  <blockquote><br><p>Listen Cardiff and listen Westminster. This is Caerphilly. And we are telling you we want a better deal. Wales is at the dawn of a new leadership, a new beginning.</p><br></blockquote><br><p>Plaid Cymru’s Lindsay Whittle speaking on <a href="https://www.theguardian.com/uk-news/2025/oct/24/plaid-cymru-wins-caerphilly-byelection-result">lifting the Caerphilly seat</a> in the Senedd from an increasingly listing Labour.</p><br>
+  
+  <br>
+  #notes #politics<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Weblog.lol interactions</title>
+  <link href="https://l.prry.uk/notes/2025-10-23-note/" />
+  <updated>2025-10-23T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-10-23-note/</id>
+  <content type="html">
+  
+  
+  
+    <img src="/assets/images/52.webp" alt="Mastodon interactions displayed on a weblog.lol website" /><br>
+  
+  
+  
+  <br>
+  <p>I've not noticed the interactions block on a weblog.lol site previously. I don't see whether it receives webmentions or from Bluesky. Might be an option if my current Bear experiment fails...</p><br><img src="/assets/images/52.webp" alt="Mastodon interactions displayed on a weblog.lol website">
+  
+  <br>
+  #notes #indieWeb<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Fan Forum - October 2025</title>
+  <link href="https://l.prry.uk/notes/2025-10-23-fan-forum/" />
+  <updated>2025-10-23T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-10-23-fan-forum/</id>
+  <content type="html">
+  
+  
+  
+    <img src="/assets/images/36.webp" alt="" /><br>
+  
+  
+  
+  <br>
+  <p>Given that Vickie has been in Portugal for the week, and I cannot watch Burnley's output on, ugh, X, ugh - I'm sure she will be looking forward to tonight's feature length viewing!</p><br><iframe class= "video" src="https://www.youtube-nocookie.com/embed/bv45nNyGwgg?si=MR6I9jGHoyGHDGvm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+  
+  <br>
+  #notes #burnleyfc #football<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+  <entry>
+  <title>Hartlepool Parkrun 521</title>
+  <link href="https://l.prry.uk/notes/2025-09-06-hartlepool-parkrun/" />
+  <updated>2025-09-06T00:00:00Z</updated>
+  <id>https://l.prry.uk/notes/2025-09-06-hartlepool-parkrun/</id>
+  <content type="html">
+  
+  
+  
+    <img src="/assets/images/img_7982.webp" alt="Looking along the course at Hartlepool Parkrun above participants at the start line on a clear day" /><br>
+  
+  
+  
+  <br>
+  <p><img src="/assets/images/img_7982.webp" alt="Looking along the course at Hartlepool Parkrun above participants at the start line on a clear day"></p><br><p>We started off the day with our annual visit to Hartlepool Parkrun as we are up in the North East for the weekend ahead of the Great North Run tomorrow.</p><br><p>My legs seem to be moving very well, with good form, and my pace seems to be flying back with Mounjaro induced weight-loss.  On the other hand my endurance and fuelling have definitely taken a hit, feeling out of gas throughout.</p><br><p>I held onto around 5:15/km throughout for a 26:40 finish - my fastest 5km in two years, and my fastest Hartlepool Parkrun.  Very happy with that considering I did not have the energy to hit the pedal - though I'll need to ease off considerably tomorrow.</p><br>
+  
+  <br>
+  #notes #note #race #running<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
+  </entry>
+</feed>

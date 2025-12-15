@@ -5,9 +5,13 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
  <meta name="fediverse:creator" content="@lee@prry.uk">
- <link rel="alternate" type="application/atom+xml" href="/atom/" title="lprry">
- <link rel="alternate" type="application/atom+xml" href="/feed/" title="lprry">
- <link rel="alternate" type="application/json" href="/json/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/feed.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/articles.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/notes.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/snaps.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/clips.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/activities.xml/" title="lprry">
  
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
@@ -51,7 +55,7 @@
 	  </h1>
 	</a>
 	<nav>
-	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='#'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	  <p><a href="/articles"><i class="ph ph-article"></i>Blog</a> <a href="/notes"><i class="ph ph-notepad"></i>Note</a> <a href="/snaps"><i class="ph ph-image"></i>Snap</a> <a href="/clips"><i class="ph ph-video"></i>Clip</a> <a href="/training-log"><i class="ph ph-person-simple-bike"></i>Log</a> <a href="#"><i class="ph ph-chats"></i></a> <a href="/directory"><i class="ph ph-list"></i></a></p>
 	</nav>
 </header>
  
@@ -86,10 +90,10 @@
 </p>
 
 	Installing CDN video hosting into my BearBlog, along with a clips section, with plans to migrate all of my macretro youtube work into my own environ.
-	<img src="/assets/images/55-1.webp" alt="Screenshot from my website showing a hosted video player in an iframe]">
+	<img src="/.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=295&format=webp&via=transform" alt="Screenshot from my website showing a hosted video player in an iframe]" loading="lazy" decoding="async" heights="auto" width="1200" height="788" srcset="/.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=1200&format=webp&via=transform 1200w" sizes="auto">
 	<p>In one quick experiment last night, I tested Bunny for video hosting.  That was really simple, embedding an iframe with the video url as src, and applying a minimal amount of styling in the theme to make the borders look better.</p>
 <p>I then added my <a href="/clips">Clips</a> section to the site, which I'll need to replicate on my front page.  If costs are sensible, I will migrate all of my youtube hosted retro gaming content here.</p>
-<p><img src="/assets/images/55-1.webp" alt="Screenshot from my website showing a hosted video player in an iframe"></p>
+<p><img src="/.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=295&format=webp&via=transform" alt="Screenshot from my website showing a hosted video player in an iframe" loading="lazy" decoding="async" heights="auto" width="1200" height="788" srcset="/.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=895&format=webp&via=transform 895w, /.11ty/image/?src=assets%2Fimages%2F55-1.webp&width=1200&format=webp&via=transform 1200w" sizes="auto"></p>
 <p>It does seem to use a cookie, which I need to look at, but I don't think tracking anything beyond the session.</p>
 
   </div>
@@ -99,11 +103,11 @@
 	
 <span id="footer-directive">
 	<div class="h-card">
-  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy" eleventy:ignore>
+  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy">
   <p class="h-card-header"><a class="p-name p-author u-url" rel="author" href="https://l.prry.uk">Lee Perry</a></p>
   <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
 <nav>
-<p><a href='/topics/code'><i class="ph ph-code"></i> </a> <a href='/topics/dogs'><i class="ph ph-dog"></i> </a> <a href='/topics/allotment'><i class="ph ph-plant"></i> </a> <a href='/topics/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/topics/exploring'><i class="ph ph-van"></i> </a><a href='/topics/reading'><i class="ph ph-book"></i> </a> <a href='/topics/watched'><i class="ph ph-television"></i> </a> <a href='/topics/vinyl'><i class="ph ph-guitar"></i> </a></p>
+<p><a href="/topics/code"><i class="ph ph-code"></i> </a> <a href="/topics/dogs"><i class="ph ph-dog"></i> </a> <a href="/topics/allotment"><i class="ph ph-plant"></i> </a> <a href="/topics/football"><i class="ph ph-soccer-ball"></i> </a> <a href="/topics/exploring"><i class="ph ph-van"></i> </a><a href="/topics/reading"><i class="ph ph-book"></i> </a> <a href="/topics/watched"><i class="ph ph-television"></i> </a> <a href="/topics/vinyl"><i class="ph ph-guitar"></i> </a></p>
 </nav>
 <div class="social">  
 <a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>

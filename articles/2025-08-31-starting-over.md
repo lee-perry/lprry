@@ -3,9 +3,9 @@ title: Starting Over
 bear: /2025-08-31-starting-over
 date: 2025-08-31
 tags: ['code', 'html', 'scrimba']
+cover: 48.webp
+description: I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.
 ---
-
-I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.
 
 That inconsistency, combined with being fairly/partly proficient, makes it really difficult to just pick up a MOOC course and follow it through from the beginning.  It's pretty boring relearning simple concepts to pick up the 2% that you may not know or that has changed.
 

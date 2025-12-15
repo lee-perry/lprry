@@ -1,15 +1,15 @@
 ---json
 {
-  "permalink": "atom/articles/",
+  "permalink": "atom/articles.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-	"title": "lprry indieWeb home",
-	"description": "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
-	"language": "en",
-	"base": "https://l.prry.uk",
-	"author": {
-	  "name": "Lee Perry"
-	}
+    "title": "lprry indieWeb home",
+    "description": "Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.",
+    "language": "en",
+    "base": "https://l.prry.uk",
+    "author": {
+    "name": "Lee Perry"
+    }
   }
 }
 ---
@@ -22,18 +22,43 @@
   <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ metadata.base | addPathPrefixToFullUrl }}</id>
   <author>
-	<name>{{ metadata.author.name }}</name>
+  <name>{{ metadata.author.name }}</name>
   </author>
   {%- for post in collections.articles | reverse %}
   {%- set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
   <entry>
-	<title>{{ post.data.title }}</title>
-	<link href="{{ absolutePostUrl }}" />
-	<updated>{{ post.date | dateToRfc3339 }}</updated>
-	<id>{{ absolutePostUrl }}</id>
-	<content type="html">{% if (post.data.type == "ride") or (post.data.type == "run") or (post.data.type == "swim") %}{% if post.data.type == "ride" %}🚴‍♂️ {% endif %}{% if post.data.type == "run" %}🏃‍♂️ {% endif %}{% if post.data.type == "swim" %}🏊‍♂️ {% endif %}{% if post.data.type == "climb" %}🧗‍♂️ {% endif %} ⏰{{ post.data.time }} 📏{{ post.data.distance }}km {% if post.data.type == "run" %} ⏱️{{ post.data.pace }}min/km {% endif %} 🛫{{ post.data.climb }}m+ ❤️‍🔥{{ post.data.hr }}bpm {% if post.data.type == "ride" %} 🪫{{ post.data.w }}w {% endif %} 🧁{{ post.data.kcal }}kcal{% endif %}
-	<![CDATA[<img src="/assets/images/{{ post.data.cover }}" alt="{{ post.data.cover_alt }}"><br>]]>{{ post.data.description }}{{ post.content | renderTransforms(post.data.page, metadata.base) }}<![CDATA[<br><br>]]>#{{ post.data.tags | join(" #") }}<![CDATA[<hr>]]>Thanks for reading via RSS!
-    </content>
+  <title>{{ post.data.title }}</title>
+  <link href="{{ absolutePostUrl }}" />
+  <updated>{{ post.date | dateToRfc3339 }}</updated>
+  <id>{{ absolutePostUrl }}</id>
+  <content type="html">
+  {% if post.data.type in ["ride","run","swim","climb"] %}
+    {% if post.data.type == "ride" %}🚴‍♂️ {% endif %}
+    {% if post.data.type == "run" %}🏃‍♂️ {% endif %}
+    {% if post.data.type == "swim" %}🏊‍♂️ {% endif %}
+    {% if post.data.type == "climb" %}🧗‍♂️ {% endif %}
+    ⏰{{ post.data.time }} 📏{{ post.data.distance }}km
+    {% if post.data.type == "run" %} ⏱️{{ post.data.pace }}min/km {% endif %}
+    🛫{{ post.data.climb }}m+ ❤️‍🔥{{ post.data.hr }}bpm
+    {% if post.data.type == "ride" %} 🪫{{ post.data.w }}w {% endif %}
+    🧁{{ post.data.kcal }}kcal
+    <br>
+  {% endif %}
+  
+  {% if post.data.cover %}
+    <img src="/assets/images/{{ post.data.cover }}" alt="{{ post.data.cover_alt }}" /><br>
+  {% endif %}
+  
+  {{ post.data.description | replace("\n", "<br>") | safe }}
+  <br>
+  {{ post.content | replace("\n", "<br>") | safe }}
+  
+  <br>
+  #{{ post.data.tags | join(" #") }}<br><br>
+  
+  Thanks for reading via RSS!
+  </content>
+
   </entry>
   {%- endfor %}
 </feed>

@@ -5,9 +5,13 @@
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
  <meta name="fediverse:creator" content="@lee@prry.uk">
- <link rel="alternate" type="application/atom+xml" href="/atom/" title="lprry">
- <link rel="alternate" type="application/atom+xml" href="/feed/" title="lprry">
- <link rel="alternate" type="application/json" href="/json/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/feed.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/articles.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/notes.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/snaps.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/clips.xml/" title="lprry">
+ <link rel="alternate" type="application/atom+xml" href="/atom/activities.xml/" title="lprry">
  
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
@@ -21,20 +25,24 @@
  
  <!-- Primary Meta Tags -->
  <meta name="title" content="lprry">
- <meta name="description" content="">
+ <meta name="description" content="I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.">
  
  <!-- Open Graph / Facebook -->
  <meta property="og:site_name" content="lprry">
  <meta property="og:title" content="Starting Over">
  <meta property="og:type" content="website">
  <meta property="og:url" content="https://l.prry.uk/articles/2025-08-31-starting-over/">
- <meta property="og:description" content="">
+ <meta property="og:description" content="I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.">
+ 
+ <meta property="og:image" content="https://l.prry.uk/assets/images/48.webp"> 
  
  <!-- Twitter -->
  <meta property="twitter:card" content="summary">
  <meta property="twitter:url" content="https://l.prry.uk/articles/2025-08-31-starting-over/">
  <meta property="twitter:title" content="Starting Over">
- <meta property="twitter:description" content="">
+ <meta property="twitter:description" content="I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.">
+ 
+ <meta property="twitter:image" content="https://l.prry.uk/assets/images/48.webp">
  
  
 </head>
@@ -47,7 +55,7 @@
 	  </h1>
 	</a>
 	<nav>
-	  <p><a href='/articles'><i class="ph ph-article"></i>Blog</a> <a href='/notes'><i class="ph ph-notepad"></i>Note</a> <a href='/snaps'><i class="ph ph-image"></i>Snap</a> <a href='/clips'><i class="ph ph-video"></i>Clip</a> <a href='/training-log'><i class="ph ph-person-simple-bike"></i>Log</a> <a href='#'><i class="ph ph-chats"></i></a> <a href='/directory'><i class="ph ph-list"></i></a></p>
+	  <p><a href="/articles"><i class="ph ph-article"></i>Blog</a> <a href="/notes"><i class="ph ph-notepad"></i>Note</a> <a href="/snaps"><i class="ph ph-image"></i>Snap</a> <a href="/clips"><i class="ph ph-video"></i>Clip</a> <a href="/training-log"><i class="ph ph-person-simple-bike"></i>Log</a> <a href="#"><i class="ph ph-chats"></i></a> <a href="/directory"><i class="ph ph-list"></i></a></p>
 	</nav>
 </header>
  
@@ -89,10 +97,9 @@
    🔖 <a href="/topics/code">code</a> 🔖 <a href="/topics/html">html</a> 🔖 <a href="/topics/scrimba">scrimba</a>
 </p>
 
-  
-  <img src="/assets/images/" alt="">
-  <p>I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.</p>
-<p>That inconsistency, combined with being fairly/partly proficient, makes it really difficult to just pick up a MOOC course and follow it through from the beginning.  It's pretty boring relearning simple concepts to pick up the 2% that you may not know or that has changed.</p>
+  I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.
+  <img src="/.11ty/image/?src=assets%2Fimages%2F48.webp&width=295&format=webp&via=transform" alt="" loading="lazy" decoding="async" heights="auto" width="670" height="688" srcset="/.11ty/image/?src=assets%2Fimages%2F48.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F48.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F48.webp&width=670&format=webp&via=transform 670w" sizes="auto">
+  <p>That inconsistency, combined with being fairly/partly proficient, makes it really difficult to just pick up a MOOC course and follow it through from the beginning.  It's pretty boring relearning simple concepts to pick up the 2% that you may not know or that has changed.</p>
 <p>I'm going to try just that though.  I've had a Scrimba subscription for a number of years, have always enjoyed the program, but have struggled to maintain progress for a variety of reasons, many external to the learning itself.  Scrimba have also recently introduced the back end to create a full-stack learning path for the first time too.</p>
 <p>So I've cleared my course and submission history, starting over from the beginning.  I'll be blogging about the journey here, partly to consolidate learning, partly to keep myself accountable, and part about rebelling against use of big tech, and finding alternatives where appropriate.</p>
 <p>I completed the Intro to HTML module in the HTML and CSS Fundamentals course today.  The assignment at the end of the module is to create a personal website, though really this task is html only - the stylesheet is provided and controlled by variables.</p>
@@ -124,7 +131,7 @@
 &lt;/html&gt;
 </code></pre>
 <p>The output is shown below, although the styling was largely provided I think this shows how minimal code is required to create something like a personal linktree page.</p>
-<p><img src="/assets/images/48.webp" alt="Screenshot of a personal website with avatar, key interests, and follow buttons"></p>
+<p><img src="/.11ty/image/?src=assets%2Fimages%2F48.webp&width=295&format=webp&via=transform" alt="Screenshot of a personal website with avatar, key interests, and follow buttons" loading="lazy" decoding="async" heights="auto" width="670" height="688" srcset="/.11ty/image/?src=assets%2Fimages%2F48.webp&width=295&format=webp&via=transform 295w, /.11ty/image/?src=assets%2Fimages%2F48.webp&width=445&format=webp&via=transform 445w, /.11ty/image/?src=assets%2Fimages%2F48.webp&width=670&format=webp&via=transform 670w" sizes="auto"></p>
 <p>The Scrimba curriculum uses Github and Netlify, neither fit well with trying to find privacy conscious EU based alternatives to big tech.  So I have set myself up with a couple of alternatives for the first time.  I am trying out <a href="https://codeberg.org">Codeberg</a> in place of Github, and <a href="https://statichost.eu">Statichost</a> in place of Netlify.</p>
 <p>So far everything has gone to plan, and though this initial exercise deploys manually rather than from codeberg, I have my SSH keys setup ready and verified in codeberg ready to use.</p>
 <p>View the project on Statichost <a href="https://scrimba-personal-website.statichost.eu/">here</a></p>
@@ -136,11 +143,11 @@
 	
 <span id="footer-directive">
 	<div class="h-card">
-  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy" eleventy:ignore>
+  <img class="u-photo h-card-img" src="/assets/images/lee.webp" alt="Lee Perry" loading="lazy">
   <p class="h-card-header"><a class="p-name p-author u-url" rel="author" href="https://l.prry.uk">Lee Perry</a></p>
   <p class="p-note h-card-text">Based in Burnley, I have been writing about exploring life with <a href="https://craftedbypanda.co.uk">@craftedbypanda</a> and our canine children, learning to code, running and cycling, and Burnley FC on the internet since 2004.</p>
 <nav>
-<p><a href='/topics/code'><i class="ph ph-code"></i> </a> <a href='/topics/dogs'><i class="ph ph-dog"></i> </a> <a href='/topics/allotment'><i class="ph ph-plant"></i> </a> <a href='/topics/football'><i class="ph ph-soccer-ball"></i> </a> <a href='/topics/exploring'><i class="ph ph-van"></i> </a><a href='/topics/reading'><i class="ph ph-book"></i> </a> <a href='/topics/watched'><i class="ph ph-television"></i> </a> <a href='/topics/vinyl'><i class="ph ph-guitar"></i> </a></p>
+<p><a href="/topics/code"><i class="ph ph-code"></i> </a> <a href="/topics/dogs"><i class="ph ph-dog"></i> </a> <a href="/topics/allotment"><i class="ph ph-plant"></i> </a> <a href="/topics/football"><i class="ph ph-soccer-ball"></i> </a> <a href="/topics/exploring"><i class="ph ph-van"></i> </a><a href="/topics/reading"><i class="ph ph-book"></i> </a> <a href="/topics/watched"><i class="ph ph-television"></i> </a> <a href="/topics/vinyl"><i class="ph ph-guitar"></i> </a></p>
 </nav>
 <div class="social">  
 <a href="https://prry.uk/@lee" class="u-url" rel="me"><i class="ph ph-mastodon-logo"></i></a>

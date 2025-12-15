@@ -3,7 +3,6 @@ title: Liquid Glass Screensaver
 date: 2025-11-14
 bear: /liquid-glass-screensaver
 description: Though I found the transition to liquid glass painful, I absolutely love the rotating screensaver images, which never fail to brighten up my day.
-cover: img_8464.webp
 tags: ['iphone'] 
 ---
 <div class="snaps-vertical">

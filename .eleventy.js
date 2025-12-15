@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   
@@ -22,8 +23,28 @@ module.exports = function (eleventyConfig) {
     // Filter only items in the 'topics' folder
     return collectionApi.getFilteredByGlob("topics/*/index.md");
   });
-
+  
   eleventyConfig.addPlugin(pluginRss);
+  
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // output image formats
+    formats: ["webp"],
+    extensions: "html",
+  
+    // output image widths
+    widths: [295, 445, 895, 1395],
+    heights: "auto",
+  
+    // optional, attributes assigned on <img> nodes override these values
+    htmlOptions: {
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+        heights: "auto",
+      },
+      pictureAttributes: {}
+    },
+  });
   
   eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
   

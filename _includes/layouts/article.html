@@ -6,7 +6,7 @@ layout: /layouts/page.html
   	<h1><a class="u-url" href="{{ page.url }}">{{ title }}</a></h1>
 	{% include 'partials/_publishedBy.html' %}
   {{ description }}
-  <img src="/assets/images/{{ cover }}" alt="{{ cover_alt }}">
+  {% if cover %}<img src="/assets/images/{{ cover }}" alt="{{ cover_alt }}">{% endif %}
   {{ content }}
   </div>
 </article>
