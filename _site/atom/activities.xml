@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>lprry indieWeb home</title>
   <subtitle>Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.</subtitle>
-  <link href="https://l.prry.uk/atom/atom/activities.xml" rel="self" />
+  <link href="https://l.prry.uk/atom/activities.xml" rel="self" />
   <link href="https://l.prry.uk/" />
-  <updated>2025-12-15T20:30:32Z</updated>
+  <updated>2025-12-15T20:56:40Z</updated>
   <id>https://l.prry.uk/</id>
   <author>
   <name>Lee Perry</name>
@@ -36,11 +36,11 @@
            alt="Riders avatars cycling on Rouvy with a sandy beach and fjord beyond, and a mountain col in the background." />
          <br />
        
-   
+       <br />
        I completed stage 5 of the RMC challenge on Rouvy this evening, an hour long effort on the Nusfjord to Haukland Beach AR route.  Like all routes in Norway, there is up, down, and fantastic scenery - but never flat!
-   
+       <br />
        #training-log #cycling #rouvy
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -74,11 +74,11 @@
            alt="Riders avatars cycling in a colorful futuristic setting on Zwift" />
          <br />
        
-   
+       <br />
        Last race of round two of the ZRL was my strongest of the season, holding onto the lead pack until half way up the final climb, and pulling my ranking back to the cusp of silver on zwiftracing.
-   
+       <br />
        #training-log #cycling #zwift
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -112,11 +112,11 @@
            alt="Screenshot from Rouvy showing a rider&#39;s avatar cycling towards white cliffs and blue skies" />
          <br />
        
-   
+       <br />
        Rode steady on this weeks' RMC stage, as I've been ill, and it was the longest stage with the biggest climb I've ridden in a number of years in any case.  Really pleased with the effort, if not the group placement.
-   
+       <br />
        #training-log #cycling #rouvy
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -150,11 +150,11 @@
            alt="Screenshot from Veloviewer showing ride map and elevation profile" />
          <br />
        
-   
+       <br />
        
-   
+       <br />
        #training-log #cycling #zwift
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>

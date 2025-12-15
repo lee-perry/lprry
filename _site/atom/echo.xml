@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>lprry indieWeb home</title>
   <subtitle>Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.</subtitle>
-  <link href="https://l.prry.uk/atom/atom/echo.xml" rel="self" />
+  <link href="https://l.prry.uk/atom/echo.xml" rel="self" />
   <link href="https://l.prry.uk/" />
-  <updated>2025-12-15T20:30:32Z</updated>
+  <updated>2025-12-15T20:56:40Z</updated>
   <id>https://l.prry.uk/</id>
   <author>
   <name>Lee Perry</name>

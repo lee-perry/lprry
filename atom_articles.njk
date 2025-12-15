@@ -53,11 +53,11 @@
            alt="{{ post.data.cover_alt }}" />
          <br />
        {% endif %}
-   
-       {{ post.data.description | replace("\n", "<br />") | safe }}
-   
+       <br />
+       {{ post.data.description | replace("\n", "<br />") | replace("&", "&amp;") | safe }}
+       <br />
        #{{ post.data.tags | join(" #") }}
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>

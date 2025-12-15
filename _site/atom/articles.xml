@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>lprry indieWeb home</title>
   <subtitle>Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.</subtitle>
-  <link href="https://l.prry.uk/atom/atom/articles.xml" rel="self" />
+  <link href="https://l.prry.uk/atom/articles.xml" rel="self" />
   <link href="https://l.prry.uk/" />
-  <updated>2025-12-15T20:30:32Z</updated>
+  <updated>2025-12-15T20:56:40Z</updated>
   <id>https://l.prry.uk/</id>
   <author>
   <name>Lee Perry</name>
@@ -25,11 +25,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        Having spent the last few weeks of my bearblog project focusing on function, I used the first day of my long weekend to complete the first iteration of my theme, here's a run through of the changes.
-   
+       <br />
        #articles #bearblog #indieWeb
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -52,11 +52,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        Images and brief thoughts from the London Stafium where Burnley managed to throw away a game they were well in control of.
-   
+       <br />
        #articles #article #burnleyfc #matchreport
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -79,11 +79,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        The topic for November's Bearblog Carnival is 'what's in my inventory?' Here I talk about the items that follow me everywhere.
-   
+       <br />
        #articles #bearblog #carnival
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -106,11 +106,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        Talking about my journey to Bear, and my plans for this blog
-   
+       <br />
        #articles #bearblog #indieWeb #posse
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -133,11 +133,11 @@
            alt="Me standing infront of the Wylam Brewery, with a lake in-between, ahead of the Great North Run in 2025" />
          <br />
        
-   
+       <br />
        Talking about my race at the Great North Run, 2025
-   
+       <br />
        #articles #race #running
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -160,11 +160,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        Illustrating my Scrimba Business Card project
-   
+       <br />
        #articles #css #code #html #scrimba
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -187,11 +187,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.
-   
+       <br />
        #articles #code #html #scrimba
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -214,11 +214,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        Discussing implementation of microformats on my bearblog project.
-   
+       <br />
        #articles #bearblog #indieWeb #microformats
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -241,11 +241,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        Setting the favicon on my Bear blog site to an existing png file
-   
+       <br />
        #articles #bearblog #indieweb
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -268,11 +268,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        Talking about contemplating completely rebuilding my website on BearBlog.
-   
+       <br />
        #articles #bearblog #indieweb
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>

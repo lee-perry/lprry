@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>lprry indieWeb home</title>
   <subtitle>Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.</subtitle>
-  <link href="https://l.prry.uk/atom/atom/notes.xml" rel="self" />
+  <link href="https://l.prry.uk/atom/notes.xml" rel="self" />
   <link href="https://l.prry.uk/" />
-  <updated>2025-12-15T20:30:32Z</updated>
+  <updated>2025-12-15T20:56:40Z</updated>
   <id>https://l.prry.uk/</id>
   <author>
   <name>Lee Perry</name>
@@ -25,11 +25,11 @@
            alt="Split screen view with a atg page broken into article, note and imagepost sections to the left, and a post showing linked tags on the right" />
          <br />
        
-   
+       <br />
        I've made good progress on my 11ty site this weekend with new topic archives collating content types for each topic, and linking through from content meta sections, with a topics index page.  I'm struggling to paginate archive pages though due to the dynamic content filtering inside my templates.
-   
+       <br />
        #notes #indieweb #eleventy
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -47,11 +47,11 @@
        
    
        
-   
+       <br />
        So I have my site running on 11ty now. I still have a lot of work to do on content ingestion into feeds - I'll probably end up writing a feed template. I need to fix the conflict between my rss and image-transform plugin setup, and to finish various general template improvements.
-   
+       <br />
        #notes #indieWeb #eleventy
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -69,11 +69,11 @@
        
    
        
-   
+       <br />
        We will not collect enough points to stay in this division trying not to lose. Change approach, or change coach.
-   
+       <br />
        #notes #football #burnleyfc
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -91,11 +91,11 @@
        
    
        
-   
+       <br />
        I've been enjoying the simplicity of my bearblog, but am torn on whether to keep it, replicate it back into Kirby, or with an eye on the future recreate in maybe 11ty or Astro. Too much choice.
-   
+       <br />
        #notes #bearblog #indieWeb
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -113,11 +113,11 @@
        
    
        
-   
+       <br />
        Though I found the transition to liquid glass painful, I absolutely love the rotating screensaver images, which never fail to brighten up my day.
-   
+       <br />
        #notes #iphone
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -140,11 +140,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        This has taken such an unbelievable (days) amount of faff, but I finally have webmention likes that I send displaying as intended, and not just as 'mentions'.
-   
+       <br />
        #notes #indieWeb
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -167,11 +167,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        
-   
+       <br />
        #notes #bearblog #indieWeb
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -194,11 +194,11 @@
            alt="Screenshot from my website showing a hosted video player in an iframe]" />
          <br />
        
-   
+       <br />
        Installing CDN video hosting into my BearBlog, along with a clips section, with plans to migrate all of my macretro youtube work into my own environ.
-   
+       <br />
        #notes #bearblog #indieWeb
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -221,11 +221,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        
-   
+       <br />
        #notes #fcunited #football
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -243,11 +243,11 @@
        
    
        
-   
+       <br />
        
-   
+       <br />
        #notes #politics
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -270,11 +270,11 @@
            alt="Mastodon interactions displayed on a weblog.lol website" />
          <br />
        
-   
+       <br />
        
-   
+       <br />
        #notes #indieWeb
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -297,11 +297,11 @@
            alt="" />
          <br />
        
-   
+       <br />
        
-   
+       <br />
        #notes #burnleyfc #football
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>
@@ -324,11 +324,11 @@
            alt="Looking along the course at Hartlepool Parkrun above participants at the start line on a clear day" />
          <br />
        
-   
+       <br />
        
-   
+       <br />
        #notes #note #race #running
-   
+       <br />
        Thanks for reading via RSS!
    
      </div>

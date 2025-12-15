@@ -54,7 +54,7 @@
          <br />
        {% endif %}
    
-       {{ post.data.description | replace("\n", "<br />") | safe }}
+       {{ post.data.description | replace("\n", "<br />") | replace("&", "&amp;") | safe }}
        <br />
    
        #{{ post.data.tags | join(" #") }}
