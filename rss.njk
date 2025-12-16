@@ -56,14 +56,6 @@
 		  {% endif %}
 		]]></description>
 
-		{# --- MEDIA THUMBNAIL --- #}
-		{% if post.data.cover %}
-		  <media:content
-			url="{{ metadata.base }}/assets/images/{{ post.data.cover }}"
-			medium="image"
-		  />
-		{% endif %}
-
 	  </item>
 	{% endfor %}
 
