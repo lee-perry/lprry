@@ -1,3 +1,7 @@
 image: node:22
 command: npm install && npx @11ty/eleventy --incremental
 public: _site
+
+cache:
+  paths:
+	- .eleventy-img

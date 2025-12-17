@@ -8,6 +8,7 @@ npm-debug.*
 .env
 .cache
 .obsidian
+.nova
 
 # Node modules and output
 node_modules
