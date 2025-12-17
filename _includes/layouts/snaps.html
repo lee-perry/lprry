@@ -9,8 +9,8 @@ layout: /layouts/page.html
 {% for item in latestSnaps %}
 {% if item.data.tags contains subject %}
  <li class="h-entry">
-	<a href="{{ item.url }}" class="u-url" rel="bookmark"><span class="p-name">{{ item.data.title }}</span></a>
 	<time datetime=""><span class="dt-published">{{ item.date | date: "%Y-%m-%d" }}</span></time>
+	<a href="{{ item.url }}" class="u-url" rel="bookmark"><span class="p-name">{{ item.data.title }}</span></a>
 	<a href="{{ item.url }}"><img src="/assets/images/{{ item.data.cover }}" alt="item.data.cover_alt"></a>
  </li>
  {% endif %} 
