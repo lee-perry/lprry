@@ -1,0 +1,17 @@
+---
+layout: /layouts/page.html
+---
+<div class="h-feed">
+<h1>My {{ subject-pretty }} Activities</h1>
+
+<ul class="embedded blog-posts">
+{% assign latestTraining = collections.training-log | reverse %}
+{% for item in latestTraining %}
+{% if item.data.tags contains subject %}
+ <li class="h-entry">
+   {{ item.date | date: "%Y-%m-%d" }} <a href="{{ item.url }}">{% if item.data.type == "ride" %}🚴‍♂️ {% endif %}{% if item.data.type == "run" %}🏃‍♂️ {% endif %}{% if item.data.type == "swim" %}🏊‍♂️ {% endif %}{% if item.data.type == "climb" %}🧗‍♂️ {% endif %}{{ item.data.time }} {{ item.data.distance }}km {% if item.data.type == "run" %}{{ item.data.pace }}min/km {% endif %}{{ item.data.climb }}m+ {{ item.data.hr }}bpm {% if item.data.type == "ride" %}{{ item.data.w }}w {% endif %}{{ item.data.kcal }}kcal</a>
+ </li>
+ {% endif %} 
+{% endfor %}
+</ul>
+</div>
