@@ -26,8 +26,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   
   eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
+  eleventyConfig.addPassthroughCopy('assets');
+  eleventyConfig.addPassthroughCopy('_redirects')
   
-  eleventyConfig.addPassthroughCopy('assets')
   return {
   passthroughFileCopy: true
   };
