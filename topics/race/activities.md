@@ -1,5 +1,5 @@
 ---
 layout : /layouts/activities.html
-subject: run
-subject-pretty: Running
+subject: race
+subject-pretty: Racing 
 ---
