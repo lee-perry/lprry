@@ -74,9 +74,9 @@
 			{% if post.data.type == "climb" %}🧗‍♂️{% endif %}
 
 			⏰ {{ post.data.time }}
-			📏 {{ post.data.distance }} km
+			{% if post.data.type != "climb" %}📏 {{ post.data.distance }} km{% endif %}
 			{% if post.data.pace %}⏱️ {{ post.data.pace }} min/km{% endif %}
-			{% if post.data.climb %}🛫 {{ post.data.climb }} m+{% endif %}
+			{% if post.data.type != "climb" %}{% if post.data.climb %}🛫 {{ post.data.climb }} m+{% endif %}{% endif %}
 			{% if post.data.hr %}❤️‍🔥 {{ post.data.hr }} bpm{% endif %}
 			{% if post.data.w %}🪫 {{ post.data.w }} w{% endif %}
 			{% if post.data.kcal %}🧁 {{ post.data.kcal }} kcal{% endif %}

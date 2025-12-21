@@ -35,17 +35,17 @@
      <div xmlns="http://www.w3.org/1999/xhtml">
    
        {% if post.data.type in ["ride","run","swim","climb"] %}
-         {% if post.data.type == "ride" %}🚴‍♂️ {% endif %}
-         {% if post.data.type == "run" %}🏃‍♂️ {% endif %}
-         {% if post.data.type == "swim" %}🏊‍♂️ {% endif %}
-         {% if post.data.type == "climb" %}🧗‍♂️ {% endif %}
-         ⏰{{ post.data.time }} 📏{{ post.data.distance }}km
-         {% if post.data.type == "run" %} ⏱️{{ post.data.pace }}min/km {% endif %}
-         🛫{{ post.data.climb }}m+ ❤️‍🔥{{ post.data.hr }}bpm
-         {% if post.data.type == "ride" %} 🪫{{ post.data.w }}w {% endif %}
-         🧁{{ post.data.kcal }}kcal
-         <br />
-       {% endif %}
+          {% if post.data.type == "ride" %}🚴‍♂️ {% endif %}
+          {% if post.data.type == "run" %}🏃‍♂️ {% endif %}
+          {% if post.data.type == "swim" %}🏊‍♂️ {% endif %}
+          {% if post.data.type == "climb" %}🧗‍♂️ {% endif %}
+          ⏰{{ post.data.time }} {% if post.data.type != "climb" %}📏{{ post.data.distance }}km{% endif %}
+          {% if post.data.type == "run" %} ⏱️{{ post.data.pace }}min/km {% endif %}
+          {% if post.data.type != "climb" %}🛫{{ post.data.climb }}m+ {% endif %}❤️‍🔥{{ post.data.hr }}bpm
+          {% if post.data.type == "ride" %} 🪫{{ post.data.w }}w {% endif %}
+          🧁{{ post.data.kcal }}kcal
+          <br />
+        {% endif %}
    
        {% if post.data.cover %}
          <img
