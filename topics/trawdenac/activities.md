@@ -1,5 +1,5 @@
 ---
 layout : /layouts/activities.html
-subject: rouvy
-subject-pretty: Rouvy 
+subject: trawdenac
+subject-pretty: Trawden Athletics Club 
 ---
