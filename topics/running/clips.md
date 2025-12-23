@@ -1,5 +1,5 @@
 ---
 layout : /layouts/clips.html
-subject: run
+subject: running
 subject-pretty: Running 
 ---

@@ -27,7 +27,7 @@ As the page grows I _may_ break this out into a page for  each route.
 
 </div>
 
-01 Dec 2025 🏃‍♂️ ⏰00:48:48 📏7.53km ⏱️06:29/km 🛫113m+ ❤️‍🔥158bpm 🧁702kcal  
+01 Dec 2025 🏃‍♂️ ⏰00:48:48 📏7.53km ⏱️6:29/km 🛫113m+ ❤️‍🔥158bpm 🧁702kcal  
 22 Dec 2025 [🏃‍♂️ ⏰00:50:25 📏7.51km ⏱️6:43min/km 🛫112m+ ❤️‍🔥165bpm 🧁793kcal](/training-log/2025-12-22-run)
 
 ## Foulridge Loop (short) from HHP

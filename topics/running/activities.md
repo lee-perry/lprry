@@ -1,5 +1,5 @@
 ---
 layout : /layouts/activities.html
-subject: run
+subject: running
 subject-pretty: Running
 ---

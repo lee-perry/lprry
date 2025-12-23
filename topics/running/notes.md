@@ -1,5 +1,5 @@
 ---
 layout : /layouts/notes.html
-subject: run
+subject: running
 subject-pretty: Running 
 ---

@@ -1,5 +1,5 @@
 ---
 layout : /layouts/articles.html
-subject: run
+subject: running
 subject-pretty: Running 
 ---

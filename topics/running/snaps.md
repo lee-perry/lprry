@@ -1,5 +1,5 @@
 ---
 layout : /layouts/snaps.html
-subject: run
+subject: running
 subject-pretty: Running 
 ---
