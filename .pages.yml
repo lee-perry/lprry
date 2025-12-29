@@ -55,6 +55,8 @@ content:
       - name: time
         label: Time
         type: text
+        options:
+          rows: 1
       - name: distance
         label: Distance
         type: number
