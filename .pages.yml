@@ -61,6 +61,9 @@ content:
       - name: pace
         label: Pace
         type: string
+      - name: climg
+        label: Climb
+        type: number
       - name: cover
         label: Preview image
         type: image
