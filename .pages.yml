@@ -1,0 +1,6 @@
+media:
+  - name: images # Note: 'name' key is required here
+    label: Images
+    input: assets/images
+    output: assets/images
+    extensions: [ webp ]
