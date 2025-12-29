@@ -9,4 +9,4 @@ content:
     label: Snaps
     path: snaps
     type: collection
-    fields: [ title, date, cover, cover_alt, description, "tags[snaps]" ]
+    fields: [ title, date, cover, cover_alt, description, "tags[0]" ]
