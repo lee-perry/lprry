@@ -52,6 +52,12 @@ content:
         type: select
         options:
           values: [ run, ride, climb, swim ]
+      - name: time
+        label: Time
+        type: text
+      - name: distance
+        label: Distance
+        type: number
       - name: cover
         label: Preview image
         type: image
