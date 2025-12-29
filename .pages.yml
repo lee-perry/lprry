@@ -1,7 +1,6 @@
 media:
   - name: images # Note: 'name' key is required here
     label: Images
-    input: assets/images
     output: assets/images
     extensions: webp
 content:
@@ -9,4 +8,4 @@ content:
     label: Snaps
     path: snaps
     type: collection
-    fields: [ title, date, cover, cover_alt, description, tags[0] ]
+    fields: [ title, date, cover, cover_alt, description, tags ]
