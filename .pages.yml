@@ -1,6 +1,6 @@
 media:
-  input: src/media
-  output: /media
+  input: assets/images
+  output: assets/images
 content:
   - name: snaps
     label: Snaps
