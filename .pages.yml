@@ -56,7 +56,7 @@ content:
         label: Time
         type: text
         options:
-          autoresize: true
+          rows: 0
       - name: distance
         label: Distance
         type: number
