@@ -47,6 +47,11 @@ content:
       - name: date
         label: Date
         type: date
+      - name: type
+        label: Type
+        type: select
+        options:
+          values: [ run, ride, climb, swim ]
       - name: cover
         label: Preview image
         type: image
@@ -59,6 +64,13 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: tags
+        label: Tags
+        type: string
+        list:
+          min: 1 # Must have at least one tag
+          max: 5 # Can have up to five tags
+          default: [training-log]
   - name: site
     label: Site settings
     path: /data/site.json
