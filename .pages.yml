@@ -54,9 +54,7 @@ content:
           values: [ run, ride, climb, swim ]
       - name: time
         label: Time
-        type: text
-        options:
-          rows: 0
+        type: string
       - name: distance
         label: Distance
         type: number
