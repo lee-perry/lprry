@@ -58,6 +58,9 @@ content:
       - name: distance
         label: Distance
         type: number
+      - name: pace
+        label: Pace
+        type: string
       - name: cover
         label: Preview image
         type: image
