@@ -47,6 +47,15 @@ content:
       - name: date
         label: Date
         type: date
+      - name: cover
+        label: Preview image
+        type: image
+      - name: cover_alt
+        label: Cover Alt Text
+        type: string
+      - name: description
+        label: Description
+        type: string
       - name: type
         label: Type
         type: select
@@ -64,18 +73,15 @@ content:
       - name: climg
         label: Climb
         type: number
-      - name: cover
-        label: Preview image
-        type: image
-      - name: cover_alt
-        label: Cover Alt Text
-        type: string
-      - name: description
-        label: Description
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
+      - name: hr
+        label: HR
+        type: number
+      - name: w
+        label: W
+        type: number
+      - name: kcal
+        label: Kcal
+        type: number
       - name: tags
         label: Tags
         type: string
@@ -83,6 +89,9 @@ content:
           min: 1 # Must have at least one tag
           max: 5 # Can have up to five tags
           default: [training-log]
+      - name: body
+        label: Body
+        type: rich-text
   - name: site
     label: Site settings
     path: /data/site.json
