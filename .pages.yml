@@ -77,10 +77,10 @@ content:
         label: HR
         type: number
       - name: w
-        label: w
+        label: W
         type: number
       - name: kcal
-        label: kcal
+        label: Kcal
         type: number
       - name: tags
         label: Tags
