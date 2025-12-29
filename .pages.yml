@@ -4,3 +4,10 @@ media:
     input: assets/images
     output: assets/images
     extensions: [ webp ]
+
+content:
+  - name: snaps
+    label: Posts
+    path: snaps
+    type: collection
+    fields: [ title, date, cover, cover_alt, description, "tags[snaps]" ]
