@@ -1,4 +1,312 @@
 [[redirects]]
-  from = "/admin"
-  to = "/admin/index.html"
-  status = 200
+  from = "/whats-in-my-inventory"
+  to = "/articles/2025-11-05-whats-in-my-inventory/"
+  status = 301
+
+[[redirects]]
+  from = "/finalising-my-bearblog-theme-for-now"
+  to = "/articles/2025-11-15-finalising-my-bearblog-theme-for-now/"
+  status = 301
+
+[[redirects]]
+  from = "/zian-flemming-penalty-at-newcastle"
+  to = "/clips/2025-12-06-zian-flemming-penalty-at-newcastle/"
+  status = 301
+
+[[redirects]]
+  from = "/webmentions-finally-sending-from-bearblog"
+  to = "/notes/2025-11-10-note/"
+  status = 301
+
+[[redirects]]
+  from = "/lovely-podenco-swimming-video"
+  to = "/clips/2025-11-20-clip/"
+  status = 301
+
+[[redirects]]
+  from = "/liquid-glass-screensaver"
+  to = "/notes/2025-11-14-liquid-glass-screensaver/"
+  status = 301
+
+[[redirects]]
+  from = "/2025-11-11-weight-loss-progress"
+  to = "/weigh-in/"
+  status = 301
+
+[[redirects]]
+  from = "/west-ham-united-3-burnley-2"
+  to = "/articles/2025-11-08-west-ham-united-3-burnley-2/"
+  status = 301
+
+[[redirects]]
+  from = "/setting-a-favicon-and-site-logo-in-bear"
+  to = "/articles/2025-07-11-a-favicon-and-site-logo-in-bear/"
+  status = 301
+
+[[redirects]]
+  from = "/loughborough-train-station"
+  to = "/snaps/2025-11-07-loughborough-train-station/"
+  status = 301
+
+[[redirects]]
+  from = "/next-previous-steps"
+  to = "/notes/2025-11-25-note/"
+  status = 301
+
+[[redirects]]
+  from = "/bearly-here"
+  to = "/articles/2025-10-25-bearly-here/"
+  status = 301
+
+[[redirects]]
+  from = "/2025-08-31-starting-over"
+  to = "/articles/2025-08-31-starting-over/"
+  status = 301
+
+[[redirects]]
+  from = "/hello-bear"
+  to = "/articles/2025-07-10-hello-bear/"
+  status = 301
+
+[[redirects]]
+  from = "/2025-11-29-snap"
+  to = "/snaps/2025-11-29-gtech-community-stadium/"
+  status = 301
+
+[[redirects]]
+  from = "/molineux-pre-kick-off"
+  to = "/snaps/2025-10-26-snap/"
+  status = 301
+
+[[redirects]]
+  from = "/stevie-hogging-the-fire"
+  to = "/snaps/2025-10-24-snap/"
+  status = 301
+
+[[redirects]]
+  from = "/fan-forum-october-2025"
+  to = "/notes/2025-10-23-fan-forum/"
+  status = 301
+
+[[redirects]]
+  from = "/using-microformats-with-bear"
+  to = "/articles/2025-07-11-using-microformats-with-bear/"
+  status = 301
+
+[[redirects]]
+  from = "/spaniel-sewing"
+  to = "/snaps/2025-11-08-spaniel-sewing/"
+  status = 301
+
+[[redirects]]
+  from = "/video-hosting-for-my-bearblog"
+  to = "/notes/2025-10-26-video-hosting-for-my-bearblog/"
+  status = 301
+
+[[redirects]]
+  from = "/weigh-ins"
+  to = "/weigh-in"
+  status = 301
+
+[[redirects]]
+  from = "/great-north-run-2025"
+  to = "/articles/2025-07-09-great-north-run/"
+  status = 301
+
+[[redirects]]
+  from = "/hartlepool-parkrun-521"
+  to = "/notes/2025-09-06-hartlepool-parkrun/"
+  status = 301
+
+[[redirects]]
+  from = "/podenco-meets-dinosaurs"
+  to = "/snaps/2025-10-20-snap/"
+  status = 301
+
+[[redirects]]
+  from = "/london-stadium-2511"
+  to = "/snaps/2025-11-08-london-stadium/"
+  status = 301
+
+[[redirects]]
+  from = "/2025-11-02-spaniel-in-charge"
+  to = "/snaps/2025-11-02-snap/"
+  status = 301
+
+[[redirects]]
+  from = "/fc-united-of-manchester-1-bamber-bridge-0"
+  to = "/notes/2025-10-25-note/"
+  status = 301
+
+[[redirects]]
+  from = "/three-podencos-under-the-desk"
+  to = "/snaps/2025-10-23-snap/"
+  status = 301
+
+[[redirects]]
+  from = "/2025-09-05-scrimba-business-card-project"
+  to = "/articles/2025-09-05-scrimba-business-card-project/"
+  status = 301
+
+[[redirects]]
+  from = "/whats-in-my-inventory/"
+  to = "/articles/2025-11-05-whats-in-my-inventory/"
+  status = 301
+
+[[redirects]]
+  from = "/finalising-my-bearblog-theme-for-now/"
+  to = "/articles/2025-11-15-finalising-my-bearblog-theme-for-now/"
+  status = 301
+
+[[redirects]]
+  from = "/zian-flemming-penalty-at-newcastle/"
+  to = "/clips/2025-12-06-zian-flemming-penalty-at-newcastle/"
+  status = 301
+
+[[redirects]]
+  from = "/webmentions-finally-sending-from-bearblog/"
+  to = "/notes/2025-11-10-note/"
+  status = 301
+
+[[redirects]]
+  from = "/lovely-podenco-swimming-video/"
+  to = "/clips/2025-11-20-clip/"
+  status = 301
+
+[[redirects]]
+  from = "/liquid-glass-screensaver/"
+  to = "/notes/2025-11-14-liquid-glass-screensaver/"
+  status = 301
+
+[[redirects]]
+  from = "/2025-11-11-weight-loss-progress/"
+  to = "/weigh-in/"
+  status = 301
+
+[[redirects]]
+  from = "/west-ham-united-3-burnley-2/"
+  to = "/articles/2025-11-08-west-ham-united-3-burnley-2/"
+  status = 301
+
+[[redirects]]
+  from = "/setting-a-favicon-and-site-logo-in-bear/"
+  to = "/articles/2025-07-11-a-favicon-and-site-logo-in-bear/"
+  status = 301
+
+[[redirects]]
+  from = "/loughborough-train-station/"
+  to = "/snaps/2025-11-07-loughborough-train-station/"
+  status = 301
+
+[[redirects]]
+  from = "/next-previous-steps/"
+  to = "/notes/2025-11-25-note/"
+  status = 301
+
+[[redirects]]
+  from = "/bearly-here/"
+  to = "/articles/2025-10-25-bearly-here/"
+  status = 301
+
+[[redirects]]
+  from = "/2025-08-31-starting-over/"
+  to = "/articles/2025-08-31-starting-over/"
+  status = 301
+
+[[redirects]]
+  from = "/hello-bear/"
+  to = "/articles/2025-07-10-hello-bear/"
+  status = 301
+
+[[redirects]]
+  from = "/2025-11-29-snap/"
+  to = "/snaps/2025-11-29-gtech-community-stadium/"
+  status = 301
+
+[[redirects]]
+  from = "/molineux-pre-kick-off/"
+  to = "/snaps/2025-10-26-snap/"
+  status = 301
+
+[[redirects]]
+  from = "/stevie-hogging-the-fire/"
+  to = "/snaps/2025-10-24-snap/"
+  status = 301
+
+[[redirects]]
+  from = "/fan-forum-october-2025/"
+  to = "/notes/2025-10-23-fan-forum/"
+  status = 301
+
+[[redirects]]
+	from = "/using-microformats-with-bear/"
+	to = "/articles/2025-07-11-using-microformats-with-bear/"
+	status = 301
+  
+  [[redirects]]
+	from = "/spaniel-sewing/"
+	to = "/snaps/2025-11-08-spaniel-sewing/"
+	status = 301
+  
+  [[redirects]]
+	from = "/video-hosting-for-my-bearblog/"
+	to = "/notes/2025-10-26-video-hosting-for-my-bearblog/"
+	status = 301
+  
+  [[redirects]]
+	from = "/weigh-ins/"
+	to = "/weigh-in"
+	status = 301
+  
+  [[redirects]]
+	from = "/great-north-run-2025/"
+	to = "/articles/2025-07-09-great-north-run/"
+	status = 301
+  
+  [[redirects]]
+	from = "/hartlepool-parkrun-521/"
+	to = "/notes/2025-09-06-hartlepool-parkrun/"
+	status = 301
+  
+  [[redirects]]
+	from = "/podenco-meets-dinosaurs/"
+	to = "/snaps/2025-10-20-snap/"
+	status = 301
+  
+  [[redirects]]
+	from = "/london-stadium-2511/"
+	to = "/snaps/2025-11-08-london-stadium/"
+	status = 301
+  
+  [[redirects]]
+	from = "/2025-11-02-spaniel-in-charge/"
+	to = "/snaps/2025-11-02-snap/"
+	status = 301
+  
+  [[redirects]]
+	from = "/fc-united-of-manchester-1-bamber-bridge-0/"
+	to = "/notes/2025-10-25-note/"
+	status = 301
+  
+  [[redirects]]
+	from = "/three-podencos-under-the-desk/"
+	to = "/snaps/2025-10-23-snap/"
+	status = 301
+  
+  [[redirects]]
+	from = "/2025-09-05-scrimba-business-card-project/"
+	to = "/articles/2025-09-05-scrimba-business-card-project/"
+	status = 301
+  
+  [[redirects]]
+	from = "/atom/"
+	to = "/atom.xml"
+	status = 301
+  
+  [[redirects]]
+	from = "/feed/"
+	to = "/feed.rss"
+	status = 302
+  
+ 
+
