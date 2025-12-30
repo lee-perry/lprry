@@ -83,7 +83,7 @@ content:
         type: number
       - name: kcal
         label: Kcal
-        type: number
+        type: string
       - name: tags
         label: Tags
         type: string
