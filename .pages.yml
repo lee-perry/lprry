@@ -315,7 +315,7 @@ content:
       - name: body
         label: Body
         type: rich-text
-  - name: Regular Running Routes
+  - name: regular-running-routes
     label: Run Routes
     path: regular-running-routes.md
     type: file
