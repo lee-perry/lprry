@@ -315,4 +315,23 @@ content:
       - name: body
         label: Body
         type: rich-text
-    
+  - name: Regular Running Routes
+    label: Run Routes
+    path: regular-running-routes.md
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: cover
+        label: Preview image
+        type: image
+      - name: cover_alt
+        label: Cover Alt Text
+        type: string
+      - name: description
+        label: Description
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
