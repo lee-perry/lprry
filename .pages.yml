@@ -177,15 +177,112 @@ content:
         description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
   - name: Homepage
     label: Site Home
-    path: /index.md
+    path: index.md
     type: file
     fields:
       - name: title
         label: Title
         type: string
-      - name: date
-        label: Date
-        type: date
+      - name: cover
+        label: Preview image
+        type: image
+      - name: cover_alt
+        label: Cover Alt Text
+        type: string
+      - name: description
+        label: Description
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: Directory
+    label: Directory
+    path: directory.md
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: cover
+        label: Preview image
+        type: image
+      - name: cover_alt
+        label: Cover Alt Text
+        type: string
+      - name: description
+        label: Description
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: About
+    label: About
+    path: about.md
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: cover
+        label: Preview image
+        type: image
+      - name: cover_alt
+        label: Cover Alt Text
+        type: string
+      - name: description
+        label: Description
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: Now
+    label: Now
+    path: now.md
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: cover
+        label: Preview image
+        type: image
+      - name: cover_alt
+        label: Cover Alt Text
+        type: string
+      - name: description
+        label: Description
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: Uses
+    label: Uses
+    path: uses.md
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: cover
+        label: Preview image
+        type: image
+      - name: cover_alt
+        label: Cover Alt Text
+        type: string
+      - name: description
+        label: Description
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: Colophon
+    label: Colophon
+    path: colophon.md
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
       - name: cover
         label: Preview image
         type: image
