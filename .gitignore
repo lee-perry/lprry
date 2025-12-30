@@ -11,6 +11,6 @@ npm-debug.*
 .nova
 
 # Node modules and output
-node_modules
+**/node_modules/**
 dist/
 _site/
