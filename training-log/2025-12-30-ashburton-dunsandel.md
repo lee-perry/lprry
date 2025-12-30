@@ -11,7 +11,7 @@ distance: 59.71
 climb: 65
 hr: 156
 w: 177
-kcal: 1056
+kcal: 1,056
 tags:
   - cycling
   - rouvy
