@@ -41,7 +41,7 @@ content:
         list:
           min: 1 # Must have at least one tag
           max: 5 # Can have up to five tags
-          default: [news]
+          default: [snaps]
   - name: training-log
     label: Activities
     type: collection
