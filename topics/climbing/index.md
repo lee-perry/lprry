@@ -1,7 +1,7 @@
 ---
 title: Climbing - Topic Focus
 layout: /layouts/topic_fitness.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: climbing
 subject-pretty: Climbing
 ---

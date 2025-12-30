@@ -3,7 +3,7 @@ title: Starting Over
 bear: /2025-08-31-starting-over
 date: 2025-08-31
 tags: ['code', 'html', 'scrimba']
-cover: 48.webp
+cover: /assets/images/48.webp
 description: I have been learning to write code on and off for over a decade now, making plenty of progress along the way, but rarely with sufficient consistency to make it 'stick'.  Certainly not adequate to build any of the projects that I would like to build.
 ---
 

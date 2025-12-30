@@ -1,7 +1,7 @@
 ---
 title: Burnley FC - Topic Focus
 layout: /layouts/topic.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: burnleyfc
 subject-pretty: Burnley FC
 ---

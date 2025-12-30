@@ -1,7 +1,7 @@
 ---
 title: Freecodecamp - Topic Focus
 layout: /layouts/topic.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: freecodecamp
 subject-pretty: FreeCodeCamp
 ---

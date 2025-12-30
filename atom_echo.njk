@@ -49,7 +49,7 @@
    
        {% if post.data.cover %}
          <img
-           src="{{ '/assets/images/' | htmlBaseUrl(metadata.base) }}{{ post.data.cover }}"
+           src="{{ post.data.cover | htmlBaseUrl(metadata.base) }}"
            alt="{{ post.data.cover_alt }}" />
          <br />
        {% endif %}

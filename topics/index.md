@@ -1,7 +1,7 @@
 ---
 title: Topics
 layout: /layouts/page.html
-cover: header.webp
+cover: /assets/images/header.webp
 ---
 {% assign sortedTopics = collections.topics | sort: 'data.subject' %}
 

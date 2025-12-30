@@ -1,7 +1,7 @@
 ---
 title: Training Log - Runs
 layout: /layouts/page.html
-cover: header.webp
+cover: /assets/images/header.webp
 ---
 <h1>My Running Activities</h1>
 

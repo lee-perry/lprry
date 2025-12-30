@@ -1,7 +1,7 @@
 ---
 title: CSS - Topic Focus
 layout: /layouts/topic.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: css
 subject-pretty: CSS 
 ---

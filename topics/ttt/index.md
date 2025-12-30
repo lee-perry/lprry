@@ -1,7 +1,7 @@
 ---
 title: TTT - Topic Focus
 layout: /layouts/topic_fitness.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: ttt
 subject-pretty: Team Time Trial 
 ---

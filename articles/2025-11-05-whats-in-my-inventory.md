@@ -3,7 +3,7 @@ title: What's in my inventory?
 bear: /whats-in-my-inventory
 date: 2025-11-05
 description: The topic for November's Bearblog Carnival is 'what's in my inventory?' Here I talk about the items that follow me everywhere.
-cover: img_4515.webp
+cover: /assets/images/img_4515.webp
 tags: ['bearblog', 'carnival']
 ---
 

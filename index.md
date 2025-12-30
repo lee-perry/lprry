@@ -2,7 +2,7 @@
 title: lprry's IndieWeb home
 layout: layouts/page.html
 description: Burnley based, I talk about learning code and the indieWeb, staying fit by running, cycling, swimming and bouldering, retrogaming, our allotment, and life with our dogs and chickens.
-cover: /header.webp
+cover: /assets/images/header.webp
 ---
 
 <img src="/assets/images/header.webp" alt="Me, surrounded by dogs on the sofa" class="header-img" >
@@ -65,7 +65,7 @@ On this site I write notes and longer articles about learning to code, exploring
  <li>
     <time datetime="">{{ item.date | date: "%Y-%m-%d" }}</time><br>
     <a href="{{ item.url }}">{{ item.data.title }}</a><br>
-     <a href="{{ item.url }}"><img src="/assets/images/{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
+     <a href="{{ item.url }}"><img src="{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
  </li>
 {% endfor %}
 </ul>

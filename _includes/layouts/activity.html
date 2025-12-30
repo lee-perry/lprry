@@ -6,7 +6,7 @@ layout: /layouts/page.html
 	<h1><a class="u-url" href="{{ page.url }}">{{ title }}</a></h1>
 	{% include 'partials/_publishedBy.html' %}
 	<h2>{% if type == "ride" %}🚴‍♂️ {% endif %}{% if type == "run" %}🏃‍♂️ {% endif %}{% if type == "swim" %}🏊‍♂️ {% endif %}{% if type == "climb" %}🧗‍♂️ {% endif %} ⏰{{ time }}{% if type != "climb" %} 📏{{ distance }}km {% endif %}{% if type == "run" %} ⏱️{{ pace }}min/km {% endif %}{% if type != "climb" %} 🛫{{ climb }}m+{% endif %} ❤️‍🔥{{ hr }}bpm {% if type == "ride" %} 🪫{{ w }}w {% endif %} 🧁{{ kcal }}kcal</h2>
-	{% if cover %}<img src="/assets/images/{{ cover }}" alt="{{ cover_alt }}">{% endif %}<br>
+	{% if cover %}<img src="{{ cover }}" alt="{{ cover_alt }}">{% endif %}<br>
 	{{ description }}
 	{{ content }}
   </div>

@@ -4,7 +4,7 @@ link: london-stadium
 bear: /london-stadium-2511
 date: 2025-11-08
 description: A few images from the London Stadium ahead of West Ham United today.
-cover: img_8426.webp
+cover: /assets/images/img_8426.webp
 tags: ['exploring', 'stadium']
 ---
 

@@ -3,7 +3,7 @@ title: Hello Bear?
 bear: /hello-bear
 date: 2025-07-10
 description: Talking about contemplating completely rebuilding my website on BearBlog.
-cover: 24-1.webp
+cover: /assets/images/24-1.webp
 tags: ['bearblog', 'indieweb']
 ---
 

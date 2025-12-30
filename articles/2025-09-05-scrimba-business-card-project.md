@@ -3,7 +3,7 @@ title: Scrimba Business Card Project
 bear: /2025-09-05-scrimba-business-card-project
 date: 2025-09-05
 description: Illustrating my Scrimba Business Card project
-cover: 17-1.webp
+cover: /assets/images/17-1.webp
 tags: ['css', 'code', 'html', 'scrimba']
 ---
 

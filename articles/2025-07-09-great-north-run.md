@@ -3,7 +3,7 @@ title: Great North Run 2025
 bear: /great-north-run-2025
 date: 2025-09-07
 description: Talking about my race at the Great North Run, 2025
-cover: img_6655.webp
+cover: /assets/images/img_6655.webp
 cover_alt: Me standing infront of the Wylam Brewery, with a lake in-between, ahead of the Great North Run in 2025
 lang: en
 tags: ['race', 'running']

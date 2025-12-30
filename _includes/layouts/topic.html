@@ -63,7 +63,7 @@ layout: /layouts/page.html
  <li>
 	<time datetime="">{{ item.date | date: "%Y-%m-%d" }}</time><br>
 	<a href="{{ item.url }}">{{ item.data.title }}</a><br>
-	 <a href="{{ item.url }}"><img src="/assets/images/{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
+	 <a href="{{ item.url }}"><img src="{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
  </li>
  {% assign shownSnaps = shownSnaps | plus: 1 %}
 {% endfor %}

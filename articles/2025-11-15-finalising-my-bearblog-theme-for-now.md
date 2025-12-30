@@ -1,7 +1,7 @@
 ---
 title: Finalising my bearblog theme. For now...
 date: 2025-11-15
-cover: 38-2.webp
+cover: /assets/images/38-2.webp
 description: Having spent the last few weeks of my bearblog project focusing on function, I used the first day of my long weekend to complete the first iteration of my theme, here's a run through of the changes.
 bear: /finalising-my-bearblog-theme-for-now
 tags: ['bearblog', 'indieWeb']

@@ -1,7 +1,7 @@
 ---
 title: Football - Topic Focus
 layout: /layouts/topic.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: football
 subject-pretty: Football
 ---

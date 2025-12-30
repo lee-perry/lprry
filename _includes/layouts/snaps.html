@@ -11,7 +11,7 @@ layout: /layouts/page.html
  <li class="h-entry">
 	<time datetime=""><span class="dt-published">{{ item.date | date: "%Y-%m-%d" }}</span></time>
 	<a href="{{ item.url }}" class="u-url" rel="bookmark"><span class="p-name">{{ item.data.title }}</span></a>
-	<a href="{{ item.url }}"><img src="/assets/images/{{ item.data.cover }}" alt="item.data.cover_alt"></a>
+	<a href="{{ item.url }}"><img src="{{ item.data.cover }}" alt="item.data.cover_alt"></a>
  </li>
  {% endif %} 
 {% endfor %}

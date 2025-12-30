@@ -3,7 +3,7 @@ title: Bearly here
 bear: /bearly-here
 date: 2025-10-25
 description: Talking about my journey to Bear, and my plans for this blog
-cover: 07.webp
+cover: /assets/images/07.webp
 tags: ['bearblog', 'indieWeb', 'posse']
 ---
 

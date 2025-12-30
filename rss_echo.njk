@@ -1,6 +1,6 @@
 ---json
 {
-  "permalink": "feed.rss",
+  "permalink": "feed/echo.rss",
   "eleventyExcludeFromCollections": true,
   "metadata": {
 	"title": "lprry indieWeb home",
@@ -45,63 +45,33 @@
 		{# --- TEXT SUMMARY --- #}
 		<description><![CDATA[
 		  {% if post.data.cover %}
-			<img src="{{ metadata.base }}/assets/images/{{ post.data.cover }}"
+			<img src="{{ post.data.cover | htmlBaseUrl(metadata.base) }}"
 				 alt="{{ post.data.cover_alt | default(post.data.title) }}"
 				 style="max-width:100%; height:auto;"><br><br>
 		  {% endif %}
+		  
+		  {% if post.data.type %}
+			  {% if post.data.type == "ride" %}🚴‍♂️{% endif %}
+			  {% if post.data.type == "run" %}🏃‍♂️{% endif %}
+			  {% if post.data.type == "swim" %}🏊‍♂️{% endif %}
+			  {% if post.data.type == "climb" %}🧗‍♂️{% endif %}
+		  
+			  ⏰ {{ post.data.time }}
+			  {% if post.data.type != "climb" %}📏 {{ post.data.distance }} km{% endif %}
+			  {% if post.data.pace %}⏱️ {{ post.data.pace }} min/km{% endif %}
+			  {% if post.data.type != "climb" %}{% if post.data.climb %}🛫 {{ post.data.climb }} m+{% endif %}{% endif %}
+			  {% if post.data.hr %}❤️‍🔥 {{ post.data.hr }} bpm{% endif %}
+			  {% if post.data.w %}🪫 {{ post.data.w }} w{% endif %}
+			  {% if post.data.kcal %}🧁 {{ post.data.kcal }} kcal{% endif %}
+			  <br><br>
+			{% endif %}
 		
 		  {{ post.data.description | default(post.data.title) | safe }}
-		  {{ post.content | safe }}
 		  {% if post.data.tags %}
 			  #{{ post.data.tags | join(" #") }}
 		  {% endif %}
 		]]></description>
 
-		{# --- MEDIA THUMBNAIL --- #}
-		{% if post.data.cover %}
-		  <media:content
-			url="{{ metadata.base }}/assets/images/{{ post.data.cover }}"
-			medium="image"
-		  />
-		{% endif %}
-
-		{# --- FULL HTML CONTENT --- #}
-		<content:encoded><![CDATA[
-		  {% if post.data.type %}
-			{% if post.data.type == "ride" %}🚴‍♂️{% endif %}
-			{% if post.data.type == "run" %}🏃‍♂️{% endif %}
-			{% if post.data.type == "swim" %}🏊‍♂️{% endif %}
-			{% if post.data.type == "climb" %}🧗‍♂️{% endif %}
-
-			⏰ {{ post.data.time }}
-			{% if post.data.type != "climb" %}📏 {{ post.data.distance }} km{% endif %}
-			{% if post.data.pace %}⏱️ {{ post.data.pace }} min/km{% endif %}
-			{% if post.data.type != "climb" %}{% if post.data.climb %}🛫 {{ post.data.climb }} m+{% endif %}{% endif %}
-			{% if post.data.hr %}❤️‍🔥 {{ post.data.hr }} bpm{% endif %}
-			{% if post.data.w %}🪫 {{ post.data.w }} w{% endif %}
-			{% if post.data.kcal %}🧁 {{ post.data.kcal }} kcal{% endif %}
-			<br><br>
-		  {% endif %}
-
-		  {% if post.data.cover %}
-			<img
-			  src="{{ metadata.base }}/assets/images/{{ post.data.cover }}"
-			  alt="{{ post.data.cover_alt | default(post.data.title) }}"
-			><br><br>
-		  {% endif %}
-
-		  {{ post.data.description | default("") }}
-
-		  {{ post.templateContent | safe }}
-
-		  <br><br>
-		  {% if post.data.tags %}
-			#{{ post.data.tags | join(" #") }}
-		  {% endif %}
-
-		  <hr>
-		  Thanks for reading via RSS!
-		]]></content:encoded>
 	  </item>
 	{% endfor %}
 

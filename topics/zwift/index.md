@@ -1,7 +1,7 @@
 ---
 title: Zwift - Topic Focus
 layout: /layouts/topic_fitness.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: zwift
 subject-pretty: Zwift 
 ---

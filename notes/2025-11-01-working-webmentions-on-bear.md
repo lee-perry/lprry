@@ -2,7 +2,7 @@
 title: Working Webmentions on Bear
 bear: /working-webmentions-on-bear
 date: 2025-11-01
-cover: 40-1.webp
+cover: /assets/images/40-1.webp
 tags: ['bearblog', 'indieWeb']
 ---
 I had webmentions working pretty quickly on bear last night, displaying them where the upvote counter is not used took longer to refactor.

@@ -3,7 +3,7 @@ title: Using Microformats with Bear
 bear: /using-microformats-with-bear
 date: 2025-07-11
 description: Discussing implementation of microformats on my bearblog project.
-cover: 56.webp
+cover: /assets/images/56.webp
 tags: ['bearblog', 'indieWeb', 'microformats']
 ---
 

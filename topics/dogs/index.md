@@ -1,7 +1,7 @@
 ---
 title: Dogs - Canine Child Focus
 layout: /layouts/topic.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: dogs
 subject-pretty: Canine Children 
 ---

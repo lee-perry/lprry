@@ -1,7 +1,7 @@
 ---
 title: Training Log
 layout: /layouts/page.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: training-log
 ---
 <div class="h-feed">

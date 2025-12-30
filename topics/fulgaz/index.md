@@ -1,7 +1,7 @@
 ---
 title: Fulgaz - Topic Focus
 layout: /layouts/topic_fitness.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: fulgaz
 subject-pretty: FulGaz 
 ---

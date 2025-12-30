@@ -1,7 +1,7 @@
 ---
 title: Changelog
 layout: /layouts/topic.html
-cover: header.webp
+cover: /assets/images/header.webp
 subject: changelog
 subject-pretty: Changelog
 ---

@@ -1,7 +1,7 @@
 ---
 title: Training Log - Swims
 layout: /layouts/page.html
-cover: header.webp
+cover: /assets/images/header.webp
 ---
 <h1>My Swimming Activities</h1>
 
