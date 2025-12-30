@@ -100,6 +100,38 @@ content:
       - name: body
         label: Body
         type: rich-text
+  - name: notes
+    label: Notes
+    type: collection
+    path: 'notes'
+    view:
+      fields: [ title, date ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: cover
+        label: Preview image
+        type: image
+      - name: cover_alt
+        label: Cover Alt Text
+        type: string
+      - name: description
+        label: Description
+        type: string
+      - name: tags
+        label: Tags
+        type: string
+        list:
+          min: 1 # Must have at least one tag
+          max: 5 # Can have up to five tags
+          default: [snaps]
+      - name: body
+        label: Body
+        type: rich-text
   - name: site
     label: Site settings
     path: /data/site.json
