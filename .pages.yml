@@ -32,9 +32,6 @@ content:
       - name: description
         label: Description
         type: string
-      - name: body
-        label: Body
-        type: rich-text
       - name: tags
         label: Tags
         type: string
@@ -42,6 +39,9 @@ content:
           min: 1 # Must have at least one tag
           max: 5 # Can have up to five tags
           default: [snaps]
+      - name: body
+        label: Body
+        type: rich-text
   - name: training-log
     label: Activities
     type: collection
