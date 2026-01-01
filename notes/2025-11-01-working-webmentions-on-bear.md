@@ -7,4 +7,4 @@ tags: ['bearblog', 'indieWeb']
 ---
 I had webmentions working pretty quickly on bear last night, displaying them where the upvote counter is not used took longer to refactor.
 
-<img src="/assets/images/{{ cover }}" alt="Screenshot of this website showing like, boost and comment webmentions displayed below an article">
+<img src="{{ cover }}" alt="Screenshot of this website showing like, boost and comment webmentions displayed below an article">
