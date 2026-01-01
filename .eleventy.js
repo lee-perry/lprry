@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
     extensions: "html",
   
     // output image widths
-    widths: [300, 450, 900],
+    widths: [325, 475, 950],
     heights: "auto",
   
     // optional, attributes assigned on <img> nodes override these values
