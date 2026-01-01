@@ -1,0 +1,33 @@
+# Block all crawlers by default
+User-agent: *
+Disallow: /
+
+# Allow specific good crawlers
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Kagi (privacy-focused search engine)
+User-agent: Kagibot
+Allow: /
+
+# Startpage
+User-agent: Startpage
+Allow: /
+
+# Mojeek (independent search engine)
+User-agent: MojeekBot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
