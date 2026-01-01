@@ -165,17 +165,19 @@
    text-align: left;
  }
  
- .ph {
-   font-size: 1.3em;
-   vertical-align: -20%;
- }
- 
  .icon {
    fill: var(--focus-color);
    height: 1.3em;
    width: 1.3em;
    vertical-align: -20%;
  }
+ 
+ .icon-l {
+    fill: var(--focus-color);
+    height: 2em;
+    width: 2em;
+    vertical-align: -20%;
+  }
  
  iframe, .video {
      aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
