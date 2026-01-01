@@ -15,7 +15,7 @@ On this site I write notes and longer articles about learning to code, exploring
 
 <nav>
 
-[<i class="ph ph-code"></i> ](/code) [<i class="ph ph-dog"></i> ](/dogs) [<i class="ph ph-plant"></i> ](/grow) [<i class="ph ph-soccer-ball"></i> ](/football) [<i class="ph ph-van"></i> ](/exploring)[<i class="ph ph-book"></i> ](/reading) [<i class="ph ph-television"></i> ](/watching) [<i class="ph ph-guitar"></i> ](/vinyl)
+[<i class="ph ph-code" aria-label="Code Archive"></i> ](/topics/code) [<i class="ph ph-dog" aria-label="Dogs Archive"></i> ](/topics/dogs) [<i class="ph ph-plant" aria-label="Allotment Archive"></i> ](/topics/allotment) [<i class="ph ph-soccer-ball" aria-label="Football Archive"></i> ](/topics/football) [<i class="ph ph-van" aria-label="Exploring Archive"></i> ](/topics/exploring)[<i class="ph ph-book" aria-label="Reading Archive"></i> ](/topics/reading) [<i class="ph ph-television" aria-label="TV and Film archive"></i> ](/topics/watched) [<i class="ph ph-guitar" aria-label="Music Archive"></i> ](/topics/vinyl)
 
 </nav>
 
