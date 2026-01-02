@@ -1,5 +1,6 @@
 ---
 title: Akhenaten
+date: 2026-01-02
 cover: /assets/images/Screenshot 2026-01-02 at 16.50.14.webp
 cover_alt: A screenshot showing Akhenaten rendering Pharoah's menu.
 description: 'In other exciting news I spotted the <a class="u-like-of"
