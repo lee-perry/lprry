@@ -24,14 +24,15 @@
  
  <!-- Primary Meta Tags -->
  <meta name="title" content="lprry">
- <meta name="description" content="{{ description }}">
+ <meta property="og:description" content="{{ description | strip_html | truncate: 300 }}">
  
  <!-- Open Graph / Facebook -->
  <meta property="og:site_name" content="lprry">
  <meta property="og:title" content="{{ title }}">
  <meta property="og:type" content="website">
  <meta property="og:url" content="https://l.prry.uk{{ page.url }}">
- <meta property="og:description" content="{{ description }}">
+ <meta property="og:description" content="{{ description | strip_html | truncate: 160 }}">
+
  {% if cover %}
  <meta property="og:image" content="https://l.prry.uk{{ cover }}"> 
  {% endif %}
@@ -39,7 +40,8 @@
  <meta property="twitter:card" content="summary">
  <meta property="twitter:url" content="https://l.prry.uk{{ page.url }}">
  <meta property="twitter:title" content="{{ title }}">
- <meta property="twitter:description" content="{{ description }}">
+ <meta property="og:description" content="{{ description | strip_html | truncate: 160 }}">
+
  {% if cover %}
  <meta property="twitter:image" content="https://l.prry.uk{{ cover }}">
  {% endif %}
