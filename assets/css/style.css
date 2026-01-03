@@ -165,6 +165,12 @@
    text-align: left;
  }
  
+ .brick {
+   max-width: 88px;
+   border: 2px solid var(--background-color);
+   border-radius: 0px;
+ }
+ 
  .icon {
    fill: var(--focus-color);
    height: 1.3em;
