@@ -3,6 +3,11 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   
+  eleventyConfig.addFilter("encodeURI", (url) => {
+    if (!url) return "";
+    return encodeURI(url);
+  });
+  
   eleventyConfig.addCollection("everything", function (collectionApi) {
     const notes = collectionApi.getFilteredByGlob("notes/*");
     const articles = collectionApi.getFilteredByGlob("articles/*");

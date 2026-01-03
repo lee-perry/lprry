@@ -60,7 +60,7 @@
 		{# --- MEDIA THUMBNAIL --- #}
 		{% if post.data.cover %}
 		  <media:content
-			url="{{ metadata.base }}{{ post.data.cover }}"
+		    url="{{ metadata.base }}{{ post.data.cover | encodeURI }}"
 			medium="image"
 		  />
 		{% endif %}
