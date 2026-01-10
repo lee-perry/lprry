@@ -26,7 +26,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: tags
         label: Tags
         type: string
@@ -57,7 +57,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: type
         label: Type
         type: select
@@ -114,7 +114,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: tags
         label: Tags
         type: string
@@ -145,7 +145,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: tags
         label: Tags
         type: string
@@ -191,7 +191,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: body
         label: Body
         type: rich-text
@@ -211,7 +211,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: body
         label: Body
         type: rich-text
@@ -231,7 +231,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: body
         label: Body
         type: rich-text
@@ -251,7 +251,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: body
         label: Body
         type: rich-text
@@ -271,7 +271,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: body
         label: Body
         type: rich-text
@@ -291,7 +291,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: body
         label: Body
         type: rich-text
@@ -311,7 +311,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: body
         label: Body
         type: rich-text
@@ -331,7 +331,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: string
+        type: text
       - name: body
         label: Body
         type: rich-text
