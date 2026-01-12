@@ -358,7 +358,7 @@ content:
         type: string
       - name: layout
         label: Layout
-        type: text
+        type: string
         default: /layouts/page.html
       - name: cover
         label: Preview image
