@@ -356,6 +356,10 @@ content:
       - name: title
         label: Title
         type: string
+      - name: layout
+        label: Layout
+        type: text
+        default: /layouts/page.html
       - name: cover
         label: Preview image
         type: image
