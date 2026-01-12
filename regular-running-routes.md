@@ -2,6 +2,8 @@
 title: Regular Running Routes
 layout: /layouts/page.html
 cover: /assets/images/header.webp
+description: This page itemises my regular running routes, with course map and
+  run data for each route.
 ---
 # Running Routes
 
