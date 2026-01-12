@@ -1,5 +1,6 @@
 ---
 title: Regular Running Routes
+layout: /layouts/page.html
 cover: /assets/images/header.webp
 ---
 # Running Routes
