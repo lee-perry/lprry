@@ -9,8 +9,11 @@ tags:
   - dogs
   - ruairidh
 ---
-<div class="snaps-horizontal">
+All images:
 
-![](/assets/images/IMG_9464.webp)
+<div class="snaps-horizontal">
+  
+![A spaniel lay on his back receiving a haircut while grinning incessantly](/assets/images/IMG_9464.webp)
+![Two spaniels sat together in front of a human, all staring towards the camera](/assets/images/IMG_9467.webp)
 
 </div>
