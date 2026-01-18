@@ -6,4 +6,5 @@ cover_alt: A spaniel, staring out of his bed directly towards the camera.
 description: Here is the Spaniel, watching Vickie's every move from his sentry box.
 tags:
   - dogs
+  - ruairidh
 ---
