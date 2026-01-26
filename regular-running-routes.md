@@ -15,6 +15,12 @@ As the page grows I _may_ break this out into a page for each route.
 
 16 Nov 2025 [🏃‍♂️ ⏰00:43:06 📏7.52km ⏱️05:44min/km 🛫052m ❤️‍🔥165bpm 🧁817 Kcal](/training-log/2025-11-16-run)
 
+## Barrowford (short) Loop from HHP
+
+![](/assets/images/Screenshot%202026-01-26%20at%2021.49.27.webp)
+
+26 Jan 2026 [🚴‍♂️ ⏰00:53:30 📏8.55km 🛫134m+ ❤️‍🔥178bpm 🪫w 🧁816kcal](https://l.prry.uk/training-log/2026-01-26-evening-run/)
+
 ## Blacko (short) from HHP
 
 ![/assets/images/blacko-short.webp](/assets/images/blacko-short.webp)
