@@ -7,7 +7,7 @@ description: This page itemises my regular running routes, with course map and
 ---
 # Running Routes
 
-As the page grows I _may_ break this out into a page for each route.
+As the page grows, _I may_ break this out into a page for each route.
 
 ## Barden Lane to B&Q Circuit CCW
 
