@@ -9,12 +9,14 @@ module.exports = function (eleventyConfig) {
   });
   
   eleventyConfig.addCollection("everything", function (collectionApi) {
+    const linkblog = collectionApi.getFilteredByGlob("linkblog/*");
     const notes = collectionApi.getFilteredByGlob("notes/*");
     const articles = collectionApi.getFilteredByGlob("articles/*");
     const snaps = collectionApi.getFilteredByGlob("snaps/*");
     const trainingLog = collectionApi.getFilteredByGlob("training-log/*");
   
     const combined = [
+      ...linkblog,
       ...notes,
       ...articles,
       ...snaps,
@@ -24,10 +26,15 @@ module.exports = function (eleventyConfig) {
     return combined;
   });
   
+  eleventyConfig.addCollection("linkblog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("linkblog/*.md");
+  });
+  
   eleventyConfig.addCollection("topics", function(collectionApi) {
     // Filter only items in the 'topics' folder
     return collectionApi.getFilteredByGlob("topics/*/index.md");
   });
+  
   
   eleventyConfig.addPlugin(pluginRss);
   

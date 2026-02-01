@@ -1,0 +1,17 @@
+---
+layout: /layouts/page.html
+---
+<div class="h-feed">
+<h1>My LinkBlog</h1>
+<ul class="embedded blog-posts">
+{% assign latestLinks = collections.linkblog | reverse %}
+{% for item in latestLinks %}
+ {% if item.data.tags contains subject %}
+  <li class="h-entry">
+    <span class="dt-published">{{ item.date | date: "%Y-%m-%d" }}</span> - <a href="{{ item.url }}" class="u-url" rel="bookmark"><span class="p-name">{{ item.data.title }}</span></a> 
+    <hr>
+  </li>
+  {% endif %} 
+{% endfor %}
+</ul>
+</div>

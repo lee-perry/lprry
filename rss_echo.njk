@@ -67,6 +67,9 @@
 			{% endif %}
 		
 		  {{ post.data.description | default(post.data.title) | safe }}
+		  {% if post.data.link %}
+			  {{ post.data.link }}
+			{% endif %}
 		  {% if post.data.tags %}
 			  #{{ post.data.tags | join(" #") }}
 		  {% endif %}

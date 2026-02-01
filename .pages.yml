@@ -133,6 +133,34 @@ content:
       - name: body
         label: Body
         type: rich-text
+  - name: linkblog
+    label: Links
+    type: collection
+    path: 'linkblog'
+    view:
+      fields: [ title, date ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: link
+        label: Link
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: description
+        label: Description
+        type: text
+        options:
+          rows: 3
+          maxlength: 200
+      - name: tags
+        label: Tags
+        type: string
+        list:
+          min: 1 # Must have at least one tag
+          max: 5 # Can have up to five tags
   - name: articles
     label: Articles
     type: collection
