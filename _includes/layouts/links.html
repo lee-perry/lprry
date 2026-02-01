@@ -2,7 +2,7 @@
 layout: /layouts/page.html
 ---
 <div class="h-feed">
-<h1>My LinkBlog</h1>
+<h1>My {{ subject-pretty }} LinkBlog</h1>
 <ul class="embedded blog-posts">
 {% assign latestLinks = collections.linkblog | reverse %}
 {% for item in latestLinks %}

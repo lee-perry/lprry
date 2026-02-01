@@ -47,6 +47,28 @@ layout: /layouts/page.html
 <br><br>
 {% endif %}
 
+<ul class="embedded blog-posts">
+{% assign latestLinks = collections.linkblog | reverse %}
+{% assign filteredLinks = latestLinks | where_exp: "item", "item.data.tags contains subject" %}
+{% assign shownLinks = 0 %}
+
+{% if filteredLinks.size > 0 %}
+<h2>Latest from the LinkBlog</h2>
+
+{% for item in latestLinks %}
+ {% if item.data.tags contains subject %}
+  <li>
+    {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
+  </li>
+  {% endif %} 
+ {% assign shownLinks = shownLinks | plus: 1 %}
+{% endfor %}
+</ul>
+</div>
+<a href="/topics/{{ subject }}/links">View all {{ subject-pretty }} links</a>
+<br><br>
+{% endif %}
+
 
 {% assign latestSnaps = collections.snaps | reverse %}
 {% assign filteredSnaps = latestSnaps | where_exp: "item", "item.data.tags contains subject" %}
@@ -93,9 +115,8 @@ layout: /layouts/page.html
 {% endfor %}
 </ul>
 
-<a href="/topics/{{ subject }}/clips">View all {{ subject-pretty }} clips</a>
+<a href="/topics/{{ subject }}/links">View all {{ subject-pretty }} links</a>
 <br><br>
 {% endif %}
-
 
 

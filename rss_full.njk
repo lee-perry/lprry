@@ -52,7 +52,12 @@
 		
 		  {{ post.data.description | default(post.data.title) | safe }}
 		  {{ post.content | safe }}
+			{% if post.data.link %}
+			  <br>
+			  {{ post.data.link }}
+			{% endif %}
 		  {% if post.data.tags %}
+		      <br>
 			  #{{ post.data.tags | join(" #") }}
 		  {% endif %}
 		]]></description>
@@ -94,6 +99,10 @@
 
 		  {{ post.templateContent | safe }}
 
+		  <br><br>
+		  {% if post.data.link %}
+			{{ post.data.link }}
+		  {% endif %}
 		  <br><br>
 		  {% if post.data.tags %}
 			#{{ post.data.tags | join(" #") }}
