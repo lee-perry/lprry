@@ -41,6 +41,14 @@ As the page grows, _i may_ break this out into a page for each route.
 24 Nov 2025[🏃‍♂️ ⏰00:46:00 📏7.00km ⏱️6:34min/km 🛫110m ❤️‍🔥158bpm 🧁574 Kcal](/training-log/2025-11-24-run)  
 12 Jan 2026[🏃‍♂️ ⏰00:44:57 📏7.16km ⏱️6:17min/km 🛫112m+ ❤️‍🔥169bpm 🧁706 kcal](/training-log/2026-01-12-evening-run/)
 
+## Marsden CCW
+
+The first half of the 'Neslon Skyline' route. Usually ran in counterclockwise orientation, mainly because I would get lost looking for the bottom of the climb in Nelson from the other direction!
+
+![](/assets/images/Screenshot%202026-02-01%20at%2020.01.12.webp)
+
+01 Feb 2025 [🏃‍♂️ ⏰01:09:38 📏11.29km ⏱️06:10min/km 🛫116m+ ❤️‍🔥171bpm 🧁1169kcal](/training-log/2026-02-01-afternoon-run/)
+
 ## Trawden Route (short) from HHP
 
 ![](/assets/images/Screenshot%202026-01-19%20at%2020.22.24.webp)
