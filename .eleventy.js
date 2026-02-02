@@ -8,6 +8,12 @@ module.exports = function (eleventyConfig) {
     return encodeURI(url);
   });
   
+  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+    if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+      return false;
+    }
+  });
+  
   eleventyConfig.addCollection("everything", function (collectionApi) {
     const linkblog = collectionApi.getFilteredByGlob("linkblog/*");
     const notes = collectionApi.getFilteredByGlob("notes/*");

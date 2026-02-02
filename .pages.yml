@@ -12,6 +12,10 @@ content:
     view:
       fields: [ title, date ]
     fields:
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
       - name: title
         label: Title
         type: string
@@ -46,6 +50,10 @@ content:
     view:
       fields: [ title, date ]
     fields:
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
       - name: title
         label: Title
         type: string
@@ -106,6 +114,10 @@ content:
     view:
       fields: [ title, date ]
     fields:
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
       - name: title
         label: Title
         type: string
@@ -140,6 +152,10 @@ content:
     view:
       fields: [ title, date ]
     fields:
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
       - name: title
         label: Title
         type: string
@@ -168,6 +184,10 @@ content:
     view:
       fields: [ title, date ]
     fields:
+      - name: draft
+        label: Draft
+        type: boolean
+        default: true
       - name: title
         label: Title
         type: string
