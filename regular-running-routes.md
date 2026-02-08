@@ -19,7 +19,7 @@ As the page grows, _i may_ break this out into a page for each route.
 
 ![](/assets/images/Screenshot%202026-01-26%20at%2021.49.27.webp)
 
-26 Jan 2026 [🚴‍♂️ ⏰00:53:30 📏8.55km 🛫134m+ ❤️‍🔥178bpm 🪫w 🧁816kcal](https://l.prry.uk/training-log/2026-01-26-evening-run/)
+26 Jan 2026 [🚴‍♂️ ⏰00:53:30 📏8.55km 🛫134m+ ❤️‍🔥178bpm 🪫w 🧁816kcal](/training-log/2026-01-26-evening-run/)
 
 ## Blacko (short) from HHP
 
@@ -47,9 +47,8 @@ The first half of the 'Neslon Skyline' route. Usually ran in counterclockwise or
 
 ![](/assets/images/Screenshot%202026-02-01%20at%2020.01.12.webp)
 
-01 Feb 2025 [🏃‍♂️ ⏰01:09:38 📏11.29km ⏱️06:10min/km 🛫116m+ ❤️‍🔥171bpm 🧁1169kcal](/training-log/2026-02-01-afternoon-run/)
-
-08 Feb 2025 [🏃‍♂️ ⏰01:03:26 📏11.25km ⏱️5:38min/km 🛫113m+ ❤️‍🔥180bpm 🧁1189kcal](https://l.prry.uk/training-log/2026-02-08-afternoon-run/)
+01 Feb 2025 [🏃‍♂️ ⏰01:09:38 📏11.29km ⏱️06:10min/km 🛫116m+ ❤️‍🔥171bpm 🧁1169kcal](/training-log/2026-02-01-afternoon-run/)  
+08 Feb 2025 [🏃‍♂️ ⏰01:03:26 📏11.25km ⏱️5:38min/km 🛫113m+ ❤️‍🔥180bpm 🧁1189kcal](/training-log/2026-02-08-afternoon-run/)
 
 ## Trawden Route (short) from HHP
 
