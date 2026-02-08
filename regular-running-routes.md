@@ -49,6 +49,8 @@ The first half of the 'Neslon Skyline' route. Usually ran in counterclockwise or
 
 01 Feb 2025 [🏃‍♂️ ⏰01:09:38 📏11.29km ⏱️06:10min/km 🛫116m+ ❤️‍🔥171bpm 🧁1169kcal](/training-log/2026-02-01-afternoon-run/)
 
+08 Feb 2025 [🏃‍♂️ ⏰01:03:26 📏11.25km ⏱️5:38min/km 🛫113m+ ❤️‍🔥180bpm 🧁1189kcal](https://l.prry.uk/training-log/2026-02-08-afternoon-run/)
+
 ## Trawden Route (short) from HHP
 
 ![](/assets/images/Screenshot%202026-01-19%20at%2020.22.24.webp)
