@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Evening Run
 date: 2026-02-09
 description: Back out on the Blacko short route with TAC, my first run of the
