@@ -25,8 +25,10 @@ As the page grows, _i may_ break this out into a page for each route.
 
 ![/assets/images/blacko-short.webp](/assets/images/blacko-short.webp)
 
+13 Oct 2025 🏃‍♂️ ⏰00:46:28 📏7.49km ⏱️6:11min/km 🛫109m+ ❤️‍🔥---bpm 🧁630kcal  
 01 Dec 2025 🏃‍♂️ ⏰00:48:48 📏7.53km ⏱️6:29min/km 🛫113m+ ❤️‍🔥158bpm 🧁702kcal  
-22 Dec 2025 [🏃‍♂️ ⏰00:50:25 📏7.51km ⏱️6:43min/km 🛫112m+ ❤️‍🔥165bpm 🧁793kcal](/training-log/2025-12-22-run)
+22 Dec 2025 [🏃‍♂️ ⏰00:50:25 📏7.51km ⏱️6:43min/km 🛫112m+ ❤️‍🔥165bpm 🧁793kcal](/training-log/2025-12-22-run)  
+09 Feb 2026 [🏃‍♂️ ⏰00:45:25 📏7.51km ⏱️6:03min/km 🛫114m+ ❤️‍🔥171bpm 🧁773kcal](/training-log/2026-02-09-evening-run/)
 
 ## Foulridge Loop (short) from HHP
 
