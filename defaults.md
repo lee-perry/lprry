@@ -1,5 +1,34 @@
 ---
 title: Defaults
 layout: /layouts/page.html
-description: Listing the default applications that I use at home and at work in 2026.
+description: Listing the default applications that I use in 2026.
 ---
+## 📧 Email
+
+## 🌐 Browser
+
+## 📅 Calendar
+
+## 🗃️ Cloud Storage
+
+## 💬 Messaging
+
+## 🏞️ Photo Management
+
+## 📝 Note Taking
+
+## ✅ Task Management
+
+## 🛜 Feed Reader
+
+## 📰 News
+
+## 🔓 Security
+
+## 🔎 Search
+
+## 🔖 Bookmarks
+
+## 👨‍💻 Code Editor
+
+## 💶 Finance
