@@ -370,6 +370,33 @@ content:
       - name: body
         label: Body
         type: rich-text
+  - name: Defaults
+    label: Defaults
+    path: defaults.md
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: layout
+        label: Layout
+        type: string
+        default: /layouts/page.html
+      - name: cover
+        label: Preview image
+        type: image
+      - name: cover_alt
+        label: Cover Alt Text
+        type: string
+      - name: description
+        label: Description
+        type: text
+        options:
+          rows: 3
+          maxlength: 200
+      - name: body
+        label: Body
+        type: text
   - name: Colophon
     label: Colophon
     path: colophon.md
