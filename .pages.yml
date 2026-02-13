@@ -390,7 +390,7 @@ content:
         type: string
       - name: description
         label: Description
-        type: text
+        type: rich-text
         options:
           rows: 3
           maxlength: 200
