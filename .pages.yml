@@ -390,13 +390,13 @@ content:
         type: string
       - name: description
         label: Description
-        type: rich-text
+        type: text
         options:
           rows: 3
           maxlength: 200
       - name: body
         label: Body
-        type: text
+        type: rich-text
   - name: Colophon
     label: Colophon
     path: colophon.md
