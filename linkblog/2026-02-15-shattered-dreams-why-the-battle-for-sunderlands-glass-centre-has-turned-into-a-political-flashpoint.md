@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: "Shattered dreams: Why the battle for Sunderland’s glass centre has
   turned into a political flashpoint"
 link: https://www.theguardian.com/uk-news/2026/feb/15/shattered-dreams-how-the-battle-for-sunderlands-glass-centre-turned-into-a-political-flashpoint
