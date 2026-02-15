@@ -12,10 +12,12 @@ tags:
   - burnleyfc
   - nelsonfc
 ---
+
+<div class="snaps-horizontal">
+  
 ![](/assets/images/IMG_9089.webp)
-
 ![](/assets/images/IMG_9090.webp)
-
 ![](/assets/images/IMG_9091.webp)
-
 ![](/assets/images/IMG_9092.webp)
+
+</div>
