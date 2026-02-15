@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Victoria Park
 date: 2026-02-15
 cover: /assets/images/IMG_9093.webp
@@ -12,12 +12,4 @@ tags:
   - burnleyfc
   - nelsonfc
 ---
-
-<div class="snaps-horizontal">
-  
-![](/assets/images/IMG_9089.webp)
-![](/assets/images/IMG_9090.webp)
-![](/assets/images/IMG_9091.webp)
-![](/assets/images/IMG_9092.webp)
-
-</div>
+<div class="snaps-horizontal"><p><img src="/assets/images/IMG_9089.webp" alt=""> <img src="/assets/images/IMG_9090.webp" alt=""> <img src="/assets/images/IMG_9091.webp" alt=""> <img src="/assets/images/IMG_9092.webp" alt=""></p></div>
