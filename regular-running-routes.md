@@ -13,7 +13,7 @@ As the page grows, _i may_ break this out into a page for each route.
 
 ![/assets/images/25-1.webp](/assets/images/25-1.webp)
 
-16 Nov 2025 [🏃‍♂️ ⏰00:43:06 📏7.52km ⏱️05:44min/km 🛫052m ❤️‍🔥165bpm 🧁817 Kcal](/training-log/2025-11-16-run)
+16 Nov 2025 [🏃‍♂️ ⏰00:43:06 📏7.52km ⏱️5:44min/km 🛫052m ❤️‍🔥165bpm 🧁817 Kcal](/training-log/2025-11-16-run)
 
 ## Barrowford (short) Loop from HHP
 
@@ -49,11 +49,17 @@ The first half of the 'Neslon Skyline' route. Usually ran in counterclockwise or
 
 ![](/assets/images/Screenshot%202026-02-01%20at%2020.01.12.webp)
 
-01 Feb 2025 [🏃‍♂️ ⏰01:09:38 📏11.29km ⏱️06:10min/km 🛫116m+ ❤️‍🔥171bpm 🧁1169kcal](/training-log/2026-02-01-afternoon-run/)  
+01 Feb 2025 [🏃‍♂️ ⏰01:09:38 📏11.29km ⏱️6:10min/km 🛫116m+ ❤️‍🔥171bpm 🧁1169kcal](/training-log/2026-02-01-afternoon-run/)  
 08 Feb 2025 [🏃‍♂️ ⏰01:03:26 📏11.25km ⏱️5:38min/km 🛫113m+ ❤️‍🔥180bpm 🧁1189kcal](/training-log/2026-02-08-afternoon-run/)
 
 ## Trawden Route (short) from HHP
 
 ![](/assets/images/Screenshot%202026-01-19%20at%2020.22.24.webp)
 
-19 Jan 2026 [🏃‍♂️ ⏰00:41:59 📏7.00km ⏱️06:00min/km 🛫110m+ ❤️‍🔥179bpm 🧁785kcal](/training-log/2026-01-19-evening-run/)
+19 Jan 2026 [🏃‍♂️ ⏰00:41:59 📏7.00km ⏱️6:00min/km 🛫110m+ ❤️‍🔥179bpm 🧁785kcal](/training-log/2026-01-19-evening-run/)
+
+## Walton Lane (short) from HHP
+
+![](/assets/images/walton-lane-short.webp)
+
+16 Feb 2026 [🏃‍♂️ ⏰00:48:58 📏9.08km ⏱️6:03min/km 🛫122m+ ❤️‍🔥164bpm 🧁757kcal](https://l.prry.uk/training-log/2026-02-16-evening-run/)
