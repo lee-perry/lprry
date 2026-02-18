@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Mastodon Self Hosting
 date: 2026-02-18
 description: I'm considering retiring my mastodon server and migrating back
