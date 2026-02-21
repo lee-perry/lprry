@@ -60,7 +60,7 @@ On this site I write notes and longer articles about learning to code, exploring
 <div class="snaps">
 
 <ul class="embedded blog-posts">
-{% assign latestSnaps = collections.snaps | reverse | slice: 0, 9 %}
+{% assign latestSnaps = collections.snaps | reverse | slice: 0, 3 %}
 {% for item in latestSnaps %}
  <li>
     <time datetime="">{{ item.date | date: "%Y-%m-%d" }}</time><br>
@@ -74,15 +74,17 @@ On this site I write notes and longer articles about learning to code, exploring
 [View all imageposts](/snaps)
 
 ## Latest Clip
-
+<div class="snaps">
 <ul class="embedded blog-posts">
-{% assign latestClips = collections.clips | reverse | slice: 0, 1 %}
+{% assign latestClips = collections.clips | reverse | slice: 0, 3 %}
 {% for item in latestClips %}
  <li>
-   {{ item.date | date: "%Y-%m-%d" }} - <a href="{{ item.url }}">{{ item.data.title }}</a>
-   {{ item.content }}
- </li>
+     <time datetime="">{{ item.date | date: "%Y-%m-%d" }}</time><br>
+     <a href="{{ item.url }}">{{ item.data.title }}</a><br>
+      <a href="{{ item.url }}"><img src="{{ item.data.cover }}" alt="item.data.cover_alt"></a>   
+  </li>
 {% endfor %}
 </ul>
+</div>
 
 [View all clips](/clips)
