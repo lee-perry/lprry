@@ -13,7 +13,7 @@ distance: 12.62
 pace: 5:48
 climb: 257
 hr: 164
-kcal: "1409"
+kcal: 1,409
 tags:
   - running
 ---
