@@ -49,8 +49,13 @@ The first half of the 'Neslon Skyline' route. Usually ran in counterclockwise or
 
 ![](/assets/images/Screenshot%202026-02-01%20at%2020.01.12.webp)
 
-01 Feb 2025 [🏃‍♂️ ⏰01:09:38 📏11.29km ⏱️6:10min/km 🛫116m+ ❤️‍🔥171bpm 🧁1169kcal](/training-log/2026-02-01-afternoon-run/)  
-08 Feb 2025 [🏃‍♂️ ⏰01:03:26 📏11.25km ⏱️5:38min/km 🛫113m+ ❤️‍🔥180bpm 🧁1189kcal](/training-log/2026-02-08-afternoon-run/)
+01 Feb 2026 [🏃‍♂️ ⏰01:09:38 📏11.29km ⏱️6:10min/km 🛫116m+ ❤️‍🔥171bpm 🧁1169kcal](/training-log/2026-02-01-afternoon-run/)  
+08 Feb 2026 [🏃‍♂️ ⏰01:03:26 📏11.25km ⏱️5:38min/km 🛫113m+ ❤️‍🔥180bpm 🧁1189kcal](/training-log/2026-02-08-afternoon-run/)
+
+## Nelson Skyline
+![](/assets/images/nelson-skyline.webp)
+
+22 Feb 2026 [🏃‍♂️ 01:13:17 12.62km 5:48min/km 257m+ 164bpm 1409kcal](/training-log/2026-02-22-afternoon-run/)
 
 ## Trawden Route (short) from HHP
 
