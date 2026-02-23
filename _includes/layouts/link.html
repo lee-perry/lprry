@@ -5,6 +5,7 @@ layout: /layouts/page.html
   <div class="e-content p-name">
 	<h1>{{ title }}</h1>
 	<p>{{ description }}</p>
+	{{ content }}
 	<p><a class="u-bookmark-of" href="{{ link }}">{{ title }}</a>: {{ link }}</p>
 	<p>Bookmarked by <a rel="author" href="https://l.prry.uk"><span class="p-author">Lee Perry</span></a> on 
 	  <span class="dt-published" datetime="{{ date | date: "%Y-%m-%dT00:00Z" }}">
