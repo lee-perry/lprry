@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: The AfD is flirting with Nazi history – but moral outrage alone won’t
   stop the far right
 link: https://www.theguardian.com/commentisfree/2026/feb/23/afd-nazi-history-far-right-germany
