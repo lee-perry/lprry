@@ -7,5 +7,7 @@ date: 2026-02-23
 description: Katja Hoyer writing in the Guardian.
 tags:
   - politics
+  - germany
+  - rightwing
 ---
 > Those who want to see the AfD diminished should expend less energy talking about the party and more on working out what has allowed it to grow and prosper.
