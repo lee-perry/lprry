@@ -58,6 +58,12 @@ The first half of the 'Neslon Skyline' route. Usually ran in counterclockwise or
 
 22 Feb 2026 [🏃‍♂️ ⏰01:13:17 📏12.62km ⏱️5:48min/km 🛫257m+ ❤️‍🔥164bpm 🧁1409kcal](https://l.prry.uk/training-log/2026-02-22-afternoon-run/)
 
+## Pendle Parkrun
+
+![](/assets/images/pendle-parkrun.webp)
+
+28 Feb 2026 [🏃‍♂️ ⏰00:26:31 📏5.00km ⏱️5:18min/km 🛫100m+ ❤️‍🔥172bpm 🧁486kcal](/training-log/2026-02-28-pendle-parkrun/)
+
 ## Trawden Route (short) from HHP
 
 ![](/assets/images/Screenshot%202026-01-19%20at%2020.22.24.webp)
