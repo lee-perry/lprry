@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Afternoon run
 date: 2026-03-01
 cover: /assets/images/IMG_9162.webp
