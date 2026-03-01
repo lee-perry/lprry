@@ -56,7 +56,13 @@ The first half of the 'Neslon Skyline' route. Usually ran in counterclockwise or
 
 ![](/assets/images/nelson-skyline.webp)
 
-22 Feb 2026 [🏃‍♂️ ⏰01:13:17 📏12.62km ⏱️5:48min/km 🛫257m+ ❤️‍🔥164bpm 🧁1409kcal](https://l.prry.uk/training-log/2026-02-22-afternoon-run/)
+22 Feb 2026 [🏃‍♂️ ⏰01:13:17 📏12.62km ⏱️5:48min/km 🛫204m+ ❤️‍🔥164bpm 🧁1409kcal](https://l.prry.uk/training-log/2026-02-22-afternoon-run/)
+
+## Nelson Skyline Extension
+
+![](/assets/images/marsden-height.webp)
+
+01 Mar 2026 [🏃‍♂️ ⏰01:26:31 📏14.54km ⏱️5:57min/km 🛫243m+ ❤️‍🔥166bpm 🧁1463kcal](https://l.prry.uk/training-log/2026-03-01-afternoon-run/)
 
 ## Pendle Parkrun
 
