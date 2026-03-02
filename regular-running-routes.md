@@ -41,8 +41,7 @@ As the page grows, _i may_ break this out into a page for each route.
 
 ![/assets/images/10-1.webp](/assets/images/10-1.webp)
 
-17 Nov 2025 [🏃‍♂️ ⏰00:49:14 📏7.76km ⏱️6:20min/km 🛫148m ❤️‍🔥157bpm 🧁877 Kcal](/training-log/2025-11-17-run)
-02 Mar 2026 [🏃‍♂️ ⏰00:48:36 📏7.769m ⏱️6:19min/km 🛫149m ❤️‍🔥151bpm 🧁669 Kcal](/training-log/2026-03-02-evening-run)
+17 Nov 2025 [🏃‍♂️ ⏰00:49:14 📏7.76km ⏱️6:20min/km 🛫148m ❤️‍🔥157bpm 🧁877 Kcal](/training-log/2025-11-17-run) 02 Mar 2026 [🏃‍♂️ ⏰00:48:36 📏7.769m ⏱️6:19min/km 🛫149m ❤️‍🔥151bpm 🧁669 Kcal](/training-log/2026-03-02-evening-run)
 
 ## Marsden CCW
 
