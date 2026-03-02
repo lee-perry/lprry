@@ -30,18 +30,18 @@ As the page grows, _i may_ break this out into a page for each route.
 22 Dec 2025 [🏃‍♂️ ⏰00:50:25 📏7.51km ⏱️6:43min/km 🛫112m+ ❤️‍🔥165bpm 🧁793kcal](/training-log/2025-12-22-run)  
 09 Feb 2026 [🏃‍♂️ ⏰00:45:25 📏7.51km ⏱️6:03min/km 🛫114m+ ❤️‍🔥171bpm 🧁773kcal](/training-log/2026-02-09-evening-run/)
 
-## Foulridge Loop (short) from HHP
-
-![/assets/images/10-1.webp](/assets/images/10-1.webp)
-
-17 Nov 2025 [🏃‍♂️ ⏰00:49:14 📏7.76km ⏱️6:20min/km 🛫148m ❤️‍🔥157bpm 🧁877 Kcal](/training-log/2025-11-17-run)
-
 ## Laneshawbridge Loop (short) from HHP
 
 ![Screenshot from Veloviewer showing route map and elevation profile](/assets/images/40-2.webp)
 
 24 Nov 2025[🏃‍♂️ ⏰00:46:00 📏7.00km ⏱️6:34min/km 🛫110m ❤️‍🔥158bpm 🧁574 Kcal](/training-log/2025-11-24-run)  
 12 Jan 2026[🏃‍♂️ ⏰00:44:57 📏7.16km ⏱️6:17min/km 🛫112m+ ❤️‍🔥169bpm 🧁706 kcal](/training-log/2026-01-12-evening-run/)
+
+## Langroyd Loop (short) from HHP
+
+![/assets/images/10-1.webp](/assets/images/10-1.webp)
+
+17 Nov 2025 [🏃‍♂️ ⏰00:49:14 📏7.76km ⏱️6:20min/km 🛫148m ❤️‍🔥157bpm 🧁877 Kcal](/training-log/2025-11-17-run)
 
 ## Marsden CCW
 
